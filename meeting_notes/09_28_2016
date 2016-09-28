@@ -1,0 +1,29 @@
+TA meeting notes
+	Audience: client – keep in layman terms, communication b/w client and devs
+	Persona: technical skills
+	Don’t get too wordy in descriptions
+	Time change 11:30~ Wed
+Administration
+	TA questions email
+	Marking – meeting + interviews
+	Interview – meeting but marked
+	Feature implemented by person A – everyone should know what it does, completed/incomplete, memorizing the technical coding not needed, no technical questions
+Advice:
+	Communicate b/w what’s being implemented, progress reports
+		Why’d you implement this, x way?
+		Why is this late? Not completed?
+		I don’t know is the worst possible answer
+		Most technical: what is the design pattern used behind this feature?
+	Deliverable
+		Git – master branch vs sub branches
+		Conflict when everyone pushes to same branch (master)
+		Personal branches for each user + merge to master
+		Resolve in person
+		Commit message formats
+	Offline
+		Accessible to everyone through internet
+		Front end? Database? Web app? Android?
+		Back end? Server?
+	Contingencies 
+		Contact? Wait next day? Majority vote?
+		Small as possible response time

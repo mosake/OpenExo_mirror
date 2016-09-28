@@ -1,0 +1,21 @@
+CSCC01 Persona – (Admins)
+
+Jane Doe
+	23 year-old graduate student, female
+	Attends school for physics and astrophysics
+	Good computer skills: Word processor, dropbox
+	Basic programming experience getting statistical models using SAS and R, python
+	Creative and detail oriented, enjoys art as a pastime
+	Enjoys saving time and money by automating tasks as much as possible
+	Leads a work-study project for Open Exoplanet Catalog in the Astronomy department
+
+1.	I want to be able to know who and where new information submissions for planets are coming from so that I can verify that they are credible sources.
+2.	I want to be able to create a new category of information for planets when someone submits data that does not have a category yet.
+3.	I want to easily solve GitHub merge conflicts automatically without ruining the data.
+4.	I want to have an automatic conversion for units of measurements that I input so that the data is consistent among the catalog.
+5.	I want to be able to have an auto-spell checker so that I don’t have to manually re-edit any changes.
+6.	I want to have a dynamic fill form for star and planet submissions so that I can easily enter the data into the catalog.
+7.	I want to automatically get updates from other verified catalogs to update OEC.
+8.	I want to be able to reject a new planet and not get prompted about it again if it’s updated on a different catalog.
+9.	I want to have a blacklist of rejected sources.
+10.	I want to get updates from other catalogs on a daily basis.

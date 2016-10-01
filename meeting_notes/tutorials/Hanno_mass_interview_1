@@ -1,0 +1,64 @@
+CSCC01 tutorial
+	Must have traits (cat) for the system?
+		name, mass
+	Check if 2 entries are the same?
+	Update/automate Open Exoplanet Catalog or create an entirely new platform (android app)?
+		Did you mean to integrate the system we're creating into with your current website, ie. should we create an entirely new front end?
+			Don't worry about front end.
+	How often is there a new planet?
+		A few per week
+	Grad students/Hanno?
+		command line exe possible
+	Pull request from GitHub:
+		not 1000 a day or something easier
+**	No access or full access
+	Multiple changes on a catalog
+		accept all at once? Yes for a reasonable amount
+			Different systems -> one by one
+	Changes show on front end in a few mins
+	One mod vs multiple mods?
+	No tech skills:
+		all future users will have technical skills and a strong background in astronomy. Know command line
+	Changes (merge)
+		newer data but simultanious conflicts
+	Hanno has authorization grant rights
+	Open as possible
+
+	Other catalogs?
+		not yet (first 2)
+
+	Human error?
+		typos :/
+		Case sensitivity?
+
+	Did you want to standardize measurements (mass, radius)?
+		Units that you use, ask ryan for 
+		Sigdigits change alert. If chagne is not sig, no alert
+
+
+*	Undo history?
+		Would be nice.
+		Manual rollback is fine.
+
+	API for 3rd party devs?
+		No. Must be stand alone
+
+	Manually edit
+		text file edit and commit
+
+*	Wants automated back end system.
+	No pointless alerts
+
+	Naming preferance given to first come
+		usually # and telescope
+		Hanno chooses primary name
+
+	Notification for changes, pull request, website, email
+
+	In terms of new col. No matching tag -> throw away.
+		Ignore
+
+	Favourite color?
+
+	Do you usually check GitHub on a daily basis, would you like to be prompted another way?
+		

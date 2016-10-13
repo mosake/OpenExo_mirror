@@ -1,0 +1,76 @@
+Product Backlog
+Sprint backlog
+
+
+Dev minutes (sat, sun off)
+	30 per day, per person
+	12.5 hours per week
+
+	Story point units:
+		1 = 30 minutes
+
+
+User Story Tasks (Priority):
+[1]		As Hanno (an admin), I want to be able to run the tool on a Mac or Unix device
+		(i.e command line)
+		
+		Implement via shell script:			 [priority]		[cost]
+		every person does their own man page		[1]		[???]
+		help
+		index
+		main
+		update (on specific folder)
+
+		logs(?)
+
+[2]		As Anne (an admin), I want a command that will output a manual of all commands and how to use them		
+
+[3]		As Hanno (an admin), I want a command to list of all planetary systems that have been updated in other catalogues since the last commit
+
+[4]		As Hanno (an admin), I want to be able to manually push and commit updates from other catalogues (Exoplanet.eu, exoplanetarchive.ipac.caltech.edu) to my git repository so that I can immediately add updated information to my catalogue
+
+[5]		As Hanno (an admin), I want to be able to open a file to see the information of a system that has been updated from another catalogue
+
+[6]		I want to pull a csv file (As Hanno (an admin), I want to see a column separated list of the values of the updated system corresponding to the table columns of my repository)
+
+[7]		I want to push a csv file
+
+[8]		I want to compare 2 csv files
+
+[9]		As Hanno (an admin), I want to be able to open a file to see the information of a system that has been updated from another catalogue
+
+[10]	As Hanno (an admin), I want to change the units of measurements that updates from other catalogues should be converted into before committing to my repository
+
+[11]	I want to raise a flag if there are certain questionable criteria for a planet
+
+[12]	As Hanno (an admin), I want to see potential typos surrounded with an asterisk when manually reviewing
+
+[13]		As Hanno (an admin), I want the tool to be able to match the same systems based on their descriptions even though they might have a different planet names in another catalogue
+
+[14]		As Hanno (an admin), I want a notification on the desktop to appear when there is an update from another catalogue found
+
+[15]		As Hanno (an admin), I want to be able to store and validate available updates offline and have them committed the next time I connect back to the internet
+
+[16]		As Hanno (an admin), I want to be able to add sources of external catalogues for which my catalogue should get updates from
+
+[17]		As Hanno (an admin), I want to be able to configure a template file of the data format for each source so that I can modify it if their data format changes later
+
+[18]	As Hanno (an admin), I want to be able to schedule when the tool should automatically commit updates from other catalogues
+
+[19]	As Hanno (an admin), I want to be able to add sources of external catalogues for which my catalogue should get updates from
+
+[20]	As Anne (an admin), I want to be able to run this tool on a Windows machine
+
+	
+
+	
+
+	
+	
+
+	
+	
+
+	
+	
+	

@@ -10,67 +10,52 @@ Dev minutes (sat, sun off)
 		1 = 30 minutes
 
 
-User Story Tasks (Priority):
-[1]		As Hanno (an admin), I want to be able to run the tool on a Mac or Unix device
-		(i.e command line)
-		
-		Implement via shell script:			 [priority]		[cost]
-		every person does their own man page		[1]		[???]
-		help
-		index
-		main
-		update (on specific folder)
 
-		logs(?)
+[Priority]	[cost]		User Story Tasks:
+[1]			[2]			As Hanno (an admin), I want to be able to run the tool on a Mac or Unix device		
+						(i.e command line)
+						
+						Implement via shell script:			 [priority]		[cost]
+						every person does their own man page		[1]		[???]
+						help
+						index										[]
+						main
+						update (on specific folder)
 
-[2]		As Anne (an admin), I want a command that will output a manual of all commands and how to use them		
+						logs(?)
 
-[3]		As Hanno (an admin), I want a command to list of all planetary systems that have been updated in other catalogues since the last commit
+[2]			[8]			As Anne (an admin), I want a command that will output a manual of all commands and how to use them		
 
-[4]		As Hanno (an admin), I want to be able to manually push and commit updates from other catalogues (Exoplanet.eu, exoplanetarchive.ipac.caltech.edu) to my git repository so that I can immediately add updated information to my catalogue
+[3]			[8]			As Hanno (an admin), I want a command to list of all planetary systems that have been updated in other catalogues since the last commit
 
-[5]		As Hanno (an admin), I want to be able to open a file to see the information of a system that has been updated from another catalogue
+[4]			[11]		As Hanno (an admin), I want to be able to manually push and commit updates from other catalogues (Exoplanet.eu, exoplanetarchive.ipac.caltech.edu) to my git repository so that I can immediately add updated information to my catalogue
 
-[6]		I want to pull a csv file (As Hanno (an admin), I want to see a column separated list of the values of the updated system corresponding to the table columns of my repository)
+[5]			[4]			As Hanno (an admin), I want to be able to open a file to see the information of a system that has been updated from another catalogue
 
-[7]		I want to push a csv file
+[6]			[10]		As Hanno, I want to pull a csv file (As Hanno (an admin), I want to see a column separated list of the values of the updated system corresponding to the table columns of my repository)
 
-[8]		I want to compare 2 csv files
+[7]			[4]			As Hanno, I want to push a csv file
 
-[9]		As Hanno (an admin), I want to be able to open a file to see the information of a system that has been updated from another catalogue
+[8]			[3]			As Hanno, I want to compare 2 csv files
 
-[10]	As Hanno (an admin), I want to change the units of measurements that updates from other catalogues should be converted into before committing to my repository
+[9]			[8]			As Hanno, I want to be able to view the description of a system that has been updated from another catalogue in a table format in an html page
 
-[11]	I want to raise a flag if there are certain questionable criteria for a planet
+[10]		[4]			As Hanno (an admin), I want to change the units of measurements that updates from other catalogues should be converted into before committing to my repository
 
-[12]	As Hanno (an admin), I want to see potential typos surrounded with an asterisk when manually reviewing
+[11]		[5]			I want to raise a flag if there are certain questionable criteria for a planet
 
-[13]		As Hanno (an admin), I want the tool to be able to match the same systems based on their descriptions even though they might have a different planet names in another catalogue
+[12]		[5]			As Hanno (an admin), I want to see potential typos surrounded with an asterisk when manually reviewing
 
-[14]		As Hanno (an admin), I want a notification on the desktop to appear when there is an update from another catalogue found
+[13]		[4]			As Hanno (an admin), I want the tool to be able to match the same systems based on their descriptions even though they might have a different planet names in another catalogue
 
-[15]		As Hanno (an admin), I want to be able to store and validate available updates offline and have them committed the next time I connect back to the internet
+[14]		[4]			As Hanno (an admin), I want a notification on the desktop to appear when there is an update from another catalogue found
 
-[16]		As Hanno (an admin), I want to be able to add sources of external catalogues for which my catalogue should get updates from
+[15]		[4]			As Hanno (an admin), I want to be able to store and validate available updates offline and have them committed the next time I connect back to the internet
 
-[17]		As Hanno (an admin), I want to be able to configure a template file of the data format for each source so that I can modify it if their data format changes later
+[16]		[1]			As Hanno (an admin), I want to be able to configure a template file of the data format for each source so that I can modify it if their data format changes later
 
-[18]	As Hanno (an admin), I want to be able to schedule when the tool should automatically commit updates from other catalogues
+[17]		[4]			As Hanno (an admin), I want to be able to schedule when the tool should automatically commit updates from other catalogues
 
-[19]	As Hanno (an admin), I want to be able to add sources of external catalogues for which my catalogue should get updates from
+[18]		[3]			As Hanno (an admin), I want to be able to add sources of external catalogues for which my catalogue should get updates from
 
-[20]	As Anne (an admin), I want to be able to run this tool on a Windows machine
-
-	
-
-	
-
-	
-	
-
-	
-	
-
-	
-	
-	
+[19]		[4]			As Anne (an admin), I want to be able to run this tool on a Windows machine

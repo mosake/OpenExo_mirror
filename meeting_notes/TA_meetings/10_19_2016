@@ -1,0 +1,72 @@
+Meeting:
+	d2 feedback on github seperate branch
+	shell script command line interface
+		RECOMENDED:
+			python for back end
+	Assign tech specialties to research
+		ex. someone to research how to use git, interface design
+	Regular bi-daily meetings (face to face or skype)
+	Starting code on Saturday
+	Live demo, most features implemented
+		doesn't have to be fully fledged but must be confident that "this feature works"
+	User Stories:
+		in order of d2
+		1.	"from which", easy to put cost, good US
+	
+		2.	Clarify with hanno as to how, US is fine
+	
+		3.	"to list all"
+				0.5 deduction for grammar on midterm (possibly)
+			too vague -> what is list, "to list line by line"
+			feature is unclear
+				what is a system? see highlight question
+				ex. location? store in home directory
+				split:
+					I want to save the OEC into __text/csv/xml__ format
+						what part of OEC?
+						I want to **export** the planetary data of the OEC into __text/csv/xml__ format
+							doesn't mean "save"
+						each format would be its own user story
+					I want to save into _____
+	
+		4. 	update method?
+			parsing
+	
+		5.	too general
+			what is the updated system -> planetary system
+			my repository -> columns of the OEC
+
+		8.	Notification:
+				content?
+
+		10. what is a type defined as
+				"edit distance"
+				typos -> mispelling, inconsistancies between dashes + spaces, etc.
+	
+		11.	non feature requirement (Unix/Mac)
+				link how to handle
+				RECOMENDED: can be a task instead of a user story or kept as a catagory on board
+				be more specific of what runs on unix and doesn't
+					"I want to read a table of planetary names on a mobile device"
+
+Look at outliers with really high/low costs
+	too vague?
+run python function running on command line
+	doesn't have to fully implement front end but chunk working
+
+full release:
+	4/5 weeks/sprints
+	productive hours -> 4-6 hours a week (rip)
+
+Git:
+	Git is bad with inconsitancy
+		same checkstyle
+	Standardize
+	fork + merge
+	or branch merging
+
+interactive mode?
+**	-i in unix? look up
+
+next week,
+	meeting back to 11:30

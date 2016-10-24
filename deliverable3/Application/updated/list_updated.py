@@ -11,7 +11,7 @@ def main ():
     fname = path+"/last_commit_date.txt" #textfile containing last commit date
     last_commit_date = str(datetime.date.today())
     if (os.path.isfile(fname) == False): #create file with current date if dne
-        os.system("echo "+last_commit_date+" > "+path+"/last_commit_date.txt")
+    	os.system("echo "+last_commit_date+" > updated/last_commit_date.txt")
     with open(fname) as f:
         content = f.readlines()
     last_commit_date = content [0].strip()

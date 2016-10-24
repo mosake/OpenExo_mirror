@@ -15,7 +15,8 @@ Dev minutes (sat, sun off)
 [--------]			[----]			As Hanno (an admin), I want to be able to run the tool on a Mac or Unix device		
 UPDATE: This story has been removed. During our weekly TA meeting, Leo mention that this was a non feature requirement.
 
-[1]			[8]			As Anne (an admin), I want a command that will output a manual of all commands and how to use them		
+[1]			[8 ->4]			As Anne (an admin), I want a command that will output a manual of all commands and how to use them		
+UPDATE: Cost of this story has been lowered from 8 to 4
 
 [2]			[8 -> 10]			As Hanno (an admin), I want a command to list all, line by line, all planetary systems that have been updated in other catalogues since the last commit
 UPDATE: The cost of this user story has increased from 8 to 10, as it took longer to parse from both Exoplanet.eu and exoplanetarchive.ipac.caltech.edu as originaly planned.

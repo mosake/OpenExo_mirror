@@ -1,0 +1,78 @@
+CSCC01 Deliverable 2 Marking Guide
+-----------------------------------
+
+T25 Jelly
+TOTAL: 78/100
+
+Personas:  13 / 20
+
+  Format:  2 / 4
+
+      must contain: gender, age, personality, skills, environment,
+      attitude towards technology in general, attitude towards
+      computer software, goals when using the system
+
+      Too many irrelevant details are not useful!
+
+      * Missing gender, age, environment
+
+  Information content:  5 / 8
+
+      The purpose of each persona is clear. Personas suggest different
+      system requirements.
+
+      * Should not contain details that belong in user stories.
+      * Anne missing ability with version control software.
+
+  Coverage: 6 / 8
+
+      personas must include at least two of the following type of users:
+
+      -- "Hanno type"
+
+      -- Hanno's grad student: can approve modifications to the data,
+           but cannot add other such users (only Hanno can)
+
+      -- A less tech-savvy astronomer: Sure, Hanno is the client who
+           makes the order, but the software will be released as
+           open-source, so other types of users are 100% realistic.
+
+      * Should include persona of tech savvy student working under Hanno.
+
+Product Backlog:  39 / 50
+
+     10 / 10 : User stories follow the format
+                "As __name__ (__role__), I want __something__."
+		("so that __benefit__" is optional)
+	       AND each __name__ corresponds to one of the personas.
+
+      8 / 10 : User stories, together, reflect all the user
+    	        requirements (from all prospective users).
+
+     10 / 10 : User stories correspond to actual requirements (no
+    	        "invented" features).
+
+     4 / 10 : User stories contain enough information for devs to
+                estimate how long it would take to implement it.
+
+     7 / 10 : Each user story addresses one specific requirement (no
+                "world peace" stories).
+
+
+Presentation:  16.5 / 20
+
+  4 / 4 : well-presented, is easy to read and to navigate
+
+  4 / 4 : spelling and grammar
+
+  7 / 10 : looks professional
+    - Try to stick with one format, either all HTML or PDF.
+    - If PDF, add a title page and table of content.
+
+  1.5 / 2 : quality of the README file
+    - Use the markdown '.md' format, allows for viewing directly on github.
+
+
+Interview: 9 / 10
+
+

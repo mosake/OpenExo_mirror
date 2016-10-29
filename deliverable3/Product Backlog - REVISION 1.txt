@@ -1,0 +1,61 @@
+Product Backlog
+Sprint backlog
+
+
+Dev minutes (sat, sun off)
+	30 per day, per person
+	12.5 hours per week
+
+	Story point units:
+		1 = 30 minutes
+	
+		
+
+[Priory]	[cost]		User Story Tasks:
+[--------]			[----]			As Hanno (an admin), I want to be able to run the tool on a Mac or Unix device		
+UPDATE: This story has been removed. During our weekly TA meeting, Leo mention that this was a non feature requirement.
+
+[1]			[8 ->4]			As Anne (an admin), I want a command that will output a manual of all commands and how to use them		
+UPDATE: Cost of this story has been lowered from 8 to 4
+
+[2]			[8 -> 10]			As Hanno (an admin), I want a command to list all, line by line, all planetary systems that have been updated in other catalogues since the last commit
+UPDATE: The cost of this user story has increased from 8 to 10, as it took longer to parse from both Exoplanet.eu and exoplanetarchive.ipac.caltech.edu as originaly planned.
+
+[3]			[11]		As Hanno (an admin), I want to be able to manually push and commit updates from other catalogues (Exoplanet.eu, exoplanetarchive.ipac.caltech.edu) to OEC so that I can immediately add updated information to my catalogue
+UPDATE: Specified location of the push and commit.
+
+[4]			[4]			As Hanno (an admin), I want to be able to open a file, stored onn my computer,  to see the information of a system that has been updated from another catalogue
+
+[5]			[10]		As Hanno, I want to pull a csv file (As Hanno (an admin), I want to see a column separated list of the values of the updated system corresponding to the table columns of my repository)
+
+[6]			[4]			As Hanno, I want to push a csv file
+
+[7]			[3]			As Hanno, I want to compare 2 csv files
+
+[8]			[8]			As Hanno, I want to be able to view the description of a system that has been updated from another catalogue in a table format in an html page
+
+[9]		[4]			As Hanno (an admin), I want to change the units of measurements that updates from other catalogues should be converted into before committing to my repository
+
+[10]		[5]			I want to raise a flag if there are certain questionable criteria for a planet
+
+[11]		[5]			As Hanno (an admin), I want to see potential typos(mispeling, inconsistancies between dashes, spaces) surrounded with an asterisk when manually reviewing
+UPDATE: defined typos.
+
+[12]		[4]			As Hanno (an admin), I want the tool to be able to match the same systems based on their descriptions even though they might have a different planet names in another catalogue
+
+[13]		[4]			As Hanno (an admin), I want a text pop up notification on my desktop to appear when there is an update from another catalogue found
+UPDATE: Specified notification.
+
+[14]		[2]			As Hanno (an admin), I want to be able to store available updates offline.
+UPDATE: Split into two stories.
+
+[15]		[2]			As Hanno (an admin), I want to be able to validate available updates offline and have them committed the next time I connect back to the internet
+
+[16]		[1]			As Hanno (an admin), I want to be able to configure a template file of the data format for each source so that I can modify it if their data format changes later
+
+[17]		[4]			As Hanno (an admin), I want to be able to schedule when the tool should automatically commit to the OpenExoplanetCatalogue updates from other catalogues
+UPDATE: Specified where to commit
+
+[18]		[3]			As Hanno (an admin), I want to be able to add sources of external catalogues from which my catalogue should get updates from
+
+[19]		[4]			As Anne (an admin), I want to be able to run this tool on a Windows machine

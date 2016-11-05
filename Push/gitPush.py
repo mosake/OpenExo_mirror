@@ -9,17 +9,17 @@ try:
     # git commit -m "some stuff here"
     # And then push, etc.
     if platform.system() == "Windows":
-        print(subprocess.Popen("git push -f origin master",
+        print(subprocess.Popen("git push -f origin Push",
                            shell=True, stdout=subprocess.PIPE).stdout.read())
     # Push git
     # Note: This only works if Git on Windows is installed...
     elif platform.system() == "Linux":
         print("Command for Linux OS")
-        print(subprocess.Popen("git push origin master",
+        print(subprocess.Popen("git push origin Push",
                                shell=True, stdout=subprocess.PIPE).stdout.read())    
     elif platform.system() == "Darwin" or platform.system() == "darwin":
         print("Command for Mac")
-        print(subprocess.Popen("git push origin master",
+        print(subprocess.Popen("git push origin Push",
                                shell=True, stdout=subprocess.PIPE).stdout.read())
 except:
     print("Git was unable to push your local copy to your main repository.")

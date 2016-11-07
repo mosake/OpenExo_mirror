@@ -1,29 +1,37 @@
-<?xml version="1.0"?>
-<root>
-<planets>
-    <planet ID="1" Name="Mercury">
-        <size Earth="38%"/>
-    </planet>
-    <planet ID="2" Name="Venus">
-        <size Earth="95%"/>
-    </planet>
-    <planet ID="3" Name="Earth">
-        <size Earth="100%"/>
-    </planet>
-    <planet ID="4" Name="Mars">
-        <size Earth="53%"/>
-    </planet>
-    <planet ID="5" Name="Jupiter">
-        <size Earth="1120%"/>
-    </planet>
-    <planet ID="6" Name="Saturn">
-        <size Earth="945%"/>
-    </planet>
-    <planet ID="7" Name="Uranus">
-        <size Earth="400%"/>
-    </planet>
-    <planet ID="8" Name="Neptune">
-        <size Earth="338%"/>
-    </planet>
-</planets>
-</root>
+<?xml version="1.0" encoding="UTF-8"?>
+<system>
+    <name></name>
+    <rightascension></rightascension>
+    <declination></declination>
+    <distance></distance>
+    <star>
+        <name></name>
+        <mass></mass>
+        <radius></radius>
+        <temperature></temperature>
+        <magV></magV>
+        <metallicity></metallicity>
+        <spectraltype></spectraltype>
+        <planet>
+            <name></name>
+            <list>Confirmed planets</list>
+            <mass></mass>
+            <radius></radius>
+            <temperature></temperature>
+            <period></period>
+            <semimajoraxis></semimajoraxis>
+            <eccentricity></eccentricity>
+            <inclination></inclination>
+            <periastron></periastron>
+            <longitude></longitude>
+            <description></description>
+            <discoverymethod>RV</discoverymethod>
+            <istransiting>1</istransiting>
+            <lastupdate>yy/mm/dd</lastupdate>
+            <discoveryyear>2014</discoveryyear>
+            <image></image>
+            <imagedescription></imagedescription>
+            <spinorbitalignment></spinorbitalignment>
+        </planet>
+    </star>
+</system>

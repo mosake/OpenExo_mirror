@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<system>
+    <name>alice</name>
+    <rightascension>true</rightascension>
+    <declination>false</declination>
+    <distance>999KM</distance>
+    <star>
+        <name>qiao</name>
+        <mass>34kg</mass>
+        <radius>2.13</radius>
+        <temperature>0C</temperature>
+        <magV>1234.00</magV>
+        <metallicity>1234.00</metallicity>
+        <spectraltype>Dark</spectraltype>
+        <planet>
+            <name>KKL</name>
+            <list>Confirmed planets</list>
+            <mass>1234</mass>
+            <radius>2.710</radius>
+            <temperature>1234F</temperature>
+            <period>21Y</period>
+            <semimajoraxis>1.0</semimajoraxis>
+            <eccentricity>2</eccentricity>
+            <inclination>3</inclination>
+            <periastron>4</periastron>
+            <longitude>5</longitude>
+            <description>6</description>
+            <discoverymethod>RV</discoverymethod>
+            <istransiting>1</istransiting>
+            <lastupdate>yy/mm/dd</lastupdate>
+            <discoveryyear>2014</discoveryyear>
+            <image>"123.jpg"</image>
+            <imagedescription>fake</imagedescription>
+            <spinorbitalignment>test</spinorbitalignment>
+        </planet>
+    </star>
+</system>

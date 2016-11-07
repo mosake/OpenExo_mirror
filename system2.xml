@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <system>
-    <name>alice</name>
+    <name>kris</name>
     <rightascension>true</rightascension>
     <declination>false</declination>
     <distance>999KM</distance>
     <star>
-        <name>qiao</name>
+        <name>lai</name>
         <mass>34kg</mass>
         <radius>2.13</radius>
         <temperature>0C</temperature>
@@ -30,6 +30,78 @@
             <lastupdate>yy/mm/dd</lastupdate>
             <discoveryyear>2014</discoveryyear>
             <image>"123.jpg"</image>
+            <imagedescription>fake</imagedescription>
+            <spinorbitalignment>test</spinorbitalignment>
+        </planet>
+	<planet>
+            <name>Alice</name>
+            <list>Confirmed planets</list>
+            <mass>1234</mass>
+            <radius>2.71</radius>
+            <temperature>1234F</temperature>
+            <period>21Y</period>
+            <semimajoraxis>1</semimajoraxis>
+            <eccentricity>2</eccentricity>
+            <inclination>3</inclination>
+            <periastron>4</periastron>
+            <longitude>5</longitude>
+            <description>6</description>
+            <discoverymethod>RV</discoverymethod>
+            <istransiting>1</istransiting>
+            <lastupdate>yy/mm/dd</lastupdate>
+            <discoveryyear>2014</discoveryyear>
+            <image>123.jpg</image>
+            <imagedescription>fake</imagedescription>
+            <spinorbitalignment>test</spinorbitalignment>
+        </planet>
+	<planet>
+            <name>star</name>
+            <list>Confirmed planets</list>
+            <mass>1234</mass>
+            <radius>2.71</radius>
+            <temperature>1234F</temperature>
+            <period>21Y</period>
+            <semimajoraxis>1</semimajoraxis>
+            <eccentricity>2</eccentricity>
+            <inclination>3</inclination>
+            <periastron>4</periastron>
+            <longitude>5</longitude>
+            <description>6</description>
+            <discoverymethod>RV</discoverymethod>
+            <istransiting>1</istransiting>
+            <lastupdate>yy/mm/dd</lastupdate>
+            <discoveryyear>2014</discoveryyear>
+            <image>123.jpg</image>
+            <imagedescription>fake</imagedescription>
+            <spinorbitalignment>test</spinorbitalignment>
+        </planet>
+    </star>
+    <star>
+        <name>alice</name>
+        <mass>98kg</mass>
+        <radius>3.14</radius>
+        <temperature>271F</temperature>
+        <magV>1234</magV>
+        <metallicity>1234</metallicity>
+        <spectraltype>Dark</spectraltype>
+        <planet>
+            <name>KKL</name>
+            <list>Confirmed planets</list>
+            <mass>1234</mass>
+            <radius>2.71</radius>
+            <temperature>1234F</temperature>
+            <period>21Y</period>
+            <semimajoraxis>1</semimajoraxis>
+            <eccentricity>2</eccentricity>
+            <inclination>3</inclination>
+            <periastron>4</periastron>
+            <longitude>5</longitude>
+            <description>6</description>
+            <discoverymethod>RV</discoverymethod>
+            <istransiting>1</istransiting>
+            <lastupdate>yy/mm/dd</lastupdate>
+            <discoveryyear>2014</discoveryyear>
+            <image>123.jpg</image>
             <imagedescription>fake</imagedescription>
             <spinorbitalignment>test</spinorbitalignment>
         </planet>

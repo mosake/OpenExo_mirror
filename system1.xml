@@ -33,5 +33,26 @@
             <imagedescription>fake</imagedescription>
             <spinorbitalignment>test</spinorbitalignment>
         </planet>
+        <planet>
+            <name>Alice</name>
+            <list>Confirmed planets</list>
+            <mass>1234</mass>
+            <radius>2.71</radius>
+            <temperature>1234F</temperature>
+            <period>21Y</period>
+            <semimajoraxis>1</semimajoraxis>
+            <eccentricity>2</eccentricity>
+            <inclination>3</inclination>
+            <periastron>4</periastron>
+            <longitude>5</longitude>
+            <description>6</description>
+            <discoverymethod>RV</discoverymethod>
+            <istransiting>1</istransiting>
+            <lastupdate>yy/mm/dd</lastupdate>
+            <discoveryyear>2014</discoveryyear>
+            <image>123.jpg</image>
+            <imagedescription>fake</imagedescription>
+            <spinorbitalignment>test</spinorbitalignment>
+        </planet>
     </star>
 </system>

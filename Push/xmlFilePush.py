@@ -12,6 +12,6 @@ def push(xml_file_name="Test XML file"):
                            shell=True, stdout=subprocess.PIPE).stdout.read())
     print(subprocess.Popen("git commit -m \"" + xml_file_name + " has been added.\"",
                            shell=True, stdout=subprocess.PIPE).stdout.read())  
-    print(subprocess.Popen("git push -f origin master",
+    print(subprocess.Popen("git push -f origin Push",
                            shell=True, stdout=subprocess.PIPE).stdout.read()) 
     

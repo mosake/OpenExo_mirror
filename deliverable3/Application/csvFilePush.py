@@ -8,10 +8,10 @@ notification_description = catalogue_name + " has been updated."
 ctypes.windll.user32.MessageBoxW(0, notification_description, "Update", 1)
 '''
 def push(csv_file_name="Test csv file"):
-    print(subprocess.Popen("git add csvFilePush.py",
+    print(subprocess.Popen("git add " +  csv_file_name,
                            shell=True, stdout=subprocess.PIPE).stdout.read())
     print(subprocess.Popen("git commit -m \"" + csv_file_name + " has been added.\"",
                            shell=True, stdout=subprocess.PIPE).stdout.read())  
-    print(subprocess.Popen("git push -f origin master",
+    print(subprocess.Popen("git push origin master",
                            shell=True, stdout=subprocess.PIPE).stdout.read()) 
     

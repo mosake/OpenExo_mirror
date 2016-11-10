@@ -40,9 +40,7 @@ def check_substructure(node):
 
 def recursing_child(node):
     ''' (xml node) -> list
-
     Return the path of every child element of the node (including their substructure).
-
     '''
     path = {}
     count = 0
@@ -79,7 +77,7 @@ def compare_element(s1, s2):
                     diff[i] = compare_element(s1[i], s2[j])
                 else:
                     diff[i] = [i + "[" + get_id(s1[i]) + "]",
-                               i + "[" + get_id(s2[j]) + "]"]
+                               j + "[" + get_id(s2[j]) + "]"]
             else:
                 if i == j and s1[i] != s2[j]:
                     diff[i] = [s1[i], s2[j]]
@@ -89,6 +87,6 @@ def compare_element(s1, s2):
 
 
 
-
+# Have to test why RNG exist
 
 main("system1.xml", "system2.xml")

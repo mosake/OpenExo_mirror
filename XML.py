@@ -1,4 +1,5 @@
 import xml.etree.ElementTree as ET
+import csv
 
 def main(xml1, xml2):
     ''' (str, str) -> None
@@ -24,7 +25,7 @@ def main(xml1, xml2):
     # Write differences to CSV and return it
     ''' EVERYTHING IS WORKING, LEARN HOW TO CONVERT TO CSV '''
     ''' Idea: Column 1: Path, C2: Different Ele, C3: Approval(Y/N)'''
-
+    print_to_csv(xml1, diff)
 
 
 def check_substructure(node):
@@ -43,13 +44,12 @@ def recursing_child(node):
     Return the path of every child element of the node (including their substructure).
     '''
     path = {}
-    count = 0
 
     if check_substructure(node):
         for child in node:
             if check_substructure(child):
-                path[child.tag + str(count)] = recursing_child(child)
-                count = count + 1
+                path[child.tag + "|" +
+                     child.find("name").text + "|"] = recursing_child(child)
             else:
                 path[child.tag] = child.text
 
@@ -78,6 +78,8 @@ def compare_element(s1, s2):
                 else:
                     diff[i] = [i + "[" + get_id(s1[i]) + "]",
                                j + "[" + get_id(s2[j]) + "]"]
+                    diff[i] = [i + "|" + get_id(s1[i]),
+                               i + "|" + get_id(s2[j])]
             else:
                 if i == j and s1[i] != s2[j]:
                     diff[i] = [s1[i], s2[j]]
@@ -85,8 +87,36 @@ def compare_element(s1, s2):
     return diff
 
 
+def print_to_csv(file, struct):
+    ''' (str, dict) -> None
+
+    Take in a dictionary and file name, return the diff file with the
+    given file name.
+    '''
+    f = open(file[0:-4] + '-diff.csv', 'w+')
+    try:
+        writer = csv.writer(f, delimiter=',')
+        writer.writerow( ('Path','XML1','XML2','Approval') )
+        l = generate_path(struct, [])
+        for i in l:
+            path = i.split("[")
+            writer.writerow((path[0], path[1].split(",")))
+    finally:
+        f.close()
 
 
-# Have to test why RNG exist
+def generate_path(struct, l):
+    ''' (dict, str) -> str
+
+    Take in a struct and current path, return the path of each tag.
+    '''
+    for i in struct:
+        if isinstance(struct[i], dict):
+            l.extend(generate_path(struct[i], l))
+        else:
+            l.append(i + str(struct[i]))
+
+    return l
+
 
 main("system1.xml", "system2.xml")

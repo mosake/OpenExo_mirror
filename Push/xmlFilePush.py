@@ -7,7 +7,9 @@ catalogue_name = "Test Catalogue"
 notification_description = catalogue_name + " has been updated."
 ctypes.windll.user32.MessageBoxW(0, notification_description, "Update", 1)
 '''
-def push(xml_file_name="Test XML file"):
+def push(xml_file_name):
+    print(subprocess.Popen("git pull origin Push",
+                                       shell=True, stdout=subprocess.PIPE).stdout.read())    
     print(subprocess.Popen("git add " +  xml_file_name,
                            shell=True, stdout=subprocess.PIPE).stdout.read())
     print(subprocess.Popen("git commit -m \"" + xml_file_name + " has been added.\"",

@@ -16,9 +16,9 @@ url = "https://github.com/OpenExoplanetCatalogue/oec_gzip/raw/master/systems.xml
 oec = ET.parse(gzip.GzipFile(fileobj=io.BytesIO(urllib.request.urlopen(url).read())))
 
 oec_planet = []
-oec_planet = []
-oec_planet = []
-oec_planet = []
+oec_cbin = []
+oec_star = []
+oec_system = []
 
 
 # catalog planet names 
@@ -26,16 +26,16 @@ for planet in oec.findall(".//planet"):
     oec_planet.append(planet.findtext("name"))
     
 # catalog circumbinary planet names 
-for planet in oec.findall(".//binary/planet"):
-    oec_planet.append(planet.findtext("name"))
+for cbin in oec.findall(".//binary/planet"):
+    oec_cbin.append(cbin.findtext("name"))
 
 # catalog star names 
-for planet in oec.findall(".//star"):
-    oec_planet.append(planet.findtext("name"))
+for star in oec.findall(".//star"):
+    oec_star.append(star.findtext("name"))
     
 # catalog system names 
-for planet in oec.findall(".//system"):
-    oec_planet.append(planet.findtext("name"))
+for system in oec.findall(".//system"):
+    oec_system.append(system.findtext("name"))
     
 # determine if name exists    
     

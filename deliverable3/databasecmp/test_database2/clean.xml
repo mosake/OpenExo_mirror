@@ -1,0 +1,29 @@
+<system>
+	<name>Kelly</name>
+	<rightascension>19 9 27</rightascension>
+	<declination>+38 42 50</declination>
+	<distance errorminus="19.0" errorplus="19.0">108.0</distance>
+	<star>
+		<name>Kelly</name>
+		<radius errorminus="0.04" errorplus="0.04">1.86</radius>
+		<magV>8.27</magV>
+		<mass errorminus="0.00541" errorplus="0.00541">0.016</mass>
+		<temperature errorminus="44.0" errorplus="44.0">6131.0</temperature>
+		<metallicity errorminus="0.06" errorplus="0.06">-0.15</metallicity>
+		<planet>
+			<name>Kelly</name>
+			<semimajoraxis errorminus="3e-07" errorplus="3e-07">0.0427172</semimajoraxis>
+			<eccentricity errorminus="0.02" errorplus="0.1">0.02</eccentricity>
+			<periastron errorminus="79.0" errorplus="79.0">245.0</periastron>
+			<inclination errorminus="0.26" errorplus="0.28">83.2</inclination>
+			<period errorminus="3e-05" errorplus="3e-05">2.78578</period>
+			<mass errorminus="0.00541" errorplus="0.00541">0.016</mass>
+			<radius errorminus="0.0013" errorplus="0.0017">0.1462</radius>
+			<temperature>2025.0</temperature>
+			<discoverymethod>Primary Transit</discoverymethod>
+			<discoveryyear>2011</discoveryyear>
+			<lastupdate>2016-09-27</lastupdate>
+			<transittime errorminus="0.00085" errorplus="0.00062" unit="JD">2455093.83716</transittime>
+		</planet>
+	</star>
+</system>

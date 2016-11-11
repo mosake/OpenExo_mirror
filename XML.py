@@ -20,12 +20,22 @@ def main(xml1, xml2):
     s2[root2.tag] = recursing_child(root2)
 
     # Output the differences
-    diff = compare_element(s1, s2)
-    print(diff)
+    big = {}
+    small = {}
+    source = 0
+    if len(s1) > len(s2):
+        big = s1
+        small = s2
+        source = 0
+    else:
+        big = s2
+        small = s1
+        source = 1
+
+    diff = compare_element(big, small)
+
     # Write differences to CSV and return it
-    ''' EVERYTHING IS WORKING, LEARN HOW TO CONVERT TO CSV '''
-    ''' Idea: Column 1: Path, C2: Different Ele, C3: Approval(Y/N)'''
-    print_to_csv(xml1, diff)
+    print_to_csv(xml1, diff, source)
 
 
 def check_substructure(node):
@@ -76,47 +86,63 @@ def compare_element(s1, s2):
                 if get_id(s1[i]) == get_id(s2[j]):
                     diff[i] = compare_element(s1[i], s2[j])
                 else:
-                    diff[i] = [i + "[" + get_id(s1[i]) + "]",
-                               j + "[" + get_id(s2[j]) + "]"]
-                    diff[i] = [i + "|" + get_id(s1[i]),
-                               i + "|" + get_id(s2[j])]
+                    if i not in s2:
+                        diff[i] = [get_id(s1[i]),
+                                   "",
+                                   "Missing"]
+                    if j not in s1:
+                        diff[j] = ["",
+                                   get_id(s2[j]),
+                                   "Missing"]
             else:
                 if i == j and s1[i] != s2[j]:
-                    diff[i] = [s1[i], s2[j]]
+                    diff[i] = [s1[i], s2[j], "Mismatch"]
 
     return diff
 
 
-def print_to_csv(file, struct):
+def print_to_csv(file, struct, source):
     ''' (str, dict) -> None
 
     Take in a dictionary and file name, return the diff file with the
     given file name.
     '''
     f = open(file[0:-4] + '-diff.csv', 'w+')
+    xml1 = 1
+    xml2 = 2
+    if source != 0:
+        xml1 = 2
+        xml2 = 1
+
     try:
         writer = csv.writer(f, delimiter=',')
-        writer.writerow( ('Path','XML1','XML2','Approval') )
-        l = generate_path(struct, [])
+        writer.writerow( ('Path','Hanno','OutSource', 'Issue', 'Approval') )
+        l = generate_path(struct, 'system')
         for i in l:
+            i = i.replace(",", "[")
             path = i.split("[")
-            writer.writerow((path[0], path[1].split(",")))
+            writer.writerow((path[0], path[xml1], path[xml2], path[3]))
     finally:
         f.close()
 
 
-def generate_path(struct, l):
-    ''' (dict, str) -> str
+def generate_path(struct, path):
+    ''' (dict, list, str) -> str
 
     Take in a struct and current path, return the path of each tag.
     '''
+    l = []
+
     for i in struct:
         if isinstance(struct[i], dict):
-            l.extend(generate_path(struct[i], l))
+            l.extend(generate_path(struct[i], i))
         else:
-            l.append(i + str(struct[i]))
+            if "[" in i:
+                l.append(str(struct[i]).replace("]", ""))
+            else:
+                l.append(path + "|" + i + str(struct[i]).replace("]", ""))
 
     return l
 
 
-main("system1.xml", "system2.xml")
+main("hanno.xml", "nasa.xml")

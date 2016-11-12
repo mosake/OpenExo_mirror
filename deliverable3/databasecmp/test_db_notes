@@ -1,3 +1,7 @@
+DB1
+	Random set of XML files from extraction branch
+
+DB2
 The file features the following test xmls:
 	clean.xml - no names overlap
 	dirty.xml - all names overlap
@@ -14,3 +18,8 @@ The file features the following test xmls:
 				overlap: planet
 	Kelly6.xml - no overlap for planet + star
 				overlap: system
+
+
+DB3
+	Random set of XML files from extraction branch
+	When run with DB1 the only files reaining should be EPIC*.xml

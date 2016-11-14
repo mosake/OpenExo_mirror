@@ -80,7 +80,7 @@ find - system, star, planet or bplanet
        default: "planet"
 '''
 
-def check_repetitions(current_database, new_database, find="planet"):
+def check_repetitions(current_database, new_database, find="system"):
     index = None
     current_files = []
     new_files = []
@@ -120,4 +120,4 @@ NEW_XML_PATH.replace("\\", "/")
 cdb = get_dictionary(REPO_PATH)
 ndb = get_dictionary(NEW_XML_PATH)
 
-print(check_repetitions(cdb, ndb, "system"))
+# print(check_repetitions(cdb, ndb, "system"))

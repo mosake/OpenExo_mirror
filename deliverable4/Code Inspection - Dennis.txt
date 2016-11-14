@@ -1,0 +1,31 @@
+Name of reviewer: Kelly Mo
+Code under review: Automatic Pull (xmlPull.py)
+Date of Review: November 12, 2016
+Code Author: Dennis Tra
+
+Checked:
+	format - not PEP8
+	style - variables are defined at the start of the code/segment of code (for loop, if statment, etc)
+		error try-except is covered
+	naming conventions - function comments and variables are fine
+	unit tests - The following inputs passed as expected:
+			Exisiting in Hanno's repo
+			"11 Com"
+			Not exisiting in repo
+			"38 Vir"
+			Case sensitive
+			"11 com"
+			No seperator
+			"11Com"
+			Extra seperators
+			"11  Com"
+			Wrong seperator
+			"11_Com"
+
+Summary:
+1) Poor Coding Style:
+- Does not follow PEP8 standards
+
+2) Code Logic:
+- No implementation of pulling all files
+

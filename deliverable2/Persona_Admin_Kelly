@@ -1,0 +1,26 @@
+CSCC01 Persona – (Admins)
+
+Jane Doe
+	23 year-old graduate student, female
+	Attends school for physics and astrophysics
+	Good computer skills: Word processor, dropbox
+	Basic programming experience getting statistical models using SAS and R, python
+	Creative and detail oriented, enjoys art as a pastime
+	Enjoys saving time and money by automating tasks as much as possible
+	Leads a work-study project for Open Exoplanet Catalog in the Astronomy department
+
+** Open Exoplanet Catalog (OXC)
+
+1.	I want to be able to know who and where new information submissions for planets are coming from in  so that I can verify that they are credible sources.
+2.	I want to be able to create a new category of information for all planets when someone submits one for one planet.
+3.	I want to easily resolve GitHub merge conflicts by overwriting old planet variables with the most recent submittion.
+4.	I want an autochecker to see if a planet submition file is in the correct format so that typos are corrected and human error can be minimized as much as possible.
+5.	I want to have automatic conversions for units of measurements so that the data is consistent and I don't have repeating catagories.
+6.	I want to automatically verify and retieve updates from catalogs that I already accepted as credible for OXC.
+7	I want to get updates from other catalogs on a daily basis, so that the OXC is the most updated resource avalible.
+8.	I want to be able to reject a new planet and not get prompted about it again if it’s updated on a different catalog.
+9.	I want to have a blacklist of rejected sources so that submittions from those sources get automatically ignored.
+10.	I want an autochecker to see if a planet submition file is in the correct format so that typos are corrected and human error can be minimized as much as possible.
+11. 	I want to be able to pull keywords from a website link to create planet files automatically so that I don't have to manually input the resourse. 
+		(Included based off of Hanno's existing GitHub repo, under "Issues" there are a lot of inquiries of this format. This won't be a part of deliverable 2 but it may be 
+		something to consider asking if other tasks are completed and there's a lot of extra time.).

@@ -1,0 +1,117 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="import" href="/nav.html">
+   <title>Team Jelly &mdash; Biographies</title>
+  </head>
+c
+  <body>
+    <div class="title">
+      <h1>Team Jelly &mdash; Biographies</h1>
+    </div>
+    <div class="navigation">
+  <p>
+  <div id="side-nav">
+  <span class="links">
+    <a href="index.shtml">Home Page</a>
+    <a href="biographies.shtml">Biographies</a>
+    <a href="agreement.shtml">Team Agreement</a>
+    <a href="deliverable_2.shtml">Deliverable 2</a>
+  </span>
+</div>
+  </p>
+</div>
+
+    
+    <div class="content">
+      <h2>Biographies</h2>
+      <p>
+        Scroll below to read more about our members!
+      </p>
+
+      <table border="1">
+        <thead valign="top">
+          <tr>
+            <th width="1%">
+              Members
+            </th>
+            <th width="70%">
+               Description
+            </th>
+	    </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+        <img id="Angelina" name ="Angelina" src="img/Angelina.jpg" alt="[Angelina Choi]" style="height:20ex; border: 0"></a><br>
+            </td>
+            <td>
+            <p style="margin-left:1%">
+            <b> Angelina Choi</b><br>
+           Hello! I am a student in the Co-op Information Systems Specialist Program and a third year at present. From previous work terms, I have engaged in creating medical mobile applications, WCF services for data streaming, and enhance existing web applications using programming languages such as C#, JavaScript, and Swift. Both my program and work experience has also helped me in establishing an understanding in business terms as well as technical jargon. Most Computer Science related fields appeal to me in terms of the concepts and learning, but my primary interests are web and software applications development. I had neither enthusiasm nor knowledge in Computer Science prior to my final year in high school and decided to pursue it last-minute, a decision I am glad I made. Aside from coding, my other activities include reading Homer and Shakespeare, writing narrative fiction, karate, and hiking.
+            </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+        <img id="Dennis" name ="Dennis" src="img/Dennis.jpg" alt="[Dennis Tra]" style="height:20ex; border: 0"></a><br>
+            </td>
+            <td>
+            <p style="margin-left:1%">
+            <b>Dennis Tra</b><br>
+           I am currently a fourth year computer science student specializing in the software engineering stream at the University of Toronto. I have knowledge of various programming languages such as: Java, Python, C, Visual Basic, SQL and HTML. I have had previous coop work experience at the Ministry of Health and Long Term. During my time with the Ministry, I was able to develop my programming skills by fixing existing bugs and implementing new features in their ticketing system, IBM Rational ClearQuest. The most important lesson I learned was the importance of translating business requirements into code. My passion for problem solving and being active has led me to my hobby of ball hockey. As I often say “Getting past a 200lb man is a solvable problem. Finding the sequence of steps which does not result in you being knocked over, now that’s the fun part”.
+            </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+        <img id="Henry" name ="Henry" src="img/Henry.jpg" alt="[Henry Liu]"  style="height:20ex; border: 0"></a><br>
+            </td>
+            <td>
+            <p style="margin-left:1%">
+            <b>Henry Liu</b><br>
+           I am currently completing my 4th year of my Bachelor's Degree as a Specialist in the Computer Science Software Engineering Stream at the University of Toronto. I enjoy solving problems and find motivation in helping others. I am also a part of the Coop program and have completed work terms in IT, QA, and Software Development positions. Throughout my undergraduate studies, I have worked with programming languages such as Java, C, Python, and SQL. Through my work terms, my interest in development have led to work with other languages such as VBA, JavaScript, and HTML/CSS. I am familiar with software development tools such as Eclipse, GitHub, and SVN, as well as issue reporting softwares like JIRA and ClearQuest. I can work well in both an independent and a team environment. I believe I can be great contributor in any project and I am confident my logical thinking, creativity, communication, and organization skills. Away from the desk, I enjoy doing physical activities including basketball, weight-lifting, mixed martial arts, and volleyball.
+            </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+        <img id="Kelly" name ="Kelly" src="img/Kelly.jpg" alt="[Kelly Mo]" style="height:20ex; border: 0"></a><br>
+            </td>
+            <td>
+            <p style="margin-left:1%">
+            <b> Kelly Mo</b><br>
+           I'm a third year student pursuing a double major in Computer Science and Statistics. My ultimate goal is to pursue a career with CSIS in cyber security and I hope to obtain my CEH by the end of 2016. I developed a passion for programming in high school and solving riddles since I was small. Currently I've worked with a simple AI script for a video game, Turing, Python, HTML5/CSS3, Java and C. I'm familiar with using several technologies; SVN, GitHub, Android Studio, Adobe Dreamweaver and Eclipse. I work well both independently and collaborating with others. I have an affinity with aesthetics, creative thinking and working hard in the present to make future tasks easier. I'm currently working part time on campus to improve my constant struggle with school, rent and personal lifestyle. My interests vary widely; I'm particularly passionate about drawing, programming, socializing, chess and white water rafting.
+            </p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+        <img id="Kris" name ="Kris" src="img/Kris.jpg" alt="[Kris Lai]" style="height:20ex; border: 0" width="130"></a><br>
+
+            </td>
+            <td>
+            <p style="margin-left:1%">
+            <b> Kris Lai</b><br>
+           I am a third year student specializing in Co-op Software Engineering stream in Computer Science and minoring in Business and Mathematics. As an undergraduate student, my biggest interest is to explore and learn more about Artificial Intelligence and I believe my Co-op and educational experience has brought me one step closer to my goal. Also, my passion for teaching and sharing experiences with others has led me to become a mentor for MiC (CSA Mentor in Co-op) and FEP (DSL First Year Experience Program) at University of Toronto.
+            </p>
+            </td>
+        </tr>
+        </tbody>
+      </table>
+      <div id="share-photo" align="center">
+        <img id="Team" src="img/share.jpg" alt="[Our Team!]" style="height:50ex; border: 0; padding-top:5%" width="600">
+      </div>
+    </div>
+        
+    <div class="spacer" />
+  </body>
+</html>
+

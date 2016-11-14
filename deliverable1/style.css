@@ -1,0 +1,166 @@
+h1 {
+  font-family: Verdana, Geneva, Lucida, Helvetica, Arial, sans-serif;
+}
+
+h2 {
+/*  background-image: url("http://www.cdf.toronto.edu/~csc108h/winter/images/hbg70.jp"g); */
+  border-bottom: solid 1px #000033;
+  border-top: solid 1px #000033;
+  /* color: #336699;*/
+}
+
+h3, h4, h5, h6 {
+}
+
+html, body, table {
+  background: #fff;
+  color: #000;
+  font-family: Verdana, Geneva, Lucida, Helvetica, Arial, sans-serif;
+}
+
+div.content {
+  clear: both;
+  position: absolute;
+  float: left;
+  margin-left: 20%;
+  padding-bottom: 1%;
+  width: 78%;
+  font-family: Verdana, Geneva, Lucida, Helvetica, Arial, sans-serif;
+}
+
+
+img {/* border style for all images */
+  border: 0;
+}
+
+img.b4 {/* scalable em size class 468px/60px banners */
+  width: 16.83em; /* replaces 468px width */
+  height: 9.06em; /* replaces 60px height */
+}
+
+a:link {
+  color: #037;
+}
+
+a:visited {
+  color: #037;
+}
+
+div.title {
+  padding-right: 1em;
+  /*text-align: right;*/
+  font-size: 75%;
+  border: solid 3px #000033;
+  /* border: solid 3px #336699; */
+  /*background-image: url("http://www.cdf.toronto.edu/~csc108h/winter/images/hbg70.jpg");*/
+  margin-bottom: 2.5ex; 
+  background-color: #000033;
+  /*  background-color: #336699; */
+  color: white;
+}
+.clear {
+  clear: both;
+  font-size: 1px;
+}
+
+.footer {
+  clear: none;
+  margin-left: 20%;
+  margin-top: 1px;
+  text-align: right;
+  border-top: solid 3px white;
+}
+
+.footer .left {
+  margin-top: 1px;
+  float: left;
+  text-align: left;
+  width: 60%;
+}
+
+.footer .right {
+  margin-top: 1px;
+  float: right;
+  text-align: right;
+  width: 40%;
+}
+
+.spacer {
+  clear: both;
+}
+
+p {
+  padding: 0;
+  margin-top: 0px;
+  font-family: Verdana, Geneva, Lucida, Helvetica, Arial, sans-serif;
+}
+
+dd {
+  font-family: Verdana, Geneva, Lucida, Helvetica, Arial, sans-serif;
+}
+
+dt {
+  font-family: Verdana, Geneva, Lucida, Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+
+div.navigation {
+  clear: both;
+  position: absolute;
+  float: left;
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 18%;
+  font-family: Verdana, Geneva, Lucida, Helvetica, Arial, sans-serif;
+ /* background-image: url("http://www.cdf.toronto.edu/~csc108h/winter/images/hbg70.jpg");*/
+  /* background-color: #336699; */
+  background-color: #000033;
+  color: white;
+}
+
+.navigation .links {
+  text-align: right;
+}
+
+div.navigation p {
+  font-family: Verdana, Geneva, Lucida, Helvetica, Arial, sans-serif;
+  color: white;
+}
+
+div.navigation p:first-child {
+  border-top: none;
+}
+
+div.navigation a, div.navigation em {
+  display: block;
+  margin: 0 0.5em;
+}
+
+div.navigation a, div.navigation em {
+  border-top: 2px solid white;
+}
+
+div.navigation a:first-child {
+  border-top: none;
+}
+
+div.navigation a:link {
+  text-decoration: none;
+  color: white;
+}
+
+div.navigation a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+div.navigation a:hover {
+  background: white;
+  color: #000033;
+}
+
+div.navigation a.validate:hover {
+  background: #000033;
+  color: white;
+}
+  

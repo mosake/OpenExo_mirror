@@ -23,4 +23,4 @@ try:
         print(subprocess.Popen("git push origin master",
                                shell=True, stdout=subprocess.PIPE).stdout.read())
 except:
-    print("Git was unsable to push your local copy to your main repository.")
+    print("Git was unable to push your local copy to your main repository.")

@@ -6,7 +6,7 @@ import os
 import datetime
 import socket
 
-def main ():
+def push_all ():
     #store data files in module path    
     #path = os.path.dirname(os.path.realpath(__file__)) 
     path="updated" #restructured to use relative path from main folder

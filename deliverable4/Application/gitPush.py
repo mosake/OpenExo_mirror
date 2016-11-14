@@ -21,20 +21,21 @@ def push_all():
                                    stdout=subprocess.PIPE).stdout.read()
             print(subprocess.Popen("git push origin master", shell=True,
                                    stdout=subprocess.PIPE).stdout.read())
-            print('Repository has been successfully pushed.')
+            print('Repository has been successfully pushed.\n')
         # Push git
         # Note: This only works if Git on Windows is installed...
         elif platform.system() == "Linux":
             # Command if run on Linux device (Could be subject to change)
-            print(subprocess.Popen("git pull origin master", shell=True,
-                                   stdout=subprocess.PIPE).stdout.read())
-            print(subprocess.Popen("git add *", shell=True,
-                                   stdout=subprocess.PIPE).stdout.read())
-            print(subprocess.Popen("git commit -m \"Push to main repository\"",
+            subprocess.Popen("git pull origin master", shell=True,
+                                   stdout=subprocess.PIPE).stdout.read()
+            subprocess.Popen("git add *", shell=True,
+                                   stdout=subprocess.PIPE).stdout.read()
+            subprocess.Popen("git commit -m \"Push to main repository\"",
                                    shell=True,
-                                   stdout=subprocess.PIPE).stdout.read())
+                                   stdout=subprocess.PIPE).stdout.read()
             print(subprocess.Popen("git push origin master", shell=True,
                                    stdout=subprocess.PIPE).stdout.read())
+            print('Repository has been successfully pushed.\n')
         elif platform.system() == "Darwin" or platform.system() == "darwin":
             subprocess.Popen("git pull origin master", shell=True,
                                    stdout=subprocess.PIPE).stdout.read()
@@ -45,6 +46,6 @@ def push_all():
                                    stdout=subprocess.PIPE).stdout.read()
             print(subprocess.Popen("git push origin master", shell=True,
                                    stdout=subprocess.PIPE).stdout.read())
-            print('Repository has been successfully pushed.')
+            print('Repository has been successfully pushed.\n')
     except:
         print("Git was unable to push your local copy to the main repository.")

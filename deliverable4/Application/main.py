@@ -8,7 +8,7 @@ switch = True
 while (switch):
 
     #Prompt user to input (i.e. help)
-    command = input('>>>')
+    command = input('>>> ')
     
     #Redirects the main to call other python scripts accordingly
     #Refer to help page for details of each command

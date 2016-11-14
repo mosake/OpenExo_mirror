@@ -107,7 +107,6 @@ def print_to_csv(file, struct, source):
     Take in a dictionary and file name, return the diff file with the
     given file name.
     '''
-    f = open(file[0:-4] + '-diff.csv', 'w+')
     xml1 = 1
     xml2 = 2
     if source != 0:
@@ -115,6 +114,7 @@ def print_to_csv(file, struct, source):
         xml2 = 1
 
     try:
+        f = open(file[0:-4] + '-diff.csv', 'w+')
         writer = csv.writer(f, delimiter=',')
         writer.writerow( ('Path','Hanno','OutSource', 'Issue', 'Approval') )
         l = generate_path(struct, 'system')
@@ -123,6 +123,7 @@ def print_to_csv(file, struct, source):
             path = i.split("[")
             writer.writerow((path[0], path[xml1], path[xml2], path[3]))
     finally:
+        print("Result has been printed in csv.")
         f.close()
 
 
@@ -143,6 +144,3 @@ def generate_path(struct, path):
                 l.append(path + "|" + i + str(struct[i]).replace("]", ""))
 
     return l
-
-
-main("hanno.xml", "nasa.xml")

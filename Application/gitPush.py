@@ -19,6 +19,7 @@ def push_all():
                                    stdout=subprocess.PIPE).stdout.read())
             print(subprocess.Popen("git push origin master", shell=True,
                                    stdout=subprocess.PIPE).stdout.read())
+            print('Repository has been successfully pushed.')
         # Push git
         # Note: This only works if Git on Windows is installed...
         elif platform.system() == "Linux":

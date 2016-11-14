@@ -1,5 +1,8 @@
 import glob, os, xml.etree.ElementTree as ET
 
+REPO_PATH = "C:/Users/Kelly/Desktop/f16/CSCC01/team25-Project/deliverable3/databasecmp/test_database1"
+NEW_XML_PATH = "C:/Users/Kelly/Desktop/f16/CSCC01/team25-Project/deliverable3/databasecmp/test_database3"
+
 '''
 Returns a dictionary with the following format, given a path to a directory:
 {file: [[system], [star], [planet], [binary planet]]}
@@ -16,7 +19,11 @@ def get_dictionary(path):
     cdb = {}
 
     for file in files:
-        f = open(file, 'r')
+        try:
+            f = open(file, 'r')
+        except InputError:
+            print ("Invalid path")
+            break
         filename = os.path.basename(file)
         temp = []
         current_data = ET.parse(f)
@@ -53,7 +60,7 @@ def get_dictionary(path):
             for cbin in current_data.findall(".//binary/planet"):
                 temp2.append(cbin.findtext("name"))     
             temp.append(temp2)
-        cdb[filename] = temp
+        cdb[path + "/" + filename] = temp
         
     return cdb
 # end of get_dictionary
@@ -73,39 +80,44 @@ find - system, star, planet or bplanet
        default: "planet"
 '''
 
-def check_repetitions(dict1, dict2, find="planet"):
-    current_index = None
-    repeating_files = []    
+def check_repetitions(current_database, new_database, find="planet"):
+    index = None
+    current_files = []
+    new_files = []
     
     if find == "system":
-        current_index = 0
+        index = 0
     elif find == "star":
-        current_index = 1
+        index = 1
     elif find == "planet":
-        current_index = 2
+        index = 2
     elif find == "bplanet":
-        current_index = 3
+        index = 3
     else:
         return None
     
-    for key in dict1:
-        for i in key[current_index]:
-            for key2 in dict2:
+    for key in current_database:
+        for i in key[index]:
+            for key2 in new_database:
                 # check if filenames repeat
                 if key == key2:
-                    repeating_files.append(key)
+                    current_files.append(key)
+                    new_files.append(key2)
                 else:
-                    for j in key[current_index]:
+                    for j in key2[index]:
                         if i == j:
-                            repeating_files.append(key)
+                            current_files.append(key)
+                            new_files.append(key2)
                             break
-    return repeating_files
+    return (current_files, new_files)
 #end of check_repetitions
 
 
-current_database = "C:/Users/Kelly/Desktop/f16/CSCC01/team25-Project/deliverable3/databasecmp/test_database1"
-new_database = "C:/Users/Kelly/Desktop/f16/CSCC01/team25-Project/deliverable3/databasecmp/test_database3"
-cdb = get_dictionary(current_database)
-ndb = get_dictionary(new_database)
+# change \ to / in paths
+REPO_PATH.replace("\\", "/")
+NEW_XML_PATH.replace("\\", "/")
 
-print(check_repetitions(cdb, ndb, "planet"))
+cdb = get_dictionary(REPO_PATH)
+ndb = get_dictionary(NEW_XML_PATH)
+
+print(check_repetitions(cdb, ndb, "system"))

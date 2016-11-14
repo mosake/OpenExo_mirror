@@ -1,0 +1,26 @@
+Code Inspection
+	-Reviewer: Dennis Tra
+	-Code Author: Henry Liu
+	-Date of review: November 13, 2016
+	-Code under review: translate_ExoPlanet.py, translate_NASA.py, xmltools.py
+  
+Categories:
+	-Bugs:
+      -When running translate_NASA, you seem to be setting the output name to the Extracted_XMLs folder (On line 46 of translate_NASA). When running the code nothing appears in this folder.
+  
+  -Poor code logic:
+      -If URL for Nasa database or Exoplanet.eu is down “FileNotFoundError” is raised. In the except statement on line 35 of translate_ExoPlanet.py just raise an error to let the user know the URL is not reachable. 
+	
+  -Poor coding style:
+      -Code not in compliance with PEP8 standards. Run code through PEP8 style check and fix accordingly.
+	
+  -Missing documentation:
+      -Function documentation? What is get() in translate_ExoPlanet.py getting? Same for other functions. Write docstring for functions.
+	
+  -Unreadable code:
+      -Lots of “QUESTION” comments left in code. Found throughout translate_ExoPlanet.py. Get clarification from either TA or Hano to answer those questions.
+      -Commented out chunks of code present. Found throughout translate_ExoPlanet.py and translate_NASA.py. Either delete or use the code. 
+	
+  -Vulnerabilities in code
+      -If column names are changed, it appears you will need to manually go through code and change accordingly.
+

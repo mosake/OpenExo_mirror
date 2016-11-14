@@ -10,6 +10,8 @@ def push_all():
 
     try:
         if platform.system() == "Windows":
+            subprocess.Popen("git checkout master", shell=True,
+                                   stdout=subprocess.PIPE).stdout.read()         
             subprocess.Popen("git pull origin master", shell=True,
                                    stdout=subprocess.PIPE).stdout.read()
             subprocess.Popen("git add *", shell=True,

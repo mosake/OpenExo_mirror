@@ -36,14 +36,15 @@ def push_all():
             print(subprocess.Popen("git push origin master", shell=True,
                                    stdout=subprocess.PIPE).stdout.read())
         elif platform.system() == "Darwin" or platform.system() == "darwin":
-            print(subprocess.Popen("git pull origin master", shell=True,
-                                   stdout=subprocess.PIPE).stdout.read())
-            print(subprocess.Popen("git add *", shell=True,
-                                   stdout=subprocess.PIPE).stdout.read())
-            print(subprocess.Popen("git commit -m \"Push to main repository\"",
+            subprocess.Popen("git pull origin master", shell=True,
+                                   stdout=subprocess.PIPE).stdout.read()
+            subprocess.Popen("git add *", shell=True,
+                                   stdout=subprocess.PIPE).stdout.read()
+            subprocess.Popen("git commit -m \"Push to main repository\"",
                                    shell=True,
-                                   stdout=subprocess.PIPE).stdout.read())
+                                   stdout=subprocess.PIPE).stdout.read()
             print(subprocess.Popen("git push origin master", shell=True,
                                    stdout=subprocess.PIPE).stdout.read())
+            print('Repository has been successfully pushed.')
     except:
         print("Git was unable to push your local copy to the main repository.")

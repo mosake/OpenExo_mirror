@@ -22,7 +22,7 @@ while (switch):
         translate_NASA.get()
         translate_NASA.parse()
     elif (command[0:4] == "push"):
-        push.main()
+        push.push_all()
     elif (command == "exit"):
         switch = False
     else:

@@ -2,6 +2,7 @@ import list_updated as list_updated
 import manual as man
 import translate_ExoPlanet as translate_Exoplanet
 import translate_NASA as translate_NASA
+import gitPush as push
 
 switch = True
 while (switch):
@@ -21,7 +22,7 @@ while (switch):
         translate_NASA.get()
         translate_NASA.parse()
     elif (command[0:4] == "push"):
-        push.main()
+        push.push_all()
     elif (command == "exit"):
         switch = False
     else:

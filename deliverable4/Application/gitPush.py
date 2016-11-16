@@ -10,10 +10,15 @@ def push_all():
 
     try:
         if platform.system() == "Windows":
+<<<<<<< Updated upstream
     #        subprocess.Popen("git checkout master", shell=True,
     #                               stdout=subprocess.PIPE).stdout.read()
             subprocess.Popen("git stash", shell=True,
                                                stdout=subprocess.PIPE).stdout.read()            
+=======
+            subprocess.Popen("git checkout master", shell=True,
+                                   stdout=subprocess.PIPE).stdout.read()         
+>>>>>>> Stashed changes
             subprocess.Popen("git pull origin master", shell=True,
                                    stdout=subprocess.PIPE).stdout.read()
             subprocess.Popen("git stash pop", shell=True,

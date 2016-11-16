@@ -2,7 +2,10 @@ import list_updated as list_updated
 import manual as man
 import translate_ExoPlanet as translate_Exoplanet
 import translate_NASA as translate_NASA
+<<<<<<< Updated upstream
 import xmlcmp as cmp
+=======
+>>>>>>> Stashed changes
 import gitPush as push
 
 switch = True

@@ -7,10 +7,7 @@ import datetime
 import socket
 
 def main ():
-    #store data files in module path    
-    #path = os.path.dirname(os.path.realpath(__file__)) 
-    path="updated" #restructured to use relative path from main folder
-    #TODO: What if last commit file gets deleted?
+    
     fname = "last_commit_date.txt" #textfile containing last commit date
     last_commit_date = str(datetime.date.today())
     if (os.path.isfile(fname) == False): #create file with current date if dne
@@ -28,13 +25,13 @@ def main ():
         try:
             response = urllib.request.urlopen(url, timeout = 5)
             content = response.read()
-            f1 = open(path+"/"+source+"_modified_since_"+last_commit_date+".csv", 'w' )
+            f1 = open(os.path.join(os.path.curdir, 'updated',source+"_modified_since_"+last_commit_date+".csv"), 'w')
             #create cumulative.csv for his generate_systems_kepler.py
-            f2 = open( path+"/"+"cumulative.csv", 'w' ) 
+            #f2 = open((os.path.join(os.path.curdir, 'updated',"cumulative.csv")), 'w') 
             f1.write( content.decode(encoding='utf-8',errors='ignore'))
-            f2.write( content.decode(encoding='utf-8',errors='ignore'))
+            #f2.write( content.decode(encoding='utf-8',errors='ignore'))
             f1.close()
-            f2.close()
+            #f2.close()
             break
         except urllib.error.URLError as e:
             attempts += 1
@@ -47,10 +44,10 @@ def main ():
     print ("The following are planet host name that has been modified since "+last_commit_date+":")
     print ("Host Name" + " " * 21 + "Date Modified" + " " * 17+ "Source")
     if (attempts <3):
-        with open(path+"/"+source+"_modified_since_"+last_commit_date+".csv", 'r') as f:
+        with open(os.path.join(os.path.curdir, 'updated',source+"_modified_since_"+last_commit_date+".csv"), 'r') as f:
             reader = csv.reader(f)
             row1 = next(reader)
-            nameCol = row1.index("pl_hostname")
+            nameCol = row1.index("pl_name")
             dateCol = row1.index("rowupdate")         
             for row in reader:
                 if (len(row) == 0):
@@ -69,7 +66,7 @@ def main ():
         try:
             response = urllib.request.urlopen(url, timeout = 5)
             content = response.read()
-            f = open(path+"/"+source+"_modified_since_"+last_commit_date+".csv", 'w' )
+            f = open(os.path.join(os.path.curdir, 'updated',source+"_modified_since_"+last_commit_date+".csv"), 'w' )
             f.write( content.decode(encoding='utf-8',errors='ignore'))
             f.close()
             break
@@ -81,7 +78,7 @@ def main ():
     if (attempts >= 3): #error extracting from Exoplanet so exit?
         print ("Could not connect to Exoplanet archive")
     if (attempts < 3):
-        with open(path+"/"+source+"_modified_since_"+last_commit_date+".csv", 'r') as f:
+        with open(os.path.join(os.path.curdir, 'updated',source+"_modified_since_"+last_commit_date+".csv")) as f:
             reader = csv.reader(f)
             row1 = next(reader)
             nameCol = 0
@@ -90,10 +87,11 @@ def main ():
             for row in reader:
                 if (len(row) == 0): #skip empty lines
                     continue
-                takeLetterOff = -2 
-                if (len(row[nameCol].split(" ")[-1]) !=1 ): #if there's no letter at end
-                    takeLetterOff=len(row[nameCol]) #take whole item
-                row_hostname = row[nameCol][:takeLetterOff].strip() #take off last letter
+                #takeLetterOff = -2 
+                #if (len(row[nameCol].split(" ")[-1]) !=1 ): #if there's no letter at end
+                #    takeLetterOff=len(row[nameCol]) #take whole item
+                row_hostname = row[nameCol].strip() #take off last letter
+                #row_hostname = row[nameCol][:takeLetterOff].strip() #take off last letter
                 row_update = row[dateCol]
                 row_source = source	
                 tab= " "*(30-len(row_hostname))

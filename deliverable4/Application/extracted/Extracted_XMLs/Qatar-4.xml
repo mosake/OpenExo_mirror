@@ -16,7 +16,7 @@
 			<mass errorminus="0.47" errorplus="0.47">5.85</mass>
 			<radius errorminus="0.057" errorplus="0.057">1.552</radius>
 			<temperature>1570.0</temperature>
-			<discoverymethod>Primary Transit TEST TROLOLOLOL</discoverymethod>
+			<discoverymethod>Primary Transit</discoverymethod>
 			<discoveryyear>2016</discoveryyear>
 			<lastupdate>2016-09-18</lastupdate>
 			<transittime errorminus="0.00098" errorplus="0.00098" unit="JD">2457323.65441</transittime>

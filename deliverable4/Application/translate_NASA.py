@@ -13,9 +13,8 @@ import datetime
 # Exoplanet Archive
 #####################
 #store data files in module path    
-path = os.path.dirname(os.path.realpath(__file__)) 
-path="updated" #restructured to use relative path from main folder
-#TODO: What if last commit file gets deleted?
+#path = os.path.dirname(os.path.realpath(__file__)) 
+#path="updated" #restructured to use relative path from main folder
 fname = "last_commit_date.txt" #textfile containing last commit date
 last_commit_date = str(datetime.date.today())
 if (os.path.isfile(fname) == False): #create file with current date if dne
@@ -26,24 +25,26 @@ with open(fname) as f:
     content = f.readlines()
 last_commit_date = content[0].strip()
 #url_exoplanetarchive = "http://exoplanetarchive.ipac.caltech.edu/cgi-bin/nstedAPI/nph-nstedAPI?table=exoplanets&format=csv&select=*"
-#TODO: format right url with last commit date
-url_exoplanetarchive = "http://exoplanetarchive.ipac.caltech.edu/cgi-bin/nstedAPI/nph-nstedAPI?table=exoplanets&where=rowupdate=to_date(%27"+last_commit_date+"%27,%27yyyy-mm-dd%27)&order=rowupdate&format=csv&select=*"
+url_exoplanetarchive = "http://exoplanetarchive.ipac.caltech.edu/cgi-bin/nstedAPI/nph-nstedAPI?table=exoplanets&where=rowupdate>=to_date(%27"+last_commit_date+"%27,%27yyyy-mm-dd%27)&order=rowupdate&format=csv&select=*"
+#print (url_exoplanetarchive)
 
 def get():
-    xmltools.ensure_empty_dir(path+"/"+"NASA_data")
-    urllib.request.urlretrieve (url_exoplanetarchive, path+"/"+"NASA_data/NASA_archive_updated.csv")
+    #xmltools.ensure_empty_dir(path+"/"+"NASA_data")
+    xmltools.ensure_empty_dir(os.path.join(os.path.curdir, 'extracted','NASA_data'))
+    #urllib.request.urlretrieve (url_exoplanetarchive, path+"/"+"NASA_data/NASA_archive_updated.csv")
+    urllib.request.urlretrieve (url_exoplanetarchive, os.path.join(os.path.curdir, 'extracted', 'NASA_data', 'NASA_archive_updated.csv'))
 
 def parse():
-    # delete old data HL: We'll take this out because the folder should have info
+    # delete old data HL: We'll take this out because the folder should have info from exoplanet
     #xmltools.ensure_empty_dir("systems_exoplanetarchive")
 
     # parse data into default xml format
-    f = open(path+"/"+"NASA_data/NASA_archive_updated.csv")
+    f = open(os.path.join(os.path.curdir, 'extracted','NASA_data','NASA_archive_updated.csv'))    
     csv_f=csv.reader(f)
     header = [x.strip() for x in f.readline().split(",")]
     for line in csv_f:
         p = dict(zip(header, [x.strip() for x in line]))
-        outputfilename = "path+"/"+Extracted_XMLs/"+p["pl_hostname"]+".xml"
+        outputfilename = os.path.join(os.path.curdir, 'extracted','Extracted_XMLs',p["pl_hostname"]+".xml")
         if os.path.exists(outputfilename):
             system = ET.parse(outputfilename).getroot()
             star = system.find(".//star")

@@ -24,5 +24,19 @@
 			<lastupdate>2016-09-12</lastupdate>
 			<transittime errorminus="0.00046" errorplus="0.00046" unit="JD">2456409.33263</transittime>
 		</planet>
+		<planet>
+			<name>HAT-P-65 b</name>
+			<semimajoraxis errorminus="0.000540" errorplus="0.000540">0.039510</semimajoraxis>
+			<eccentricity>0.304000</eccentricity>
+			<inclination errorminus="1.300" errorplus="1.300">84.200</inclination>
+			<period errorminus="0.00000310" errorplus="0.00000310">2.60545520</period>
+			<mass errorminus="0.08300" errorplus="0.08300">0.52700</mass>
+			<radius errorminus="0.130" errorplus="0.130">1.890</radius>
+			<temperature errorminus="45" errorplus="45">1930</temperature>
+			<discoverymethod>Transit</discoverymethod>
+			<discoveryyear>2016</discoveryyear>
+			<lastupdate>2016-09-15</lastupdate>
+			<transittime errorminus=".000460" errorplus="0.000460" unit="BJD">2456409.332630</transittime>
+		</planet>
 	</star>
 </system>

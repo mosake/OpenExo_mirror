@@ -1,0 +1,106 @@
+Team 25
+Jelly
+
+
+CSCC01 Deliverable 3 Marking Guide
+-----------------------------------
+
+Project Management:  __________ (28/40%)
+
+  Release plan: 3/5
+    * What are the goals for each release? -1
+      * Stories don't provide a good sense of what the app can do at each
+        release. i.e. it isn't clear that story 2 involves scrapping other
+        catalogs.
+    * Shouldn't story 17 be done in the first 1 or 2 sprints? -1
+    - each release corresponds to end of Sprint
+    - project fully laid out:
+      for each release date, list of user stories to implement
+    - project velocity specified and used
+    - highest priority user stories first modulo dependencies
+    - reasonable goals for each release
+
+  Product Backlog: 2/5
+    * Some stories are improved, but still too vague to understand the
+      underlying feature -1
+      * Stories 6, 7
+    * Costs are hard to estimate for some (potential epics) -2
+      * Stories 1, 3, 14, 19
+    - user stories follow the correct format.
+    - user stories, together, reflect all the user requirements (from
+      all personas).
+    - user stories correspond to actual requirements (no "invented"
+      features).
+    - user stories contain enough information for devs to estimate how
+      long it would take to implement it.
+    - each user story addresses one specific requirement (no "world
+      peace" stories).
+
+  Sprint Backlog(s): 3/5
+    * Product backlog on report should really be sprint backlog -2.
+      Product backlog is all of your user stories.
+    - user stories taken from the Product Backlog
+    - estimated costs
+    - estimated values
+
+  Sprint Plan(s): 3/5
+    * Story for manual is said to be removed, but still part of plan? -1
+    * Story 2 doesn't seem to imply the list of tasks. Shouldn't they be under
+      a user story that covers catalog scrapping? -1
+    - user stories divided into tasks when appropriate.
+    - each Sprint Plan contains all the necessary information:
+        who is working on which task on which day
+    - sum of costs of user stories in the sprint = project velocity
+    - good planning decisions
+
+  Use of Task Board: 3/5
+    * Some to-do tasks dissapeared? What happened to git stuff? -2
+    - correct format of task boards
+    - snapshots in the begginning and end of each Sprint are provided
+
+  Use of Burndown Charts: 3/5
+    * Should specify a burndown chart per sprint, not for the entire duration.-1
+      * One in burndown-charts folder has invalid expected line.
+    * No before snapshot. -1
+    - snapshots in the begginning and end of each Sprint are provided
+    - correctness of burndown charts
+
+  Use of Repo: 5/5
+    (good use of branches not required here, but is required for next deliverable)
+
+  Use of communication tools: 5/5
+    - evidence of using communication tools of their choice effectively
+
+
+Design and Implementation:  __________ (22/30%)
+
+   System Design: 3/5
+     * Design doesn't tell me anything about how your system works besides
+       front-end/backend. -2
+     - good modular design
+     - general and easy to extend
+     - it is clear how the current implementation is going to be
+        extended into an application that satisfies the client's needs
+
+   Implementation: 8/10
+     * Instructions unclear: Where exactly do I put the local repo? -1
+     * Instructions do not specify required packages -1
+       * need python3 requests,
+     - 0 marks if it doesn't run
+     - at least one feature is either fully implemented of nearly implemented
+     - quality and maturity of code
+
+
+Report: __________ (13/20%)
+
+  * Report is not coheisive, release plan and product backlog are in separate
+    places, in different formats. -7
+  - well-presented, is easy to read and to navigate
+  - spelling and grammar
+  - looks professional
+  - quality of the README file
+
+
+Interview: ________ (9/10%)
+  * Gave reasons for changes in product backlog, but no specifics. -1
+  * Interview went well otherwise.

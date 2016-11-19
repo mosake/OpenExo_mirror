@@ -1,0 +1,30 @@
+TA Meeting notes
+
+Man page problem - ongoing updates with new functions added, will not be completed in one sprint
+
+SP - new based on how long it took to execute
+
+Which stories to put into sprint backlog
+
+Back end connect to software files
+	expand
+	components of application for diagram
+		module to communicate with git
+			format of pull requests
+		know "why I need this component"
+
+Update:
+	save last date run into text file for pull query
+
+more hours for next sprint
+	more research instead of development
+
+merge may be more complicated than expected (warning)
+	merge story is an epic, split up into at least 5 stories
+
+Talk to Ryan
+
+Get script to download from online
+	** don't get users to instal git, find a library from python that can execute it directly
+
+	or get user to install git as a component

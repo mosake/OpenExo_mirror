@@ -1,0 +1,42 @@
+<system>
+	<name>HAT-P-65</name>
+	<rightascension>21 3 37</rightascension>
+	<declination>+11 59 22</declination>
+	<distance errorminus="45.0" errorplus="45.0">841.0</distance>
+	<star>
+		<name>HAT-P-65</name>
+		<radius errorminus="0.01" errorplus="0.01">1.86</radius>
+		<magV>13.15</magV>
+		<mass errorminus="0.083" errorplus="0.083">0.527</mass>
+		<temperature errorminus="51.0" errorplus="51.0">5835.0</temperature>
+		<metallicity errorminus="0.08" errorplus="0.08">0.1</metallicity>
+		<planet>
+			<name>HAT-P-65 b</name>
+			<semimajoraxis errorminus="0.00054" errorplus="0.00054">0.03951</semimajoraxis>
+			<eccentricity errorminus="0.3" errorplus="0.0">0.3</eccentricity>
+			<inclination errorminus="1.3" errorplus="1.3">84.2</inclination>
+			<period errorminus="3.1e-06" errorplus="3.1e-06">2.6054552</period>
+			<mass errorminus="0.083" errorplus="0.083">0.527</mass>
+			<radius errorminus="0.13" errorplus="0.13">1.89</radius>
+			<temperature>1930.0</temperature>
+			<discoverymethod>Primary Transit</discoverymethod>
+			<discoveryyear>2016</discoveryyear>
+			<lastupdate>2016-09-12</lastupdate>
+			<transittime errorminus="0.00046" errorplus="0.00046" unit="JD">2456409.33263</transittime>
+		</planet>
+		<planet>
+			<name>HAT-P-65 b</name>
+			<semimajoraxis errorminus="0.000540" errorplus="0.000540">0.039510</semimajoraxis>
+			<eccentricity>0.304000</eccentricity>
+			<inclination errorminus="1.300" errorplus="1.300">84.200</inclination>
+			<period errorminus="0.00000310" errorplus="0.00000310">2.60545520</period>
+			<mass errorminus="0.08300" errorplus="0.08300">0.52700</mass>
+			<radius errorminus="0.130" errorplus="0.130">1.890</radius>
+			<temperature errorminus="45" errorplus="45">1930</temperature>
+			<discoverymethod>Transit</discoverymethod>
+			<discoveryyear>2016</discoveryyear>
+			<lastupdate>2016-09-15</lastupdate>
+			<transittime errorminus=".000460" errorplus="0.000460" unit="BJD">2456409.332630</transittime>
+		</planet>
+	</star>
+</system>

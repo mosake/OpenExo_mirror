@@ -1,6 +1,7 @@
-import updated.list_updated as list_updated
-import push.push as push
+import list_updated as list_updated
 import manual as man
+import translate_ExoPlanet as translate_Exoplanet
+import translate_NASA as translate_NASA
 
 switch = True
 while (switch):
@@ -13,7 +14,12 @@ while (switch):
     if (command == "help"):
         man.main()
     elif (command[0:7] == "updated"):
-        list_updated.main()    
+        #TODO: handle opened file exceptions
+        list_updated.main()
+        translate_Exoplanet.get()
+        translate_Exoplanet.parse()
+        translate_NASA.get()
+        translate_NASA.parse()
     elif (command[0:4] == "push"):
         push.main()
     elif (command == "exit"):

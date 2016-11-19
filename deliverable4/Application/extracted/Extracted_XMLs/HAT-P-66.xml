@@ -1,0 +1,41 @@
+<system>
+	<name>HAT-P-66</name>
+	<rightascension>10 2 17</rightascension>
+	<declination>+53 57 3</declination>
+	<distance errorminus="49.0" errorplus="75.0">927.0</distance>
+	<star>
+		<name>HAT-P-66</name>
+		<radius errorminus="0.095" errorplus="0.151">1.881</radius>
+		<magV>13.0</magV>
+		<mass errorminus="0.057" errorplus="0.057">0.783</mass>
+		<temperature errorminus="50.0" errorplus="50.0">6002.0</temperature>
+		<metallicity errorminus="0.08" errorplus="0.08">0.035</metallicity>
+		<planet>
+			<name>HAT-P-66 b</name>
+			<semimajoraxis errorminus="0.00064" errorplus="0.00121">0.04363</semimajoraxis>
+			<eccentricity>0.0</eccentricity>
+			<inclination errorminus="1.8" errorplus="1.8">86.2</inclination>
+			<period errorminus="5.7e-06" errorplus="5.7e-06">2.972086</period>
+			<mass errorminus="0.057" errorplus="0.057">0.783</mass>
+			<radius errorminus="0.1" errorplus="0.16">1.59</radius>
+			<discoverymethod>Primary Transit</discoverymethod>
+			<discoveryyear>2016</discoveryyear>
+			<lastupdate>2016-09-12</lastupdate>
+			<transittime errorminus="0.00072" errorplus="0.00072" unit="JD">457258.79907</transittime>
+		</planet>
+		<planet>
+			<name>HAT-P-66 b</name>
+			<semimajoraxis errorminus="0.000640" errorplus="0.001210">0.043630</semimajoraxis>
+			<eccentricity>0.090000</eccentricity>
+			<inclination errorminus="1.800" errorplus="1.800">86.200</inclination>
+			<period errorminus="0.00000570" errorplus="0.00000570">2.97208600</period>
+			<mass errorminus="0.05700" errorplus="0.05700">0.78300</mass>
+			<radius errorminus="0.100" errorplus="0.160">1.590</radius>
+			<temperature errorminus="42" errorplus="66">1896</temperature>
+			<discoverymethod>Transit</discoverymethod>
+			<discoveryyear>2016</discoveryyear>
+			<lastupdate>2016-09-15</lastupdate>
+			<transittime errorminus=".000720" errorplus="0.000720" unit="BJD">2457258.799070</transittime>
+		</planet>
+	</star>
+</system>

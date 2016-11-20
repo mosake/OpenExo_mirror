@@ -86,14 +86,24 @@ def compare_element(s1, s2):
                 if get_id(s1[i]) == get_id(s2[j]):
                     diff[i] = compare_element(s1[i], s2[j])
                 else:
-                    if i not in s2:
-                        diff[i] = [get_id(s1[i]),
+                    exist = False
+                    for k in s2:
+                        if isinstance(s2[k], dict): 
+                            if get_id(s1[i]) == get_id(s2[k]):
+                                exist = True
+                    if exist == False:
+                        diff[i + "|" + get_id(s1[i])] = [get_id(s1[i]),
                                    "",
-                                   "Missing"]
-                    if j not in s1:
-                        diff[j] = ["",
+                                   "Missing"]   
+                    exist = False
+                    for k in s1:
+                        if isinstance(s1[k], dict):
+                            if get_id(s2[i]) == get_id(s1[k]):
+                                exist = True
+                    if exist == False:
+                        diff[j+ "|" + get_id(s2[j])] = ["",
                                    get_id(s2[j]),
-                                   "Missing"]
+                                   "Missing"]                     
             else:
                 if i == j and s1[i] != s2[j]:
                     diff[i] = [s1[i], s2[j], "Mismatch"]

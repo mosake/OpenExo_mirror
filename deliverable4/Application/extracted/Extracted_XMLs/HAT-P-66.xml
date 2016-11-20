@@ -23,5 +23,19 @@
 			<lastupdate>2016-09-12</lastupdate>
 			<transittime errorminus="0.00072" errorplus="0.00072" unit="JD">457258.79907</transittime>
 		</planet>
+		<planet>
+			<name>HAT-P-66 b</name>
+			<semimajoraxis errorminus="0.000640" errorplus="0.001210">0.043630</semimajoraxis>
+			<eccentricity>0.090000</eccentricity>
+			<inclination errorminus="1.800" errorplus="1.800">86.200</inclination>
+			<period errorminus="0.00000570" errorplus="0.00000570">2.97208600</period>
+			<mass errorminus="0.05700" errorplus="0.05700">0.78300</mass>
+			<radius errorminus="0.100" errorplus="0.160">1.590</radius>
+			<temperature errorminus="42" errorplus="66">1896</temperature>
+			<discoverymethod>Transit</discoverymethod>
+			<discoveryyear>2016</discoveryyear>
+			<lastupdate>2016-09-15</lastupdate>
+			<transittime errorminus=".000720" errorplus="0.000720" unit="BJD">2457258.799070</transittime>
+		</planet>
 	</star>
 </system>

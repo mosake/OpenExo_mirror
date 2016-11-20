@@ -23,5 +23,20 @@
 			<lastupdate>2016-09-14</lastupdate>
 			<transittime errorminus="0.00027" errorplus="0.00027" unit="JD">2454577.85806</transittime>
 		</planet>
+		<planet>
+			<name>WASP-17 b</name>
+			<semimajoraxis errorminus="0.000340" errorplus="0.000340">0.051500</semimajoraxis>
+			<eccentricity errorminus="0.018000" errorplus="0.015000">0.028000</eccentricity>
+			<periastron errorminus="2.6000" errorplus="14.6000">-82.6000</periastron>
+			<inclination errorminus="0.560" errorplus="0.680">86.830</inclination>
+			<period errorminus="0.00000680" errorplus="0.00000680">3.73543800</period>
+			<mass errorminus="0.03200" errorplus="0.03200">0.48600</mass>
+			<radius errorminus="0.081" errorplus="0.081">1.991</radius>
+			<temperature errorminus="35" errorplus="35">1771</temperature>
+			<discoverymethod>Transit</discoverymethod>
+			<discoveryyear>2009</discoveryyear>
+			<lastupdate>2016-09-08</lastupdate>
+			<transittime errorminus=".000270" errorplus="0.000270" unit="HJD-UTC">2454577.858060</transittime>
+		</planet>
 	</star>
 </system>

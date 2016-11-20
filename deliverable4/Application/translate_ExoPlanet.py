@@ -30,17 +30,20 @@ url_exoplanetarchive = "http://exoplanet.eu/catalog/csv/?status=&f=updated+%3E%3
 
 def get():
     try:
-        xmltools.ensure_empty_dir(path+"/"+"ExoPlanet_data")
-        urllib.request.urlretrieve (url_exoplanetarchive, path+"/"+"Exoplanet_data/Exoplanet_archive_updated.csv")
+        #xmltools.ensure_empty_dir(path+"/"+"ExoPlanet_data")
+        xmltools.ensure_empty_dir(os.path.join(os.path.curdir, 'extracted','ExoPlanet_data'))
+        #urllib.request.urlretrieve (url_exoplanetarchive, path+"/"+"Exoplanet_data/Exoplanet_archive_updated.csv")
+        urllib.request.urlretrieve (url_exoplanetarchive, os.path.join(os.path.curdir, 'extracted', 'Exoplanet_data', 'Exoplanet_archive_updated.csv'))
     except:
         pass
     
 def parse():
     # delete old data
-    xmltools.ensure_empty_dir(path+"/"+"Extracted_XMLs")
+    xmltools.ensure_empty_dir(os.path.join(os.path.curdir, 'extracted', 'Extracted_XMLs'))
 
     # parse data into default xml format
-    f = open(path+"/"+"Exoplanet_data/Exoplanet_archive_updated.csv")
+    f = open(os.path.join(os.path.curdir, 'extracted','Exoplanet_data','Exoplanet_archive_updated.csv'))
+    
     csv_f=csv.reader(f)
     header = [x.strip() for x in f.readline().split(",")]
     for line in csv_f:
@@ -50,7 +53,7 @@ def parse():
             takeLetterOff=len(p["# name"]) #take whole item        
         host_name = p["# name"][:takeLetterOff].strip() #remove the last letter
         pl_letter = p["# name"][takeLetterOff:].strip()
-        outputfilename = path+"/"+"Extracted_XMLs/"+host_name+".xml"
+        outputfilename = os.path.join(os.path.curdir, 'extracted','Extracted_XMLs', host_name+".xml")        
         if os.path.exists(outputfilename):
             system = ET.parse(outputfilename).getroot()
             star = system.find(".//star")

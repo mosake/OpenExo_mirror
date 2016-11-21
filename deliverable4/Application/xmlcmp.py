@@ -154,7 +154,7 @@ def print_to_csv(file, struct, source):
         for i in l:
             i = i.replace(",", "[")
             path = i.split("[")
-            writer.writerow((path[0], path[xml1], path[xml2], path[3]))
+            writer.writerow((path[0], path[xml1], path[xml2], path[-1]))
     finally:
         print("Result has been printed in csv.")
         f.close()

@@ -32,8 +32,8 @@ def get():
     try:
         #xmltools.ensure_empty_dir(path+"/"+"ExoPlanet_data")
         xmltools.ensure_empty_dir(os.path.join(os.path.curdir, 'extracted','ExoPlanet_data'))
-        #urllib.request.urlretrieve (url_exoplanetarchive, path+"/"+"Exoplanet_data/Exoplanet_archive_updated.csv")
-        urllib.request.urlretrieve (url_exoplanetarchive, os.path.join(os.path.curdir, 'extracted', 'Exoplanet_data', 'Exoplanet_archive_updated.csv'))
+        #urllib.request.urlretrieve (url_exoplanetarchive, path+"/"+"ExoPlanet_data/Exoplanet_archive_updated.csv")
+        urllib.request.urlretrieve (url_exoplanetarchive, os.path.join(os.getcwd(), 'extracted', 'ExoPlanet_data', 'Exoplanet_archive_updated.csv'))
     except:
         pass
     
@@ -42,7 +42,7 @@ def parse():
     xmltools.ensure_empty_dir(os.path.join(os.path.curdir, 'extracted', 'Extracted_XMLs'))
 
     # parse data into default xml format
-    f = open(os.path.join(os.path.curdir, 'extracted','Exoplanet_data','Exoplanet_archive_updated.csv'))
+    f = open(os.path.join(os.path.curdir, 'extracted','ExoPlanet_data','Exoplanet_archive_updated.csv'))
     
     csv_f=csv.reader(f)
     header = [x.strip() for x in f.readline().split(",")]

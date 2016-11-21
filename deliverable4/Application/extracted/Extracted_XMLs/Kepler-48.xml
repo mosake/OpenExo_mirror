@@ -10,16 +10,6 @@
 		<temperature errorminus="73.00" errorplus="73.00">5194.00</temperature>
 		<metallicity errorminus="0.070" errorplus="0.070">0.170</metallicity>
 		<planet>
-			<name>Kepler-48 c</name>
-			<period>9.67395000</period>
-			<mass errorminus="0.00724" errorplus="0.00724">0.04597</mass>
-			<radius errorminus="0.012" errorplus="0.012">0.242</radius>
-			<discoverymethod>Transit</discoverymethod>
-			<discoveryyear>2012</discoveryyear>
-			<lastupdate>2016-10-27</lastupdate>
-			<transittime unit="BJD">2454958.339250</transittime>
-		</planet>
-		<planet>
 			<name>Kepler-48 b</name>
 			<period>4.77800000</period>
 			<mass errorminus="0.00661" errorplus="0.00661">0.01240</mass>
@@ -28,6 +18,16 @@
 			<discoveryyear>2012</discoveryyear>
 			<lastupdate>2016-10-27</lastupdate>
 			<transittime unit="BJD">2454957.061130</transittime>
+		</planet>
+		<planet>
+			<name>Kepler-48 c</name>
+			<period>9.67395000</period>
+			<mass errorminus="0.00724" errorplus="0.00724">0.04597</mass>
+			<radius errorminus="0.012" errorplus="0.012">0.242</radius>
+			<discoverymethod>Transit</discoverymethod>
+			<discoveryyear>2012</discoveryyear>
+			<lastupdate>2016-10-27</lastupdate>
+			<transittime unit="BJD">2454958.339250</transittime>
 		</planet>
 	</star>
 </system>

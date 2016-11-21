@@ -11,16 +11,6 @@
 		<temperature errorminus="75.00" errorplus="75.00">5417.00</temperature>
 		<metallicity errorminus="0.070" errorplus="0.070">-0.320</metallicity>
 		<planet>
-			<name>Kepler-37 b</name>
-			<period>13.36750000</period>
-			<mass>0.03146</mass>
-			<radius errorminus="0.002" errorplus="0.002">0.029</radius>
-			<discoverymethod>Transit</discoverymethod>
-			<discoveryyear>2013</discoveryyear>
-			<lastupdate>2016-10-27</lastupdate>
-			<transittime unit="BJD">2455017.041710</transittime>
-		</planet>
-		<planet>
 			<name>Kepler-37 d</name>
 			<period>39.79220000</period>
 			<mass>0.03839</mass>
@@ -29,6 +19,16 @@
 			<discoveryyear>2013</discoveryyear>
 			<lastupdate>2016-10-27</lastupdate>
 			<transittime unit="BJD">2455008.249500</transittime>
+		</planet>
+		<planet>
+			<name>Kepler-37 b</name>
+			<period>13.36750000</period>
+			<mass>0.03146</mass>
+			<radius errorminus="0.002" errorplus="0.002">0.029</radius>
+			<discoverymethod>Transit</discoverymethod>
+			<discoveryyear>2013</discoveryyear>
+			<lastupdate>2016-10-27</lastupdate>
+			<transittime unit="BJD">2455017.041710</transittime>
 		</planet>
 		<planet>
 			<name>Kepler-37 c</name>

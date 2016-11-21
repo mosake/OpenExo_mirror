@@ -21,15 +21,6 @@
 			<transittime unit="BJD">2454969.380250</transittime>
 		</planet>
 		<planet>
-			<name>Kepler-68 d</name>
-			<period errorminus="16.00000000" errorplus="16.00000000">625.00000000</period>
-			<mass errorminus="0.05034" errorplus="0.05034">0.84007</mass>
-			<discoverymethod>Radial Velocity</discoverymethod>
-			<discoveryyear>2013</discoveryyear>
-			<lastupdate>2016-10-27</lastupdate>
-			<transittime unit="BJD" />
-		</planet>
-		<planet>
 			<name>Kepler-68 b</name>
 			<period>5.39875000</period>
 			<mass errorminus="0.00535" errorplus="0.00535">0.01878</mass>
@@ -38,6 +29,15 @@
 			<discoveryyear>2013</discoveryyear>
 			<lastupdate>2016-10-27</lastupdate>
 			<transittime unit="BJD">2455006.857830</transittime>
+		</planet>
+		<planet>
+			<name>Kepler-68 d</name>
+			<period errorminus="16.00000000" errorplus="16.00000000">625.00000000</period>
+			<mass errorminus="0.05034" errorplus="0.05034">0.84007</mass>
+			<discoverymethod>Radial Velocity</discoverymethod>
+			<discoveryyear>2013</discoveryyear>
+			<lastupdate>2016-10-27</lastupdate>
+			<transittime unit="BJD" />
 		</planet>
 	</star>
 </system>

@@ -88,18 +88,23 @@ def compare_element(s1, s2):
                 else:
                     exist = False
                     for k in s2:
-                        if isinstance(s2[k], dict): 
-                            if get_id(s1[i]) == get_id(s2[k]):
-                                exist = True
+                        if isinstance(s2[k], dict):
+                            if i in s1:
+                                if get_id(s1[i]) == get_id(s2[k]):
+                                    exist = True
+                                    
                     if exist == False:
                         diff[i + "|" + get_id(s1[i])] = [get_id(s1[i]),
                                    "",
-                                   "Missing"]   
+                                   "Missing"]
+                        
                     exist = False
                     for k in s1:
                         if isinstance(s1[k], dict):
-                            if get_id(s2[i]) == get_id(s1[k]):
-                                exist = True
+                            if i in s2:
+                                if get_id(s2[i]) == get_id(s1[k]):
+                                    exist = True
+                                    
                     if exist == False:
                         diff[j+ "|" + get_id(s2[j])] = ["",
                                    get_id(s2[j]),

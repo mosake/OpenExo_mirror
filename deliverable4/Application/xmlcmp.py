@@ -54,6 +54,8 @@ def recursing_child(node):
     Return the path of every child element of the node (including their substructure).
     '''
     path = {}
+    #Initialize name
+    path['name'] = []
 
     if check_substructure(node):
         for child in node:
@@ -61,7 +63,11 @@ def recursing_child(node):
                 path[child.tag + "|" +
                      child.find("name").text + "|"] = recursing_child(child)
             else:
-                path[child.tag] = child.text
+                # If name tag, add to list for multi-name
+                if child.tag == "name":
+                    path[child.tag].append(child.text)
+                else:
+                    path[child.tag] = child.text
 
     return path
 
@@ -71,6 +77,18 @@ def get_id(struct):
     Return the ID for the substructure
     '''
     return struct['name']
+
+
+def compare_id(s1, s2):
+    '''
+    '''
+    exist = False
+    
+    for i in s1:
+        for j in s2:
+            if i == j:
+                exist = True
+    return exist
 
 
 def compare_element(s1, s2):
@@ -83,23 +101,28 @@ def compare_element(s1, s2):
     for i in s1:
         for j in s2:
             if isinstance(s1[i], dict) and isinstance(s2[j], dict):
-                if get_id(s1[i]) == get_id(s2[j]):
+                if compare_id(s1[i], s2[j]):
                     diff[i] = compare_element(s1[i], s2[j])
                 else:
                     exist = False
                     for k in s2:
-                        if isinstance(s2[k], dict): 
-                            if get_id(s1[i]) == get_id(s2[k]):
-                                exist = True
+                        if isinstance(s2[k], dict):
+                            if i in s1:
+                                if get_id(s1[i]) == get_id(s2[k]):
+                                    exist = True
+                                    
                     if exist == False:
                         diff[i + "|" + get_id(s1[i])] = [get_id(s1[i]),
                                    "",
-                                   "Missing"]   
+                                   "Missing"]
+                        
                     exist = False
                     for k in s1:
                         if isinstance(s1[k], dict):
-                            if get_id(s2[i]) == get_id(s1[k]):
-                                exist = True
+                            if i in s2:
+                                if get_id(s2[i]) == get_id(s1[k]):
+                                    exist = True
+                                    
                     if exist == False:
                         diff[j+ "|" + get_id(s2[j])] = ["",
                                    get_id(s2[j]),
@@ -131,7 +154,7 @@ def print_to_csv(file, struct, source):
         for i in l:
             i = i.replace(",", "[")
             path = i.split("[")
-            writer.writerow((path[0], path[xml1], path[xml2], path[3]))
+            writer.writerow((path[0], path[xml1], path[xml2], path[-1]))
     finally:
         print("Result has been printed in csv.")
         f.close()

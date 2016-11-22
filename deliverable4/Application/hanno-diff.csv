@@ -1,6 +1,4 @@
-<<<<<<< HEAD
-<<<<<<< HEAD,,,,
-<<<<<<< HEAD,,,,
+
 Path,Hanno,OutSource,Issue,Approval
 system|star|nasa|, '','nasa', 'Missing',
 system|distance, '1000KM','999KM', 'Mismatch',
@@ -121,5 +119,3 @@ star|kris||mass, '98kg','34kg', 'Mismatch'
 star|kris||planet|extraHanno|, 'extraHanno','', 'Missing'
 star|kris||planet|star|, '','star', 'Missing'
 system|star|hanno|, 'hanno','', 'Missing'
-
->>>>>>> 04e5f437388a0b895b1d91e53265b16af2ffcec2

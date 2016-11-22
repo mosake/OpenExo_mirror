@@ -11,29 +11,31 @@ def push_all():
     a = subprocess.Popen("git pull origin master", shell=True,
                                        stdout=subprocess.PIPE)
     a.communicate()
+    print("a done")
     b = subprocess.Popen("git add *", shell=True,
                                        stdout=subprocess.PIPE)
     b.communicate()
+    print("b done")    
     c = subprocess.Popen("git commit -m \"Push to main repository\"",
                                        shell=True,
                                        stdout=subprocess.PIPE)
     c.communicate()
+    print("c done")    
     d = subprocess.Popen("git push origin master", shell=True,
                                        stdout=subprocess.PIPE)
-    print("$")
-    print(d.communicate()[0])
-    print("%%%%%%%%%%%%%%%%%%")
+    d.communicate()
+    print("d done")    
     try:
         if platform.system() == "Windows":
-            FNULL = open(os.devnull, 'w')
-            # FNULL blocks unnecessary output from being displayed on shell.
-            subprocess.Popen("git checkout master", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE).stdout.read()
+            checkout_command = subprocess.Popen("git checkout master", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+            checkout_command.communicate()
             
             pull_result = subprocess.Popen(["git", "pull", "origin", "master"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
             pull_output = pull_result.communicate()[0]
             pull_errors = pull_result.communicate()[1]
             error_message = pull_errors.decode()
             print(error_message)
+            print("%")
             if(error_message != ""):
                 if("files would be overwritten by merge" in error_message):
                     # There is a merge conflict in pulling the master repo

@@ -19,8 +19,9 @@ def push_all():
             subprocess.Popen("git add *", shell=True, stdout=subprocess.PIPE)
             subprocess.Popen("git commit -m \"Push to main repository\"",
                                    shell=True, stdout=subprocess.PIPE)
-            subprocess.Popen("git push origin master", shell=True,
-                                   stdout=subprocess.PIPE).stdout.read()
+            if(bytes("Aborting", encoding="ascii") in subprocess.Popen("git push origin master", shell=True,
+                                   stdout=subprocess.PIPE).stdout.read()):
+                print("error")
             print('Repository has been successfully pushed.\n')
         elif platform.system() == "Linux":
             # Command if run on Linux device (Could be subject to change)

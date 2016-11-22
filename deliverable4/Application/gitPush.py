@@ -16,7 +16,8 @@ def push_all():
                                        shell=True,
                                        stdout=subprocess.PIPE).stdout.read()
     subprocess.Popen("git push origin master", shell=True,
-                                       stdout=subprocess.PIPE).stdout.read()    
+                                       stdout=subprocess.PIPE).stdout.read()
+    print("%%%%%%%%%%%%%%%%%%")
     try:
         if platform.system() == "Windows":
             FNULL = open(os.devnull, 'w')

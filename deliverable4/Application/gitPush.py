@@ -15,15 +15,18 @@ def push_all():
     #        subprocess.Popen("git pull origin master", shell=True,
     #                               stdout=subprocess.PIPE).stdout.read()
             
-            process = subprocess.Popen(["git", "pull"], stdout=subprocess.PIPE)
-            output = process.communicate()[0]
-            print(output)
+            pull_result = subprocess.Popen(["git", "pull"], stdout=subprocess.PIPE)
+            pull_output = pull_result.communicate()[0]
+
+            print(pull_output.decode())
             
             subprocess.Popen("git add *", shell=True, stdout=subprocess.PIPE)
             subprocess.Popen("git commit -m \"Push to main repository\"",
                                    shell=True, stdout=subprocess.PIPE)
-            subprocess.Popen("git push origin master", shell=True,
-                                   stdout=subprocess.PIPE).stdout.read()
+   #         subprocess.Popen("git push origin master", shell=True,
+    #                               stdout=subprocess.PIPE).stdout.read()
+            push_result = subprocess.Popen(["git", "push"], stdout=subprocess.PIPE)
+            push_output = push_result.communicate()[0]
             print('\n')
         elif platform.system() == "Linux":
             # Command if run on Linux device (Could be subject to change)

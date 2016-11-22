@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-<<<<<<< HEAD,,,,
+
 Path,Hanno,OutSource,Issue,Approval
 system|star|nasa|, '','nasa', 'Missing',
 system|distance, '1000KM','999KM', 'Mismatch',
@@ -18,7 +17,7 @@ star|kris||mass, '98kg','34kg', 'Mismatch',
 star|kris||planet|extraHanno|, 'extraHanno','', 'Missing',
 star|kris||planet|star|, '','star', 'Missing',
 system|star|hanno|, 'hanno','', 'Missing',
-Err:510,,,,
+
 Path,Hanno,OutSource,Issue,Approval
 system|star|nasa|, '','nasa', 'Missing',
 system|distance, '1000KM','999KM', 'Mismatch',
@@ -38,8 +37,7 @@ star|kris||mass, '98kg','34kg', 'Mismatch',
 star|kris||planet|extraHanno|, 'extraHanno','', 'Missing',
 star|kris||planet|star|, '','star', 'Missing',
 system|star|hanno|, 'hanno','', 'Missing',
->>>>>>> 9e6612e040ba6e472fd69a111b313a6b9ab4e373,foo,,,
-=======
+
 Path,Hanno,OutSource,Issue,Approval
 system|star|nasa|, '','nasa', 'Missing'
 system|distance, '1000KM','999KM', 'Mismatch'

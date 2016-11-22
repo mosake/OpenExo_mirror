@@ -1,6 +1,9 @@
 Path,Hanno,OutSource,Issue,Approval
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f9fa52d93b983f826582b0e7cb49dde09c43c144
 retertertert, '','nasa', 'Missing',
 system|distance, '1000KM','999KM', 'Mismatch',
 star|kris||temperature, '271F','0C', 'Mismatch',
@@ -288,7 +291,10 @@ system|star|hanno|, 'hanno','', 'Missing',
 >>>>>>> 9e6612e040ba6e472fd13a6b9ab4e373,foo,,,
 Err:510,,,,
 Path,Hanno,OutSource,Issue,Approval
+<<<<<<< HEAD
 >>>>>>> refs/remotes/origin/master
+=======
+>>>>>>> f9fa52d93b983f826582b0e7cb49dde09c43c144
 system|star|nasa|, '','nasa', 'Missing',
 system|distance, '1000KM','999KM', 'Mismatch',
 star|kris||temperature, '271F','0C', 'Mismatch',
@@ -308,8 +314,11 @@ star|kris||planet|extraHanno|, 'extraHanno','', 'Missing',
 star|kris||planet|star|, '','star', 'Missing',
 system|star|hanno|, 'hanno','', 'Missing',
 <<<<<<< HEAD
+<<<<<<< HEAD
 TEST,,,,
 =======
+=======
+>>>>>>> f9fa52d93b983f826582b0e7cb49dde09c43c144
 >>>>>>> 30920db157f8368cc4b26fed50c4cc5487f5578c,,,,
 =======
 
@@ -372,4 +381,7 @@ star|kris||planet|extraHanno|, 'extraHanno','', 'Missing'
 star|kris||planet|star|, '','star', 'Missing'
 system|star|hanno|, 'hanno','', 'Missing'
 >>>>>>> 90daf5498c74533b4ba0d5c5ea52fc91ff3cf292
+<<<<<<< HEAD
 >>>>>>> refs/remotes/origin/master
+=======
+>>>>>>> f9fa52d93b983f826582b0e7cb49dde09c43c144

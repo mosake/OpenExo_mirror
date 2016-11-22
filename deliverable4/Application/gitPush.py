@@ -12,10 +12,13 @@ def push_all():
         if platform.system() == "Windows":
 
             subprocess.Popen("git checkout master", shell=True, stdout=subprocess.PIPE)
-            subprocess.Popen("git pull origin master", shell=True,
-                                   stdout=subprocess.PIPE).stdout.read()
-            subprocess.Popen("git add *", shell=True,
-                                   stdout=subprocess.PIPE).stdout.read()
+    #        subprocess.Popen("git pull origin master", shell=True,
+    #                               stdout=subprocess.PIPE).stdout.read()
+            
+            process = subprocess.Popen(["git", "pull"], stdout=subprocess.PIPE)
+            output = process.communicate()[0]
+            print(output)
+            
             subprocess.Popen("git add *", shell=True, stdout=subprocess.PIPE)
             subprocess.Popen("git commit -m \"Push to main repository\"",
                                    shell=True, stdout=subprocess.PIPE)

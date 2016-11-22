@@ -1,4 +1,5 @@
 import subprocess
+import os
 import platform
 import time
 '''
@@ -10,22 +11,31 @@ def push_all():
 
     try:
         if platform.system() == "Windows":
-
-            subprocess.Popen("git checkout master", shell=True, stdout=subprocess.PIPE)
-
+            FNULL = open(os.devnull, 'w')
+            # FNULL blocks unnecessary output from being displayed on shell.
+            subprocess.Popen("git checkout master", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
             
-            pull_result = subprocess.Popen(["git", "pull"], stdout=subprocess.PIPE)
+            pull_result = subprocess.Popen(["git", "pull"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
             pull_output = pull_result.communicate()[0]
-            print("*********")
-            print(pull_output.decode())
-            print("*********")
-            #        subprocess.Popen("git pull origin master", shell=True,
-            #                               stdout=subprocess.PIPE).stdout.read()            
+            pull_errors = pull_result.communicate()[1]
+            potential_error_msg = pull_errors.decode()
+            if(potential_error_msg != ""):
+                if("files would be overwritten by merge" in potential_error_msg):
+                    # There is a merge conflict in pulling the master repo
+                    # Any merge conflict would need to be solved manually
+                    # (That way, no data is accidentally lost)
+                    print("Oops! There seems to be a merge conflict.")
+                    print("Please check your files and the master repository.")
+                    raise
+                elif("Aborting" in potential_error_message):
+                    print("The master repository could not be pulled.")
+                    raise
+         
             subprocess.Popen("git add *", shell=True, stdout=subprocess.PIPE)
             subprocess.Popen("git commit -m \"Push to main repository\"",
-                                   shell=True, stdout=subprocess.PIPE)
+                                  shell=True, stdout=subprocess.PIPE)
             subprocess.Popen("git push origin master", shell=True,
-                                   stdout=subprocess.PIPE).stdout.read()
+                                  stdout=subprocess.PIPE).stdout.read()
             print('\n')
         elif platform.system() == "Linux":
             # Command if run on Linux device (Could be subject to change)

@@ -19,6 +19,7 @@ def push_all():
             while True:
                 line = pull_command.stdout.readline()
                 print(line)
+                print("sdf")
                 if not line:
                     break
             subprocess.Popen("git checkout master", shell=True,

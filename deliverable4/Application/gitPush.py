@@ -13,11 +13,9 @@ def push_all():
         if platform.system() == "Windows":
            
             subprocess.Popen("git checkout master", shell=True, stdout=subprocess.PIPE)
-
-            
-            if(b'error' in subprocess.Popen("git pull origin master", shell=True,
-                                   stdout=subprocess.PIPE).stdout.read()):
-                print("ER")
+            pull_command = subprocess.Popen("git pull origin master", shell=True,
+                                   stdout=subprocess.PIPE).stdout.read()
+            output = pull_command.communicate()[0]
             subprocess.Popen("git add *", shell=True, stdout=subprocess.PIPE)
             subprocess.Popen("git commit -m \"Push to main repository\"",
                                    shell=True, stdout=subprocess.PIPE)

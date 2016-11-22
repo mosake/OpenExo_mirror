@@ -10,33 +10,18 @@ def push_all():
 
     try:
         if platform.system() == "Windows":
-           
-            subprocess.Popen("git checkout master", shell=True,
-                                   stdout=subprocess.PIPE).stdout.read()
-            sleep(5)
+
+            subprocess.Popen("git checkout master", shell=True, stdout=subprocess.PIPE)
             pull_command = subprocess.Popen("git pull origin master", shell=True,
                                    stdout=subprocess.PIPE).stdout.read()
-            while True:
-                line = pull_command.stdout.readline()
-                print(line)
-                print("sdf")
-                if not line:
-                    break
-            subprocess.Popen("git checkout master", shell=True,
-                                   stdout=subprocess.PIPE).stdout.read()         
-            try:
-                subprocess.Popen("git pull origin master", shell=True,
-                                   stdout=subprocess.PIPE).stdout.read()
-            except:
-                print("failure")
-             
             subprocess.Popen("git add *", shell=True,
                                    stdout=subprocess.PIPE).stdout.read()
+            output = pull_command.communicate()[0]
+            subprocess.Popen("git add *", shell=True, stdout=subprocess.PIPE)
             subprocess.Popen("git commit -m \"Push to main repository\"",
-                                   shell=True,
+                                   shell=True, stdout=subprocess.PIPE)
+            subprocess.Popen("git push origin master", shell=True,
                                    stdout=subprocess.PIPE).stdout.read()
-            print(subprocess.Popen("git push origin master", shell=True,
-                                   stdout=subprocess.PIPE).stdout.read())
             print('Repository has been successfully pushed.\n')
         elif platform.system() == "Linux":
             # Command if run on Linux device (Could be subject to change)

@@ -20,6 +20,8 @@ def push_all():
     c.communicate()
     d = subprocess.Popen("git push origin master", shell=True,
                                        stdout=subprocess.PIPE)
+    print("$")
+    print(d.communicate()[0])
     print("%%%%%%%%%%%%%%%%%%")
     try:
         if platform.system() == "Windows":

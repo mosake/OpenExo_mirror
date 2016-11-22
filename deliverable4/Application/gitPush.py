@@ -14,14 +14,12 @@ def push_all():
            
             subprocess.Popen("git checkout master", shell=True, stdout=subprocess.PIPE)
             
-            x = print(subprocess.Popen("git pull origin master", shell=True,
-                                   stdout=subprocess.PIPE).stdout.read())
+            subprocess.Popen("git pull origin master", shell=True,
+                                   stdout=subprocess.PIPE).stdout.read()
                 
-            subprocess.Popen("git add *", shell=True,
-                                   stdout=subprocess.PIPE).stdout.read()
+            subprocess.Popen("git add *", shell=True, stdout=subprocess.PIPE)
             subprocess.Popen("git commit -m \"Push to main repository\"",
-                                   shell=True,
-                                   stdout=subprocess.PIPE).stdout.read()
+                                   shell=True, stdout=subprocess.PIPE)
             print(subprocess.Popen("git push origin master", shell=True,
                                    stdout=subprocess.PIPE).stdout.read())
             print('Repository has been successfully pushed.\n')

@@ -93,7 +93,7 @@ def compare_element(s1, s2):
 
                 #If the block has a matching ID, then compare substructure
                 if  block_id != "":
-                    diff[i] = compare_element(s1[j], s2[i])
+                    diff[j] = compare_element(s1[j], s2[i])
                 #Otherwise, check if block missing
                 else:
                     exist = False

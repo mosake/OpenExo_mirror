@@ -8,17 +8,18 @@ push_all() pushes changes from local repository to master using command line
 
 
 def push_all():
-
+    
     try:
         if platform.system() == "Windows":
             FNULL = open(os.devnull, 'w')
             # FNULL blocks unnecessary output from being displayed on shell.
-            subprocess.Popen("git checkout master", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+            subprocess.Popen("git checkout master", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE).stdout.read()
             
             pull_result = subprocess.Popen(["git", "pull", "origin", "master"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
             pull_output = pull_result.communicate()[0]
             pull_errors = pull_result.communicate()[1]
             error_message = pull_errors.decode()
+            print(error_message)
             if(error_message != ""):
                 if("files would be overwritten by merge" in error_message):
                     # There is a merge conflict in pulling the master repo
@@ -31,14 +32,16 @@ def push_all():
                     # Some other error has occurred.
                     print("The master repository could not be pulled.")
                     raise
+
+
             subprocess.Popen("git pull origin master", shell=True,
-                                               stdout=subprocess.PIPE).stdout.read()          
+                                                   stdout=subprocess.PIPE).stdout.read()          
             subprocess.Popen("git add *", shell=True, stdout=subprocess.PIPE)
             subprocess.Popen("git commit -m \"Push to main repository\"",
-                                               shell=True,
-                                               stdout=subprocess.PIPE).stdoust.read()            
+                                                   shell=True,
+                                                   stdout=subprocess.PIPE).stdoust.read()            
             subprocess.Popen("git push origin master", shell=True,
-                                   stdout=subprocess.PIPE).stdout.read()
+                                       stdout=subprocess.PIPE).stdout.read()
             print('\n')
         elif platform.system() == "Linux":
             # Command if run on Linux device (Could be subject to change)

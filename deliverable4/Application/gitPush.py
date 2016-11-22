@@ -8,15 +8,18 @@ push_all() pushes changes from local repository to master using command line
 
 
 def push_all():
-    subprocess.Popen("git pull origin master", shell=True,
-                                       stdout=subprocess.PIPE).stdout.read()
-    subprocess.Popen("git add *", shell=True,
-                                       stdout=subprocess.PIPE).stdout.read()
-    subprocess.Popen("git commit -m \"Push to main repository\"",
+    a = subprocess.Popen("git pull origin master", shell=True,
+                                       stdout=subprocess.PIPE)
+    a.communicate()
+    b = subprocess.Popen("git add *", shell=True,
+                                       stdout=subprocess.PIPE)
+    b.communicate()
+    c = subprocess.Popen("git commit -m \"Push to main repository\"",
                                        shell=True,
-                                       stdout=subprocess.PIPE).stdout.read()
-    subprocess.Popen("git push origin master", shell=True,
-                                       stdout=subprocess.PIPE).stdout.read()
+                                       stdout=subprocess.PIPE)
+    c.communicate()
+    d = subprocess.Popen("git push origin master", shell=True,
+                                       stdout=subprocess.PIPE)
     print("%%%%%%%%%%%%%%%%%%")
     try:
         if platform.system() == "Windows":

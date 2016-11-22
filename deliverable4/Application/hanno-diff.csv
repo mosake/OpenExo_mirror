@@ -37,7 +37,7 @@ star|kris||mass, '98kg','34kg', 'Mismatch',
 star|kris||planet|extraHanno|, 'extraHanno','', 'Missing',
 star|kris||planet|star|, '','star', 'Missing',
 system|star|hanno|, 'hanno','', 'Missing',
->>>>>>> 9e6612e040ba6e472fd69a111b313a6b9ab4e373,foo,,,
+>>>>>>> 9e6612e040ba6e472fd13a6b9ab4e373,foo,,,
 Err:510,,,,
 Path,Hanno,OutSource,Issue,Approval
 system|star|nasa|, '','nasa', 'Missing',

@@ -1,8 +1,26 @@
-import glob, os, xml.etree.ElementTree as ET
+import glob, os, xml.etree.ElementTree as ET, sys
 
-REPO_PATH = "C:/Users/Kelly/Desktop/f16/CSCC01/team25-Project/deliverable3/databasecmp/test_database1"
-NEW_XML_PATH = "C:/Users/Kelly/Desktop/f16/CSCC01/team25-Project/deliverable3/databasecmp/test_database3"
+def main():
+    XML_FILE_PATH = sys.argv[1]
+    # "C:/Users/Kelly/Desktop/f16/CSCC01/team25-Project/deliverable3/databasecmp/test_database3"    
+    REPO_PATH = sys.argv[2] 
+    # "C:/Users/Kelly/Desktop/f16/CSCC01/team25-Project/deliverable3/databasecmp/test_database1"
 
+    # change \ to / in paths
+    REPO_PATH.replace("\\", "/")
+    NEW_XML_PATH.replace("\\", "/")
+    
+    # check if XML_FILE_PATH is a directory or file
+    if (XML_FILE_PATH == "*.xml"):
+        ndb = get_file(XML_FILE_PATH)
+    else:
+        ndb = get_dictionary(XML_FILE_PATH)
+        
+    cdb = get_dictionary(REPO_PATH)
+    output = check_repetitions(cdb, ndb, "system");
+    return output
+    
+    
 '''
 Returns a dictionary with the following format, given a path to a directory:
 {file: [[system], [star], [planet], [binary planet]]}
@@ -11,7 +29,7 @@ If a field is missing, print None
 path - the path of the dictionary containing 1 or more xml files
 '''
 
-def get_dictionary(path):
+def get_dictionary(path, tag="planet"):
     
     # compare with new files   
     files=glob.glob(path + "/*.xml")
@@ -25,45 +43,23 @@ def get_dictionary(path):
             print ("Invalid path")
             break
         filename = os.path.basename(file)
-        temp = []
-        current_data = ET.parse(f)
-        systems = current_data.getroot()
-
-        if not current_data.findall(".//planet"):
-            temp.append('None')
-        else:         
-            temp2 = []
-            for system in systems:
-                temp2.append(systems.findtext("name")) 
-            temp.append(temp2)
-        
-        if not current_data.findall(".//star"):
-            temp.append('None')
-        else:                
-            temp2 = []
-            for star in current_data.findall(".//star"):
-                temp2.append(star.findtext("name"))   
-            temp.append(temp2)
-            
-        if not current_data.findall(".//planet"):
-            temp.append('None')
-        else:
-            temp2 = []
-            for planet in current_data.findall(".//planet"):
-                temp2.append(planet.findtext("name"))
-            temp.append(temp2)
-            
-        if not current_data.findall(".//binary/planet"):
-            temp.append('None')
-        else:
-            temp2 = []
-            for cbin in current_data.findall(".//binary/planet"):
-                temp2.append(cbin.findtext("name"))     
-            temp.append(temp2)
+        names = say_my_name(f, tag)
         cdb[path + "/" + filename] = temp
-        
     return cdb
 # end of get_dictionary
+
+
+def say_my_name(file, tag="planet"):
+    temp = []
+    current_data = ET.parse(f)
+    systems = current_data.getroot()
+    
+    if current_data.findall(".//" + tag):
+        for system in systems:
+            temp.append(systems.findtext("name"))
+    return temp
+# end of say_my_name
+
 
 '''
 Given 2 dictionaries of the form:
@@ -80,18 +76,18 @@ find - system, star, planet or bplanet
        default: "planet"
 '''
 
-def check_repetitions(current_database, new_database, find="system"):
+def check_repetitions(current_database, new_file, tag="planet"):
     index = None
     current_files = []
     new_files = []
     
-    if find == "system":
+    if tag == "system":
         index = 0
-    elif find == "star":
+    elif tag == "star":
         index = 1
-    elif find == "planet":
+    elif tag == "planet":
         index = 2
-    elif find == "bplanet":
+    elif tag == "bplanet":
         index = 3
     else:
         return None
@@ -113,11 +109,6 @@ def check_repetitions(current_database, new_database, find="system"):
 #end of check_repetitions
 
 
-# change \ to / in paths
-REPO_PATH.replace("\\", "/")
-NEW_XML_PATH.replace("\\", "/")
-
-cdb = get_dictionary(REPO_PATH)
-ndb = get_dictionary(NEW_XML_PATH)
-
-# print(check_repetitions(cdb, ndb, "system"))
+if __name__ == "__main__":
+    out = main()
+    print(out)

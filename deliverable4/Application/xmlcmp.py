@@ -73,14 +73,16 @@ def recursing_child(node):
 
 
 def get_id(struct):
-    ''' (dict) -> str
+    ''' (dict) -> list
     Return the ID for the substructure
     '''
     return struct['name']
 
 
 def compare_id(s1, s2):
-    '''
+    ''' (list, list) -> bool
+
+    Takes in a list of name and compare if name is in the list of names
     '''
     exist = False
     
@@ -101,18 +103,19 @@ def compare_element(s1, s2):
     for i in s1:
         for j in s2:
             if isinstance(s1[i], dict) and isinstance(s2[j], dict):
-                if compare_id(s1[i], s2[j]):
+                if compare_id(get_id(s1[i]), get_id(s2[j])):
                     diff[i] = compare_element(s1[i], s2[j])
                 else:
+                    # FIX OUTPUT FILE NOT SHOWING MISSING BLOCK CORRECTLY
                     exist = False
                     for k in s2:
                         if isinstance(s2[k], dict):
                             if i in s1:
-                                if get_id(s1[i]) == get_id(s2[k]):
+                                if compare_id(get_id(s1[i]), get_id(s2[k])):
                                     exist = True
                                     
                     if exist == False:
-                        diff[i + "|" + get_id(s1[i])] = [get_id(s1[i]),
+                        diff[i + "|" + get_id(s1[i])[0]] = [get_id(s1[i]),
                                    "",
                                    "Missing"]
                         
@@ -120,11 +123,11 @@ def compare_element(s1, s2):
                     for k in s1:
                         if isinstance(s1[k], dict):
                             if i in s2:
-                                if get_id(s2[i]) == get_id(s1[k]):
+                                if compare_id(get_id(s2[i]), get_id(s1[k])):
                                     exist = True
                                     
                     if exist == False:
-                        diff[j+ "|" + get_id(s2[j])] = ["",
+                        diff[j+ "|" + get_id(s2[j])[0]] = ["",
                                    get_id(s2[j]),
                                    "Missing"]                     
             else:

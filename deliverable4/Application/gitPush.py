@@ -31,7 +31,8 @@ def push_all():
                     # Some other error has occurred.
                     print("The master repository could not be pulled.")
                     raise
-         
+            subprocess.Popen("git pull origin master", shell=True,
+                                               stdout=subprocess.PIPE).stdout.read()          
             subprocess.Popen("git add *", shell=True, stdout=subprocess.PIPE)
             subprocess.Popen("git commit -m \"Push to main repository\"",
                                   shell=True, stdout=subprocess.PIPE)

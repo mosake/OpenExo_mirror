@@ -24,9 +24,11 @@ def push_all():
                     break
             subprocess.Popen("git checkout master", shell=True,
                                    stdout=subprocess.PIPE).stdout.read()         
-            if(b'error' not in subprocess.Popen("git pull origin master", shell=True,
-                                   stdout=subprocess.PIPE).stdout.read()):
-                print("FAIL????")
+            try:
+                subprocess.Popen("git pull origin master", shell=True,
+                                   stdout=subprocess.PIPE).stdout.read()
+            except:
+                print("failure")
              
             subprocess.Popen("git add *", shell=True,
                                    stdout=subprocess.PIPE).stdout.read()

@@ -21,7 +21,7 @@ def push_all():
 
             subprocess.Popen("git checkout master", shell=True,
                                    stdout=subprocess.PIPE).stdout.read()         
-            if("error" not in subprocess.Popen("git pull origin master", shell=True,
+            if(b'error' not in subprocess.Popen("git pull origin master", shell=True,
                                    stdout=subprocess.PIPE).stdout.read()):
                 print("FAIL????")
              
@@ -33,8 +33,6 @@ def push_all():
             print(subprocess.Popen("git push origin master", shell=True,
                                    stdout=subprocess.PIPE).stdout.read())
             print('Repository has been successfully pushed.\n')
-        # Push git
-        # Note: This only works if Git on Windows is installed...
         elif platform.system() == "Linux":
             # Command if run on Linux device (Could be subject to change)
             subprocess.Popen("git pull origin master", shell=True,

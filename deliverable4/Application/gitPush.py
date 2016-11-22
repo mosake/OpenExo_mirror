@@ -1,6 +1,6 @@
 import subprocess
 import platform
-
+import time
 '''
 push_all() pushes changes from local repository to master using command line
 '''
@@ -11,14 +11,16 @@ def push_all():
     try:
         if platform.system() == "Windows":
            
-            if(b'error' in subprocess.Popen("git checkout master", shell=True,
-                                   stdout=subprocess.PIPE).stdout.read()):
-                print("error detected1")
-         
-            if(b'error' in subprocess.Popen("git pull origin master", shell=True,
-                                   stdout=subprocess.PIPE).stdout.read()):
-                print("error detected2")
-
+            subprocess.Popen("git checkout master", shell=True,
+                                   stdout=subprocess.PIPE).stdout.read()
+            sleep(5)
+            pull_command = subprocess.Popen("git pull origin master", shell=True,
+                                   stdout=subprocess.PIPE).stdout.read()
+            while True:
+                line = pull_command.stdout.readline()
+                print(line)
+                if not line:
+                    break
             subprocess.Popen("git checkout master", shell=True,
                                    stdout=subprocess.PIPE).stdout.read()         
             if(b'error' not in subprocess.Popen("git pull origin master", shell=True,

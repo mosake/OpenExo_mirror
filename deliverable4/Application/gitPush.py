@@ -15,7 +15,7 @@ def push_all():
             # FNULL blocks unnecessary output from being displayed on shell.
             subprocess.Popen("git checkout master", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
             
-            pull_result = subprocess.Popen(["git", "pull"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+            pull_result = subprocess.Popen(["git", "pull", "origin", "master"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
             pull_output = pull_result.communicate()[0]
             pull_errors = pull_result.communicate()[1]
             error_message = pull_errors.decode()
@@ -35,9 +35,10 @@ def push_all():
                                                stdout=subprocess.PIPE).stdout.read()          
             subprocess.Popen("git add *", shell=True, stdout=subprocess.PIPE)
             subprocess.Popen("git commit -m \"Push to main repository\"",
-                                  shell=True, stdout=subprocess.PIPE)
+                                               shell=True,
+                                               stdout=subprocess.PIPE).stdoust.read()            
             subprocess.Popen("git push origin master", shell=True,
-                                  stdout=subprocess.PIPE).stdout.read()
+                                   stdout=subprocess.PIPE).stdout.read()
             print('\n')
         elif platform.system() == "Linux":
             # Command if run on Linux device (Could be subject to change)
@@ -45,11 +46,8 @@ def push_all():
                                    stdout=subprocess.PIPE).stdout.read()
             subprocess.Popen("git add *", shell=True,
                                    stdout=subprocess.PIPE).stdout.read()
-            subprocess.Popen("git commit -m \"Push to main repository\"",
-                                   shell=True,
+            subprocess.Popen("git push origin master", shell=True,
                                    stdout=subprocess.PIPE).stdout.read()
-            print(subprocess.Popen("git push origin master", shell=True,
-                                   stdout=subprocess.PIPE).stdout.read())
             print('\n')
         elif platform.system() == "Darwin" or platform.system() == "darwin":
             subprocess.Popen("git pull origin master", shell=True,

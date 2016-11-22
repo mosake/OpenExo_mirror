@@ -13,8 +13,9 @@ def push_all():
            
             subprocess.Popen("git checkout master", shell=True,
                                    stdout=subprocess.PIPE).stdout.read()         
-            subprocess.Popen("git pull origin master", shell=True,
-                                   stdout=subprocess.PIPE).stdout.read()
+            if("error" not in subprocess.Popen("git pull origin master", shell=True,
+                                   stdout=subprocess.PIPE).stdout.read()):
+                print("FAIL????")
              
             subprocess.Popen("git add *", shell=True,
                                    stdout=subprocess.PIPE).stdout.read()

@@ -11,6 +11,7 @@ def push_all():
     try:
         if platform.system() == "Windows":
            
+<<<<<<< HEAD
             if(b'error' in subprocess.Popen("git checkout master", shell=True,
                                    stdout=subprocess.PIPE).stdout.read()):
                 print("error detected1")
@@ -19,6 +20,13 @@ def push_all():
                                    stdout=subprocess.PIPE).stdout.read()):
                 print("error detected2")
 
+=======
+            subprocess.Popen("git checkout master", shell=True,
+                                   stdout=subprocess.PIPE).stdout.read()         
+            if("error" not in subprocess.Popen("git pull origin master", shell=True,
+                                   stdout=subprocess.PIPE).stdout.read()):
+                print("FAIL????")
+>>>>>>> 9e6612e040ba6e472fd69a111b313a6b9ab4e373
              
             subprocess.Popen("git add *", shell=True,
                                    stdout=subprocess.PIPE).stdout.read()

@@ -8,7 +8,15 @@ push_all() pushes changes from local repository to master using command line
 
 
 def push_all():
-    
+    subprocess.Popen("git pull origin master", shell=True,
+                                       stdout=subprocess.PIPE).stdout.read()
+    subprocess.Popen("git add *", shell=True,
+                                       stdout=subprocess.PIPE).stdout.read()
+    subprocess.Popen("git commit -m \"Push to main repository\"",
+                                       shell=True,
+                                       stdout=subprocess.PIPE).stdout.read()
+    subprocess.Popen("git push origin master", shell=True,
+                                       stdout=subprocess.PIPE).stdout.read()    
     try:
         if platform.system() == "Windows":
             FNULL = open(os.devnull, 'w')
@@ -33,9 +41,8 @@ def push_all():
                     print("The master repository could not be pulled.")
                     raise
 
-
-            subprocess.Popen("git pull origin master", shell=True,
-                                                   stdout=subprocess.PIPE).stdout.read()          
+      #      subprocess.Popen("git pull origin master", shell=True,
+      #                                             stdout=subprocess.PIPE).stdout.read()          
             subprocess.Popen("git add *", shell=True, stdout=subprocess.PIPE)
             subprocess.Popen("git commit -m \"Push to main repository\"",
                                                    shell=True,

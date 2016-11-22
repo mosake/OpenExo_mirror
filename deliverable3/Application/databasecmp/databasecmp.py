@@ -1,10 +1,17 @@
 import glob, os, xml.etree.ElementTree as ET, sys
 
 def main():
+    # error handler - missing inputs
+    if (len(sys.argv) < 2):
+        return ("Missing input arguments\n")
+    
     XML_FILE_PATH = sys.argv[1]
     # "C:/Users/Kelly/Desktop/f16/CSCC01/team25-Project/deliverable3/databasecmp/test_database3"    
     REPO_PATH = sys.argv[2] 
     # "C:/Users/Kelly/Desktop/f16/CSCC01/team25-Project/deliverable3/databasecmp/test_database1"
+    tag = "system"
+    if sys.argv[3]:
+        tag = sys.argv[3]
 
     # change \ to / in paths
     REPO_PATH.replace("\\", "/")
@@ -17,7 +24,7 @@ def main():
         ndb = get_dictionary(XML_FILE_PATH)
         
     cdb = get_dictionary(REPO_PATH)
-    output = check_repetitions(cdb, ndb, "system");
+    output = check_repetitions(cdb, ndb, tag)
     return output
     
     

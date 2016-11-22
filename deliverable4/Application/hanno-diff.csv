@@ -1,9 +1,9 @@
-<<<<<<< HEAD
+<<<<<<< HEAD,,,,
 Path,Hanno,OutSource,Issue,Approval
 system|star|nasa|, '','nasa', 'Missing',
 system|distance, '1000KM','999KM', 'Mismatch',
 star|kris||temperature, '271F','0C', 'Mismatch',
-star|kris||metallicity, '1234','1234.00', 'Mismatch',
+star|kris||metallicityfloooo, '1234','1234.00', 'Mismatch',
 planet|Alice||temperature, '1234F','12345F', 'Mismatch',
 planet|Alice||semimajoraxis, '1','1.0', 'Mismatch',
 planet|Alice||radius, '2.71','2.713', 'Mismatch',
@@ -17,24 +17,24 @@ star|kris||mass, '98kg','34kg', 'Mismatch',
 star|kris||planet|extraHanno|, 'extraHanno','', 'Missing',
 star|kris||planet|star|, '','star', 'Missing',
 system|star|hanno|, 'hanno','', 'Missing',
-=======
+Err:510,,,,
 Path,Hanno,OutSource,Issue,Approval
-system|star|nasa|, '','nasa', 'Missing'
-system|distance, '1000KM','999KM', 'Mismatch'
-star|kris||temperature, '271F','0C', 'Mismatch'
-star|kris||metallicity, '1234','1234.00', 'Mismatch'
-planet|Alice||temperature, '1234F','12345F', 'Mismatch'
-planet|Alice||semimajoraxis, '1','1.0', 'Mismatch'
-planet|Alice||radius, '2.71','2.713', 'Mismatch'
-planet|Alice||discoveryyear, '2014','2015', 'Mismatch'
-planet|Alice||mass, '1234','12345', 'Mismatch'
-star|kris||radius, '3.14','2.13', 'Mismatch'
-planet|KKL||semimajoraxis, '1','1.0', 'Mismatch'
-ssssssssssplanet|KKL||radius, '2.71','2.710', 'Mismatch'
-planet|KKL||image, '123.jpg',"'""123.jpg""'", 'Mismatch'
-star|kris||magV, '1234','1234.00', 'Mismatch'
-star|kris||mass, '98kg','34kg', 'Mismatch'
-star|kris||planet|extraHanno|, 'extraHanno','', 'Missing'
-star|kris||planet|star|, '','star', 'Missing'
-system|star|hanno|, 'hanno','', 'Missing'
->>>>>>> 9e6612e040ba6e472fd69a111b313a6b9ab4e373
+system|star|nasa|, '','nasa', 'Missing',
+system|distance, '1000KM','999KM', 'Mismatch',
+star|kris||temperature, '271F','0C', 'Mismatch',
+star|kris||metallicity, '1234','1234.00', 'Mismatch',
+planet|Alice||temperature, '1234F','12345F', 'Mismatch',
+planet|Alice||semimajoraxis, '1','1.0', 'Mismatch',
+planet|Alice||radius, '2.71','2.713', 'Mismatch',
+planet|Alice||discoveryyear, '2014','2015', 'Mismatch',
+planet|Alice||mass, '1234','12345', 'Mismatch',
+star|kris||radius, '3.14','2.13', 'Mismatch',
+planet|KKL||semimajoraxis, '1','1.0', 'Mismatch',
+ssssssssssplanet|KKL||radius, '2.71','2.710', 'Mismatch',
+planet|KKL||image, '123.jpg',"'""123.jpg""'", 'Mismatch',
+star|kris||magV, '1234','1234.00', 'Mismatch',
+star|kris||mass, '98kg','34kg', 'Mismatch',
+star|kris||planet|extraHanno|, 'extraHanno','', 'Missing',
+star|kris||planet|star|, '','star', 'Missing',
+system|star|hanno|, 'hanno','', 'Missing',
+>>>>>>> 9e6612e040ba6e472fd69a111b313a6b9ab4e373,foo,,,

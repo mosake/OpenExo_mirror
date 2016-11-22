@@ -13,16 +13,16 @@ def push_all():
         if platform.system() == "Windows":
            
             subprocess.Popen("git checkout master", shell=True, stdout=subprocess.PIPE)
-            print("^^^^^^^")
-            subprocess.Popen("git pull origin master", shell=True,
-                                   stdout=subprocess.PIPE).stdout.read()
-            print("******************")
+
+            
+            if(b'error' in subprocess.Popen("git pull origin master", shell=True,
+                                   stdout=subprocess.PIPE).stdout.read()):
+                print("ER")
             subprocess.Popen("git add *", shell=True, stdout=subprocess.PIPE)
             subprocess.Popen("git commit -m \"Push to main repository\"",
                                    shell=True, stdout=subprocess.PIPE)
-            print(subprocess.Popen("git push origin master", shell=True,
-                                   stdout=subprocess.PIPE).stdout.read())
-            print("$$$$$$$")
+            subprocess.Popen("git push origin master", shell=True,
+                                   stdout=subprocess.PIPE).stdout.read()
             print('Repository has been successfully pushed.\n')
         # Push git
         # Note: This only works if Git on Windows is installed...

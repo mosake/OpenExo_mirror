@@ -22,7 +22,6 @@ def push_all():
             pull_output, err = pull_result.communicate()
             pull_error_msg = err.decode()
             print(pull_error_msg)
-            print("*")
             if(pull_error_msg != ""):
                 if("files would be overwritten by merge" in pull_error_msg):
                     # There is a merge conflict in pulling the master repo
@@ -35,10 +34,8 @@ def push_all():
                     # Some other error has occurred.
                     print("The master repository could not be pulled.")
                     raise
-            print("*")
             add_command = subprocess.Popen("git add *", shell=True,
                                            stdout=subprocess.PIPE)
-            print("@")
             add_command.communicate()
             commit_command = subprocess.Popen("git commit"\
                                               " -m \"Push to main repository\"",
@@ -49,8 +46,7 @@ def push_all():
                                             shell=True,
                                             stdout=subprocess.PIPE,
                                             stderr=subprocess.PIPE)
-            push_output = push_command.communicate()[0]
-            push_error = push_command.communicate()[1]
+            push_output, push_error = push_command.communicate()
             push_error_message = push_error.decode()
             if(push_error_message != "" and "error" in push_error_message):
                 print("Oops! A conflict occurred when pushing to master.")

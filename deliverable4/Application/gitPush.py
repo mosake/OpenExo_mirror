@@ -35,13 +35,14 @@ def push_all():
       #                                             stdout=subprocess.PIPE).stdout.read()          
             add_command = subprocess.Popen("git add *", shell=True, stdout=subprocess.PIPE)
             add_command.communicate()
-            print("#")
+            
             commit_command = subprocess.Popen("git commit -m \"Push to main repository\"",
                                                    shell=True,
-                                                   stdout=subprocess.PIPE).stdoust.read()
+                                                   stdout=subprocess.PIPE)
+            print("#")
             commit_command.communicate()
             push_command = subprocess.Popen("git push origin master", shell=True,
-                                       stdout=subprocess.PIPE).stdout.read()
+                                       stdout=subprocess.PIPE)
             push_command.communicate()
             print('\n')
         elif platform.system() == "Linux":

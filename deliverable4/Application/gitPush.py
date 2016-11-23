@@ -42,9 +42,9 @@ def push_all():
             push_output = push_command.communicate()[0]
             push_error = push_command.communicate()[1]
             push_error_message = push_error.decode()
-            if(push_error_message != ""):
+            if(push_error_message != "" and "error" in push_error_message):
                 print("Oops! A conflict occurred when pushing to master.")
-                print("PLease check the repositories for further details.")
+                print("Please check the repositories for further details.")
                 raise
             print("Push was successful.")
             

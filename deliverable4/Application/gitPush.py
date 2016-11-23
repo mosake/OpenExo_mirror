@@ -21,6 +21,7 @@ def push_all():
             print(error_message)
             print("%")
             if(error_message != ""):
+                print("$")
                 if("files would be overwritten by merge" in error_message):
                     # There is a merge conflict in pulling the master repo
                     # Any merge conflict would need to be solved manually
@@ -32,7 +33,7 @@ def push_all():
                     # Some other error has occurred.
                     print("The master repository could not be pulled.")
                     raise
-
+            print("#")
       #      subprocess.Popen("git pull origin master", shell=True,
       #                                             stdout=subprocess.PIPE).stdout.read()          
             add_command = subprocess.Popen("git add *", shell=True, stdout=subprocess.PIPE)

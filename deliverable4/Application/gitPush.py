@@ -38,7 +38,8 @@ def push_all():
             add_command = subprocess.Popen("git add *", shell=True,
                                            stdout=subprocess.PIPE)
             add_command.communicate()
-            commit_command = subprocess.Popen("git commit -m \"Push to main repository\"",
+            commit_command = subprocess.Popen("git commit"\
+                                              " -m \"Push to main repository\"",
                                               shell=True,
                                               stdout=subprocess.PIPE)
             commit_command.communicate()

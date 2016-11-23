@@ -25,7 +25,6 @@ while (switch):
     elif (command[0: 7] == "compare"):
         try:
             l = command.split(" ")
-            print(l)
             cmp.main(l[1], l[2])
         except:
             print("Please enter a valid input: compare file1.xml file2.xml")

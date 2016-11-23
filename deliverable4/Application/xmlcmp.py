@@ -160,5 +160,3 @@ def generate_path(struct, path):
                 l.append(path + "|" + i + str(struct[i]).replace("]", ""))
 
     return l
-
-main("HATS-17.xml","HATS-171.xml")

@@ -8,23 +8,7 @@ push_all() pushes changes from local repository to master using command line
 
 
 def push_all():
-    a = subprocess.Popen("git pull origin master", shell=True,
-                                       stdout=subprocess.PIPE)
-    a.communicate()
-    print("a done")
-    b = subprocess.Popen("git add *", shell=True,
-                                       stdout=subprocess.PIPE)
-    b.communicate()
-    print("b done")    
-    c = subprocess.Popen("git commit -m \"Push to main repository\"",
-                                       shell=True,
-                                       stdout=subprocess.PIPE)
-    c.communicate()
-    print("c done")    
-    d = subprocess.Popen("git push origin master", shell=True,
-                                       stdout=subprocess.PIPE)
-    d.communicate()
-    print("d done")    
+
     try:
         if platform.system() == "Windows":
             checkout_command = subprocess.Popen("git checkout master", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
@@ -51,12 +35,15 @@ def push_all():
 
       #      subprocess.Popen("git pull origin master", shell=True,
       #                                             stdout=subprocess.PIPE).stdout.read()          
-            subprocess.Popen("git add *", shell=True, stdout=subprocess.PIPE)
-            subprocess.Popen("git commit -m \"Push to main repository\"",
+            add_command = subprocess.Popen("git add *", shell=True, stdout=subprocess.PIPE)
+            add_command.communicate()
+            commit_command = subprocess.Popen("git commit -m \"Push to main repository\"",
                                                    shell=True,
-                                                   stdout=subprocess.PIPE).stdoust.read()            
-            subprocess.Popen("git push origin master", shell=True,
+                                                   stdout=subprocess.PIPE).stdoust.read()
+            commit_command.communicate()
+            push_command = subprocess.Popen("git push origin master", shell=True,
                                        stdout=subprocess.PIPE).stdout.read()
+            push_command.communicate()
             print('\n')
         elif platform.system() == "Linux":
             # Command if run on Linux device (Could be subject to change)

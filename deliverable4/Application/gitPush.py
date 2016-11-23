@@ -11,34 +11,41 @@ def push_all():
     platform_names = ["Windows", "Linux", "Darwin", "darwin"]
     try:
         if platform.system() in platform_names:
-            checkout_command = subprocess.Popen("git checkout master", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+            checkout_command = subprocess.Popen("git checkout master",
+                                                shell=True,
+                                                stdout=subprocess.PIPE,
+                                                stderr=subprocess.PIPE)
             checkout_command.communicate()
-            
-            pull_result = subprocess.Popen(["git", "pull", "origin", "master"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+
+            pull_result = subprocess.Popen(["git", "pull", "origin", "master"],
+                                           stdout=subprocess.PIPE,
+                                           stderr=subprocess.PIPE)
             pull_output = pull_result.communicate()[0]
             pull_errors = pull_result.communicate()[1]
-            pull_error_message = pull_errors.decode()
-            if(pull_error_message != ""):
-                if("files would be overwritten by merge" in pull_error_message):
+            pull_error_msg = pull_errors.decode()
+            if(pull_error_msg != ""):
+                if("files would be overwritten by merge" in pull_error_msg):
                     # There is a merge conflict in pulling the master repo
                     # Any merge conflict would need to be solved manually
                     # (That way, no data is accidentally lost)
                     print("Oops! There seems to be a merge conflict.")
                     print("Please check your files and the master repository.")
                     raise
-                elif("Aborting" in pull_error_message):
+                elif("Aborting" in pull_error_msg):
                     # Some other error has occurred.
                     print("The master repository could not be pulled.")
-                    raise          
-            add_command = subprocess.Popen("git add *", shell=True, stdout=subprocess.PIPE)
+                    raise
+            add_command = subprocess.Popen("git add *", shell=True,
+                                           stdout=subprocess.PIPE)
             add_command.communicate()
-            
             commit_command = subprocess.Popen("git commit -m \"Push to main repository\"",
-                                                   shell=True,
-                                                   stdout=subprocess.PIPE)
+                                              shell=True,
+                                              stdout=subprocess.PIPE)
             commit_command.communicate()
-            push_command = subprocess.Popen("git push origin master", shell=True,
-                                       stdout=subprocess.PIPE, stderr=subprocess.PIPE)           
+            push_command = subprocess.Popen("git push origin master",
+                                            shell=True,
+                                            stdout=subprocess.PIPE,
+                                            stderr=subprocess.PIPE)
             push_output = push_command.communicate()[0]
             push_error = push_command.communicate()[1]
             push_error_message = push_error.decode()
@@ -47,7 +54,5 @@ def push_all():
                 print("Please check the repositories for further details.")
                 raise
             print("Push was successful.")
-        else:
-            print("L")
     except:
         print("Git was unable to push your local copy to the main repository.")

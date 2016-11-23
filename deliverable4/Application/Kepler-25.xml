@@ -29,5 +29,15 @@
 			<lastupdate>2016-10-27</lastupdate>
 			<transittime unit="BJD">2455004.705410</transittime>
 		</planet>
+		<planet>
+			<name>Kepler-25 e</name>
+			<period>6.23850000</period>
+			<mass errorminus="0.01321" errorplus="0.01321">0.03020</mass>
+			<radius errorminus="0.004" errorplus="0.004">0.242</radius>
+			<discoverymethod>Transit</discoverymethod>
+			<discoveryyear>2011</discoveryyear>
+			<lastupdate>2016-10-27</lastupdate>
+			<transittime unit="BJD">2455004.705410</transittime>
+		</planet>
 	</star>
 </system>

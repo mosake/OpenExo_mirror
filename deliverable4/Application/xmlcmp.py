@@ -107,14 +107,18 @@ def compare_element(s1, s2):
                     if exist == False:
                         diff[i + "|" + s2[i]['name'][0]] = ["",
                                    s2[i]['name'][0],
-                                   "Missing"]
+                                   "Missing Block"]
             else:
                 #Check to see if block_id
                 if i == j and i == 'name':
                     if get_id(s1, s2) == "":
                         diff[i] = [s1[i][0], s2[i][0], "Mismatch"]
-                elif i == j and s1[i].lower() != s2[j].lower():
+                elif i == j and s1[i] != s2[j]:
                     diff[i] = [s1[i], s2[i], "Mismatch"]
+
+        #Check if missing tag
+        if i not in s1:
+            diff[i] = ["", "<" + i + ">", "Missing Tag"]
 
     return diff
 
@@ -156,3 +160,5 @@ def generate_path(struct, path):
                 l.append(path + "|" + i + str(struct[i]).replace("]", ""))
 
     return l
+
+main("HATS-17.xml","HATS-171.xml")

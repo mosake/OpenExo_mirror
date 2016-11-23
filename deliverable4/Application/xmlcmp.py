@@ -1,3 +1,28 @@
+'''
+INSTRUCTIONS:
+
+1) Call main("", "")
+
+2) The input parameters will take in source file (1st parameter),
+   and outsource file (2nd Parameter).
+   (I.e. main("hanno.xml", "nasa.xml")
+
+3) xmlcmp.py will output a csv file into the same directory.
+
+4) Open csv file and the difference will be listed in there.
+
+5) Columns represents the information:
+> | Path | Source | Outsource | Issue | Approval |
+
+Path: The xml tag location in the XML
+Source: The value of the tag in the source file
+Outsource: The value of the tag in the outsource file
+Issue: Display the type of difference
+Approval: Status of change
+
+'''
+
+
 import xml.etree.ElementTree as ET
 import csv
 

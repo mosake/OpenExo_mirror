@@ -8,7 +8,7 @@ push_all() pushes changes from local repository to master using command line
 
 
 def push_all():
-    platform_names = ["Windows", "Linux", "Darwin", "darwin"]
+    platform_names = ['Windows', 'Linux', 'Darwin', 'darwin']
     try:
         if platform.system() in platform_names:
             checkout_command = subprocess.Popen("git checkout master",
@@ -16,13 +16,13 @@ def push_all():
                                                 stdout=subprocess.PIPE,
                                                 stderr=subprocess.PIPE)
             checkout_command.communicate()
-
-            pull_result = subprocess.Popen(["git", "pull", "origin", "master"],
+            pull_result = subprocess.Popen(["git", "pull"],
                                            stdout=subprocess.PIPE,
                                            stderr=subprocess.PIPE)
-            pull_output = pull_result.communicate()[0]
-            pull_errors = pull_result.communicate()[1]
-            pull_error_msg = pull_errors.decode()
+            pull_output, err = pull_result.communicate()
+            pull_error_msg = err.decode()
+            print(pull_error_msg)
+            print("*")
             if(pull_error_msg != ""):
                 if("files would be overwritten by merge" in pull_error_msg):
                     # There is a merge conflict in pulling the master repo
@@ -35,8 +35,10 @@ def push_all():
                     # Some other error has occurred.
                     print("The master repository could not be pulled.")
                     raise
+            print("*")
             add_command = subprocess.Popen("git add *", shell=True,
                                            stdout=subprocess.PIPE)
+            print("@")
             add_command.communicate()
             commit_command = subprocess.Popen("git commit"\
                                               " -m \"Push to main repository\"",

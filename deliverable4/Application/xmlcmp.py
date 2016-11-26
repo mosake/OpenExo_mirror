@@ -130,7 +130,7 @@ def compare_element(s1, s2):
                                     exist = True
 
                     if exist == False:
-                        diff[i + "|" + s2[i]['name'][0]] = ["",
+                        diff[i] = ["",
                                    s2[i]['name'][0],
                                    "Missing Block"]
             else:
@@ -143,7 +143,8 @@ def compare_element(s1, s2):
 
         #Check if missing tag
         if i not in s1:
-            diff[i] = ["", "<" + i + ">", "Missing Tag"]
+            if i not in diff:
+                diff[i] = ["", "<" + i + ">", "Missing Tag"]
 
     return diff
 
@@ -185,3 +186,5 @@ def generate_path(struct, path):
                 l.append(path + "|" + i + str(struct[i]).replace("]", ""))
 
     return l
+
+main("kepler-25.xml", "kepler-26.xml")

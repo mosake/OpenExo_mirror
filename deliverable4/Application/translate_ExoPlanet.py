@@ -53,7 +53,7 @@ def parse():
             takeLetterOff=len(p["# name"]) #take whole item        
         host_name = p["# name"][:takeLetterOff].strip() #remove the last letter
         pl_letter = p["# name"][takeLetterOff:].strip()
-        outputfilename = os.path.join(os.path.curdir, 'extracted','Extracted_XMLs', host_name+".xml")        
+        outputfilename = os.path.join(os.path.curdir, 'extracted','Extracted_XMLs', "Exoplanet_"+host_name+".xml")        
         if os.path.exists(outputfilename):
             system = ET.parse(outputfilename).getroot()
             star = system.find(".//star")

@@ -1,0 +1,101 @@
+<system>
+	<name>Kepler-25</name>
+	<distance>191</distance>
+	<rightascension>19 06 33</rightascension>
+	<declination>+38 20 37</declination>
+	<star>
+		<name>Kepler-25</name>
+		<age errorminus="0.300" errorplus="0.300">2.750</age>
+		<spectraltype>F</spectraltype>
+		<magK errorminus="0.017" errorplus="0.017">9.493</magK>
+		<magH errorminus="0.020" errorplus="0.020">9.532</magH>
+		<magJ errorminus="0.020" errorplus="0.020">9.764</magJ>
+		<magR errorminus="0.021" errorplus="0.021">10.598</magR>
+		<magB errorminus="0.07" errorplus="0.07">11.32</magB>
+		<name>KOI-244</name>
+		<radius errorminus="0.01" errorplus="0.01">1.34</radius>
+		<magV errorminus="0.06" errorplus="0.06">10.77</magV>
+		<mass errorminus="0.03" errorplus="0.03">1.26</mass>
+		<temperature errorminus="27" errorplus="27">6354</temperature>
+		<metallicity errorminus="0.03" errorplus="0.03">0.11</metallicity>
+		<planet>
+			<name>Kepler-25 c</name>
+			<istransiting>1</istransiting>
+		<temperature>959.7</temperature>
+			<spinorbitalignment errorminus="7.1" errorplus="7.1">9.4</spinorbitalignment>
+			<description>This planet candidate was discovered with the Kepler spacecraft. Its host star gets periodically fainter whenever the planet is in front of the star. Because there are multiple phenomena that can create a signal that looks similar to a planetary transit, the candidates have to be confirmed with another method. For Kepler-25 the planetary nature of the companions has been confirmed by transit timing variations, caused by other planets in the system, and a stability analysis. However, the mass of the planets is not well constrained yet. The orbit is aligned at 26.9 degrees from the stellar equator.</description>
+			<eccentricity errorminus="0.01" errorplus="0.07">0.01</eccentricity>
+			<semimajoraxis>0.110</semimajoraxis>
+			<list>Confirmed planets</list>
+			<name>KOI-244 c</name>
+			<name>KOI-244.01</name>
+			<name>KIC 4349452 c</name>
+			<period errorminus="0.0000035" errorplus="0.0000035">12.7203678</period>
+			<mass errorminus="0.01793" errorplus="0.01793">0.07740</mass>
+			<radius errorminus="0.0054" errorplus="0.0054">0.4598</radius>
+			<discoverymethod>transit</discoverymethod>
+			<discoveryyear>2012</discoveryyear>
+			<lastupdate>15/06/09</lastupdate>
+			<transittime errorminus="0.0008" errorplus="0.0008" unit="BJD">2454986.0871</transittime>
+		</planet>
+		<planet>
+			<name>Kepler-25 b</name>
+			<istransiting>1</istransiting>
+		<temperature>1220.6</temperature>
+			<description>This planet candidate was discovered with the Kepler spacecraft. Its host star gets periodically fainter whenever the planet is in front of the star. Because there are multiple phenomena that can create a signal that looks similar to a planetary transit, the candidates have to be confirmed with another method. For Kepler-25 the planetary nature of the companions has been confirmed by transit timing variations, caused by other planets in the system, and a stability analysis. However, the mass of the planets is not well constrained yet.</description>
+			<eccentricity errorminus="0.05" errorplus="0.11">0.05</eccentricity>
+			<semimajoraxis>0.068</semimajoraxis>
+			<list>Confirmed planets</list>
+			<name>KOI-244 b</name>
+			<name>KOI-244.02</name>
+			<name>KIC 4349452 b</name>
+			<period errorminus="0.0000033" errorplus="0.0000033">6.2385369</period>
+			<mass errorminus="0.01321" errorplus="0.01321">0.03020</mass>
+			<radius errorminus="0.0033" errorplus="0.0033">0.2411</radius>
+			<discoverymethod>transit</discoverymethod>
+			<discoveryyear>2012</discoveryyear>
+			<lastupdate>15/06/09</lastupdate>
+			<transittime errorminus="0.0021" errorplus="0.0021" unit="BJD">2454973.5126</transittime>
+		</planet>
+		<planet>
+			<name>Kepler-25 e</name>
+			<period>6.23850000</period>
+			<mass errorminus="0.01321" errorplus="0.01321">0.03020</mass>
+			<radius errorminus="0.004" errorplus="0.004">0.242</radius>
+			<discoverymethod>Transit</discoverymethod>
+			<discoveryyear>2011</discoveryyear>
+			<lastupdate>2016-10-27</lastupdate>
+			<transittime unit="BJD">2455004.705410</transittime>
+		</planet>
+	<planet>
+			<name>Kepler-25 d</name>
+			<name>KOI-244.10</name>
+			<name>KIC 4349452 d</name>
+			<name>KOI-244 d</name>
+			<period errorminus="2" errorplus="2">123</period>
+			<mass errorminus="0.043096" errorplus="0.043096">0.282798</mass>
+			<list>Confirmed planets</list>
+			<description>This planet has been discovered during a radial velocity follow up of stars observed by Kepler which host planet candidates. Although other planets in this system are transiting, this one is not.</description>
+			<discoveryyear>2014</discoveryyear>
+			<lastupdate>14/02/24</lastupdate>
+			<discoverymethod>RV</discoverymethod>
+		</planet>
+	</star>
+<star>
+		<name>KOI-245</name>
+		<name>Kepler-255</name>
+		<planet>
+			<name>Kepler-25 e</name>
+			<name>KOI-244.10</name>
+			<name>KIC 4349452 d</name>
+			<name>KOI-244 d</name>
+			<period errorminus="2" errorplus="2">123</period>
+			<mass errorminus="0.043096" errorplus="0.043096">0.282798</mass>
+			<list>Confirmed planets</list>
+			<description>Test</description>
+			<discoveryyear>2014</discoveryyear>
+			<lastupdate>14/02/24</lastupdate>
+			<discoverymethod>RV</discoverymethod>
+		</planet>
+	</star>
+</system>

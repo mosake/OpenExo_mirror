@@ -1,0 +1,31 @@
+<system>
+	<name>Kepler-106</name>
+	<rightascension>20 03 27</rightascension>
+	<declination>+44 20 15</declination>
+	<star>
+		<name>Kepler-106</name>
+		<radius errorminus="0.17" errorplus="0.17">1.04</radius>
+		<magV>12.882</magV>
+		<mass errorminus="0.06" errorplus="0.06">1.00</mass>
+		<temperature errorminus="114.00" errorplus="114.00">5858.00</temperature>
+		<metallicity errorminus="0.110" errorplus="0.110">-0.120</metallicity>
+		<planet>
+			<name>Kepler-106 d</name>
+			<period>23.98020000</period>
+			<radius errorminus="0.012" errorplus="0.012">0.085</radius>
+			<discoverymethod>Transit</discoverymethod>
+			<discoveryyear>2014</discoveryyear>
+			<lastupdate>2016-10-13</lastupdate>
+			<transittime unit="BJD">2454980.532630</transittime>
+		</planet>
+		<planet>
+			<name>Kepler-106 b</name>
+			<period>6.16486000</period>
+			<radius errorminus="0.010" errorplus="0.010">0.073</radius>
+			<discoverymethod>Transit</discoverymethod>
+			<discoveryyear>2014</discoveryyear>
+			<lastupdate>2016-10-13</lastupdate>
+			<transittime unit="BJD">2454968.640350</transittime>
+		</planet>
+	</star>
+</system>

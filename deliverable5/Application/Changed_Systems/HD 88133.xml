@@ -1,0 +1,27 @@
+<system>
+	<name>HD 88133</name>
+	<rightascension>10 10 08</rightascension>
+	<declination>+18 11 13</declination>
+	<distance errorminus="5.92" errorplus="7.04">74.46</distance>
+	<star>
+		<name>HD 88133</name>
+		<radius errorminus="0.06" errorplus="0.06">1.94</radius>
+		<magV>8.010</magV>
+		<mass errorminus="0.06" errorplus="0.06">1.18</mass>
+		<temperature errorminus="34.00" errorplus="34.00">5438.00</temperature>
+		<metallicity errorminus="0.050" errorplus="0.050">0.330</metallicity>
+		<planet>
+			<name>HD 88133 b</name>
+			<semimajoraxis errorminus="0.000800" errorplus="0.000800">0.046910</semimajoraxis>
+			<eccentricity errorminus="0.030000" errorplus="0.030000">0.050000</eccentricity>
+			<periastron errorminus="48.1100" errorplus="31.3900">7.2200</periastron>
+			<inclination errorminus="5.000" errorplus="6.000">15.000</inclination>
+			<period errorminus="0.00004730" errorplus="0.00004570">3.41486740</period>
+			<mass errorminus="0.28000" errorplus="0.61000">1.02000</mass>
+			<discoverymethod>Radial Velocity</discoverymethod>
+			<discoveryyear>2004</discoveryyear>
+			<lastupdate>2016-10-13</lastupdate>
+			<transittime unit="JD" />
+		</planet>
+	</star>
+</system>

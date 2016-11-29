@@ -11,7 +11,14 @@ def push_all(directory="*"):
     platform_names = ['Windows', 'Linux', 'Darwin', 'darwin']
     try:
         if platform.system() in platform_names:
-            checkout_command = subprocess.Popen("git checkout master",
+            branch_command = subprocess.Popen("git branch", shell=True,
+                                              stdout=subprocess.PIPE,
+                                              stderr=subprocess.PIPE)
+            branch_output, branch_error = branch_command.communicate()
+            branch_output_str = branch_output.decode()
+            branch_name = branch_output_str.split('\n')[0][1:]
+
+            checkout_command = subprocess.Popen("git checkout " + branch_name,
                                                 shell=True,
                                                 stdout=subprocess.PIPE,
                                                 stderr=subprocess.PIPE)
@@ -47,14 +54,14 @@ def push_all(directory="*"):
                                               shell=True,
                                               stdout=subprocess.PIPE)
             commit_command.communicate()
-            push_command = subprocess.Popen("git push origin master",
+            push_command = subprocess.Popen("git push origin " + branch_name,
                                             shell=True,
                                             stdout=subprocess.PIPE,
                                             stderr=subprocess.PIPE)
             push_output, push_error = push_command.communicate()
             push_error_message = push_error.decode()
             if(push_error_message != "" and "error" in push_error_message):
-                print("Oops! A conflict occurred when pushing to master.")
+                print("Oops! A conflict occurred when pushing to remote.")
                 print("Please check the repositories for further details.")
                 raise
             print("Push was successful.")

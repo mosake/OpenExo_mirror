@@ -10,7 +10,7 @@ import repo as repoTools
 import glob
 import os
 import shutil
-import ntpath
+import ntpath, datetime
 
 switch = True
 while (switch):
@@ -87,8 +87,30 @@ while (switch):
         elif (command[5:8].strip() == "-l"):
             print(repoTools.getLocalRepo())
         else:
-            print ("Usage Error: "+command+". Please enter 'help' to read 'repo' command")
+            print ("Usage Error: "+command+". Please enter 'help [command]' to read 'repo' command")
 
+    elif (command[0:4] == "date"):
+        args = command.split(" ",2)
+        if (len(command) > 4 and command [5:7]== "-c"):
+            #get the rest of command and try to parse as a date
+            if (len(args) < 3):
+                print ("Date argument not provided. Please enter 'help [command]' to read 'date' command")
+            else:
+                dateArg = args[2].strip()
+                try:
+                    #try parsing as yyyy-mm-dd
+                    dateString = str(datetime.datetime.strptime(dateArg, "%Y-%m-%d").date())
+                    fname = "last_commit_date.txt"
+                    with open(fname, 'w') as f:
+                        f.write(dateString)
+                    print ("Last commit date has been changed to: " + dateString)
+                except:
+                    print("Could not parse "+ dateArg + " as date. Please try again with date format YYYY-MM-DD")
+        else:
+            fname = "last_commit_date.txt"
+            with open(fname) as f:
+                print (f.readlines()[0].strip()) 
+                
     elif (command[0:6] == "commit"):
         localRepoPath = repoTools.getLocalRepo()
         if (localRepoPath == ""): #file is not right, print message and pass if case

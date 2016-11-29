@@ -1,11 +1,13 @@
 <system>
 	<name>HD 154672</name>
 	<name>HD 154672</name>
+	<name>HD 154672</name>
 	<rightascension>17 10 05</rightascension>
 	<declination>-56 26 57</declination>
 	<distance errorminus="3.52" errorplus="3.52">64.77</distance>
 	<star>
 		<mass errorminus="0.05" errorplus="0.05">1.08</mass>
+		<name>HD 154672</name>
 		<name>HD 154672</name>
 		<radius errorminus="0.05" errorplus="0.05">1.44</radius>
 		<magV>8.210</magV>
@@ -16,6 +18,7 @@
 		<metallicity errorminus="0.100" errorplus="0.100">0.110</metallicity>
 		<spectraltype>G3IV</spectraltype>
 		<planet>
+			<name>HD 154672 b</name>
 			<name>HD 154672 b</name>
 			<periastron errorminus="0.5700" errorplus="0.5700">265.2800</periastron>
 			<name>HD 154672 b</name>

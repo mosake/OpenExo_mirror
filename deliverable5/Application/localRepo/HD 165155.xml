@@ -1,9 +1,11 @@
 <system>
 	<name>HD 165155</name>
+	<name>HD 165155</name>
 	<rightascension>18 05 57</rightascension>
 	<declination>-29 55 02</declination>
 	<distance errorminus="7.26" errorplus="7.26">64.98</distance>
 	<star>
+		<name>HD 165155</name>
 		<name>HD 165155</name>
 		<radius errorminus="0.11" errorplus="0.11">0.95</radius>
 		<magV>9.360</magV>
@@ -11,6 +13,7 @@
 		<temperature errorminus="100.00" errorplus="100.00">5426.00</temperature>
 		<metallicity errorminus="0.100" errorplus="0.100">0.090</metallicity>
 		<planet>
+			<name>HD 165155 b</name>
 			<name>HD 165155 b</name>
 			<semimajoraxis errorminus="0.040000" errorplus="0.040000">1.130000</semimajoraxis>
 			<eccentricity errorminus="0.030000" errorplus="0.030000">0.200000</eccentricity>

@@ -1,11 +1,13 @@
 <system>
 	<name>HD 48265</name>
 	<name>HD 48265</name>
+	<name>HD 48265</name>
 	<rightascension>06 40 02</rightascension>
 	<declination>-48 32 31</declination>
 	<distance errorminus="4.23" errorplus="4.23">85.40</distance>
 	<star>
 		<mass errorminus="0.05" errorplus="0.05">1.28</mass>
+		<name>HD 48265</name>
 		<radius errorminus="0.05" errorplus="0.05">2.05</radius>
 		<name>HD 48265</name>
 		<magV>8.050</magV>
@@ -16,6 +18,7 @@
 		<metallicity errorminus="0.100" errorplus="0.100">0.400</metallicity>
 		<spectraltype>G5V</spectraltype>
 		<planet>
+			<name>HD 48265 b</name>
 			<name>HD 48265 b</name>
 			<periastron errorminus="137.5100" errorplus="137.5100">343.7800</periastron>
 			<name>HD 48265 b</name>

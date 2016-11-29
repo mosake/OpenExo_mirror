@@ -1,11 +1,13 @@
 <system>
 	<name>HD 152079</name>
 	<name>HD 152079</name>
+	<name>HD 152079</name>
 	<rightascension>16 53 30</rightascension>
 	<declination>-46 19 59</declination>
 	<distance errorminus="10.56" errorplus="10.56">83.33</distance>
 	<star>
 		<mass errorminus="0.05" errorplus="0.05">1.10</mass>
+		<name>HD 152079</name>
 		<radius errorminus="0.13" errorplus="0.13">1.15</radius>
 		<name>HD 152079</name>
 		<magV>9.180</magV>
@@ -16,6 +18,7 @@
 		<metallicity errorminus="0.100" errorplus="0.100">0.160</metallicity>
 		<spectraltype>G6V</spectraltype>
 		<planet>
+			<name>HD 152079 b</name>
 			<name>HD 152079 b</name>
 			<periastron errorminus="3.4400" errorplus="3.4400">324.8700</periastron>
 			<name>HD 152079 b</name>

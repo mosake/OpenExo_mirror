@@ -1,15 +1,18 @@
 <system>
 	<name>HD 133131 A</name>
+	<name>HD 133131 A</name>
 	<rightascension>15 03 35</rightascension>
 	<declination>-27 50 33</declination>
 	<distance>47.00</distance>
 	<star>
+		<name>HD 133131 A</name>
 		<name>HD 133131 A</name>
 		<magV>8.400</magV>
 		<mass>0.95</mass>
 		<temperature errorminus="19.00" errorplus="19.00">5799.00</temperature>
 		<metallicity errorminus="0.016" errorplus="0.016">-0.306</metallicity>
 		<planet>
+			<name>HD 133131 A c</name>
 			<name>HD 133131 A c</name>
 			<semimajoraxis errorminus="0.920000" errorplus="0.920000">4.490000</semimajoraxis>
 			<eccentricity errorminus="0.220000" errorplus="0.220000">0.490000</eccentricity>
@@ -22,6 +25,7 @@
 			<transittime unit="JD" />
 		</planet>
 		<planet>
+			<name>HD 133131 A b</name>
 			<name>HD 133131 A b</name>
 			<semimajoraxis errorminus="0.005000" errorplus="0.005000">1.440000</semimajoraxis>
 			<eccentricity errorminus="0.030000" errorplus="0.030000">0.330000</eccentricity>

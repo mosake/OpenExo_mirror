@@ -1,8 +1,11 @@
 <system>
 	<name>38 Vir</name>
+	<name>38 Vir</name>
 	<rightascension>12 53 11</rightascension>
 	<declination>-3 33 11</declination>
 	<star>
+		<name>38 Vir</name>
+		<name>HD 111998</name>
 		<name>38 Vir</name>
 		<radius errorminus="0.07" errorplus="0.07">1.45</radius>
 		<magV>6.11</magV>
@@ -11,6 +14,8 @@
 		<metallicity>0.07</metallicity>
 		<name>HD 111998</name>
 		<planet>
+			<name>HD 111998 b</name>
+			<name>38 Vir b</name>
 			<name>HD 111998 b</name>
 			<name>38 Vir b</name>
 			<semimajoraxis errorminus="0.07" errorplus="0.07">1.82</semimajoraxis>

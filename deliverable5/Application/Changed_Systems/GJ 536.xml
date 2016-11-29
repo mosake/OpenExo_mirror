@@ -1,9 +1,11 @@
 <system>
 	<name>GJ 536</name>
+	<name>GJ 536</name>
 	<rightascension>14 01 03</rightascension>
 	<declination>-02 39 18</declination>
 	<distance>10.03</distance>
 	<star>
+		<name>GJ 536</name>
 		<name>GJ 536</name>
 		<radius errorminus="0.05" errorplus="0.05">0.50</radius>
 		<magV errorminus="0.009">9.720</magV>
@@ -11,6 +13,7 @@
 		<temperature errorminus="68.00" errorplus="68.00">3685.00</temperature>
 		<metallicity errorminus="0.090" errorplus="0.090">-0.080</metallicity>
 		<planet>
+			<name>GJ 536 b</name>
 			<name>GJ 536 b</name>
 			<semimajoraxis errorminus="0.000013" errorplus="0.000011">0.066610</semimajoraxis>
 			<eccentricity errorminus="0.060000" errorplus="0.090000">0.080000</eccentricity>

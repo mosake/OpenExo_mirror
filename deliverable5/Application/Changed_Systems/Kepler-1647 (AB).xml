@@ -1,14 +1,17 @@
 <system>
 	<name>Kepler-1647 (AB)</name>
+	<name>Kepler-1647 (AB)</name>
 	<rightascension>19 52 36</rightascension>
 	<declination>+40 39 22</declination>
 	<star>
+		<name>Kepler-1647 (AB)</name>
 		<name>Kepler-1647 (AB)</name>
 		<radius errorminus="0.006" errorplus="0.006">1.79</radius>
 		<magV>13.78</magV>
 		<mass errorminus="0.65" errorplus="0.65">1.52</mass>
 		<temperature errorminus="100.0" errorplus="100.0">6210.0</temperature>
 		<planet>
+			<name>Kepler-1647 (AB) b</name>
 			<name>Kepler-1647 (AB) b</name>
 			<semimajoraxis errorminus="0.007" errorplus="0.007">2.7205</semimajoraxis>
 			<eccentricity errorminus="0.0689" errorplus="0.0689">0.0581</eccentricity>

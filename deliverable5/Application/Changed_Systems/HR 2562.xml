@@ -1,14 +1,17 @@
 <system>
 	<name>HR 2562</name>
+	<name>HR 2562</name>
 	<rightascension>06 50 01</rightascension>
 	<declination>-60 14 57</declination>
 	<distance errorminus="0.48" errorplus="0.48">33.63</distance>
 	<star>
 		<name>HR 2562</name>
+		<name>HR 2562</name>
 		<magV>6.110</magV>
 		<mass>1.30</mass>
 		<metallicity errorminus="0.060" errorplus="0.070">0.020</metallicity>
 		<planet>
+			<name>HR 2562 b</name>
 			<name>HR 2562 b</name>
 			<semimajoraxis errorminus="0.300000" errorplus="0.300000">20.300000</semimajoraxis>
 			<mass errorminus="15.00000" errorplus="15.00000">30.00000</mass>

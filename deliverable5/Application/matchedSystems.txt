@@ -1,0 +1,91 @@
+Kepler-21.xml,Kepler-21.xml
+2M 2236+4751.xml,2M 2236+4751.xml
+38 Vir.xml,38 Vir.xml
+EPIC 211822797.xml,EPIC 211822797.xml
+EPIC 211913977.xml,EPIC 211913977.xml
+EPIC 211916756.xml,EPIC 211916756.xml
+EPIC 211969807.xml,EPIC 211969807.xml
+EPIC 211970147.xml,EPIC 211970147.xml
+EPIC 211990866.xml,EPIC 211990866.xml
+EPIC 219388192.xml,EPIC 219388192.xml
+EPIC 220504338.xml,EPIC 220504338.xml
+EPIC 220674823.xml,EPIC 220674823.xml
+GJ 163.xml,GJ 163.xml
+GJ 667 C.xml,GJ 667 C.xml
+HD 175370.xml,HD 175370.xml
+HD 189733.xml,HD 189733.xml
+HD 222076.xml,HD 222076.xml
+HD 86950.xml,HD 86950.xml
+HIP 68468.xml,HIP 68468.xml
+K2-39.xml,K2-39.xml
+Kepler-1647 (AB).xml,Kepler-1647 (AB).xml
+Kepler-80.xml,Kepler-80.xml
+OGLE-2007-BLG-349(AB).xml,OGLE-2007-BLG-349(AB).xml
+PSR 0636.xml,PSR 0636.xml
+Qatar-3.xml,Qatar-3.xml
+Qatar-4.xml,Qatar-4.xml
+Qatar-5.xml,Qatar-5.xml
+V2051 Oph.xml,V2051 Oph.xml
+WASP-47.xml,WASP-47.xml
+2MASS J22362452+4751425.xml,2MASS J22362452+4751425.xml
+EPIC 211351816.xml,EPIC 211351816.xml
+EPIC 211391664.xml,EPIC 211391664.xml
+GJ 536.xml,GJ 536.xml
+GJ 676 A.xml,GJ 676 A.xml
+HAT-P-65.xml,HAT-P-65.xml
+HAT-P-66.xml,HAT-P-66.xml
+HATS-11.xml,HATS-11.xml
+HATS-12.xml,HATS-12.xml
+HATS-18.xml,HATS-18.xml
+HD 111998.xml,HD 111998.xml
+HD 128356.xml,HD 128356.xml
+HD 133131 A.xml,HD 133131 A.xml
+HD 133131 B.xml,HD 133131 B.xml
+HD 147873.xml,HD 147873.xml
+HD 165155.xml,HD 165155.xml
+HD 224538.xml,HD 224538.xml
+HD 3167.xml,HD 3167.xml
+HD 42618.xml,HD 42618.xml
+HD 68402.xml,HD 68402.xml
+HD 72892.xml,HD 72892.xml
+HD 9174.xml,HD 9174.xml
+HR 2562.xml,HR 2562.xml
+K2-77.xml,K2-77.xml
+K2-95.xml,K2-95.xml
+K2-99.xml,K2-99.xml
+Kepler-100.xml,Kepler-100.xml
+Kepler-102.xml,Kepler-102.xml
+Kepler-106.xml,Kepler-106.xml
+Kepler-109.xml,Kepler-109.xml
+Kepler-113.xml,Kepler-113.xml
+Kepler-25.xml,Kepler-25.xml
+Kepler-37.xml,Kepler-37.xml
+Kepler-407.xml,Kepler-407.xml
+Kepler-408.xml,Kepler-408.xml
+Kepler-409.xml,Kepler-409.xml
+Kepler-48.xml,Kepler-48.xml
+Kepler-68.xml,Kepler-68.xml
+OGLE 2007-BLG-349L A.xml,OGLE 2007-BLG-349L A.xml
+OGLE 2015-BLG-0051L.xml,OGLE 2015-BLG-0051L.xml
+OGLE-2012-BLG-0950L.xml,OGLE-2012-BLG-0950L.xml
+OGLE-2014-BLG-1760.xml,OGLE-2014-BLG-1760.xml
+rho CrB.xml,rho CrB.xml
+WASP-118.xml,WASP-118.xml
+WASP-12.xml,WASP-12.xml
+WASP-92.xml,WASP-92.xml
+WASP-93.xml,WASP-93.xml
+KELT-17.xml,KELT-17.xml
+HAT-P-11.xml,HAT-P-11.xml
+KELT-8.xml,KELT-8.xml
+HATS-17.xml,HATS-17.xml
+HD 143361.xml,HD 143361.xml
+HD 152079.xml,HD 152079.xml
+HD 154672.xml,HD 154672.xml
+HD 164922.xml,HD 164922.xml
+HD 48265.xml,HD 48265.xml
+HD 60532.xml,HD 60532.xml
+HD 88133.xml,HD 88133.xml
+HD 97658.xml,HD 97658.xml
+Kepler-56.xml,Kepler-56.xml
+Qatar-1.xml,Qatar-1.xml
+WASP-17.xml,WASP-17.xml

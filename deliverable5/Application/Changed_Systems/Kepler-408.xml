@@ -1,8 +1,10 @@
 <system>
 	<name>Kepler-408</name>
+	<name>Kepler-408</name>
 	<rightascension>18 59 09</rightascension>
 	<declination>+48 25 24</declination>
 	<star>
+		<name>Kepler-408</name>
 		<name>Kepler-408</name>
 		<radius errorminus="0.03" errorplus="0.03">1.23</radius>
 		<magV>8.769</magV>
@@ -10,6 +12,7 @@
 		<temperature errorminus="74.00" errorplus="74.00">6104.00</temperature>
 		<metallicity errorminus="0.100" errorplus="0.100">-0.200</metallicity>
 		<planet>
+			<name>Kepler-408 b</name>
 			<name>Kepler-408 b</name>
 			<period>2.46502000</period>
 			<radius errorminus="0.003" errorplus="0.003">0.073</radius>

@@ -9,14 +9,15 @@ If xml1 is none then just create new file as xml2
 
 
 '''
-def main(xml1, xml2):
-    ''' (str, str) -> None
+def main(xml1, xml2, dest = "."):
+    ''' (str, str, str) -> None
     Main function, Calls the other functions to perform
-    XML Comparison
+    XML Comparison. Dest is optional parameter to specify which
+    directory the modified XMLs will be saved into
     '''
     if not (xml1 == None): 
         fileName = ntpath.basename(xml1) #get filename from abs path
-        outputfilename = os.path.join(os.getcwd(),"Changed_Systems", fileName)
+        outputfilename = os.path.join(dest, fileName)
         system1 = ET.parse(xml1)
         resultSys = copy.deepcopy(system1)
         system2 = ET.parse(xml2)
@@ -29,7 +30,7 @@ def main(xml1, xml2):
         system2 = ET.parse(xml2)
         fileName = ntpath.basename(xml2) #get filename from abs path
         fileName = fileName.split("_")[1] #remove source from file name e.g. NASA_KOI-1.xml
-        outputfilename = os.path.join(os.getcwd(),"Changed_Systems", fileName)
+        outputfilename = os.path.join(dest, fileName)
         system2.write(outputfilename)
     return outputfilename
 

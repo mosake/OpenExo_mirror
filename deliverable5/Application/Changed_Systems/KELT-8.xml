@@ -1,29 +1,51 @@
 <system>
 	<name>KELT-8</name>
+	<name>KELT-8</name>
+	<name>KELT-8</name>
 	<rightascension>18 53 13</rightascension>
 	<declination>+24 7 39</declination>
 	<distance errorminus="9.0" errorplus="9.0">236.0</distance>
 	<star>
 		<name>KELT-8</name>
-		<radius errorminus="0.14" errorplus="0.14">1.67</radius>
+		<name>KELT-8</name>
+		<name>KELT-8</name>
+		<name>HD 343246</name>
+		<name>2MASS J18531332+2407385</name>
+		<name>TYC 2109-49-1</name>
+		<name>WDS 18533+2407</name>
+		<magB errorminus="0.065" errorplus="0.065">11.545</magB>
 		<magV>10.83</magV>
+		<magJ errorminus="0.026" errorplus="0.026">9.586</magJ>
+		<magH errorminus="0.032" errorplus="0.032">9.269</magH>
+		<magK errorminus="0.021" errorplus="0.021">9.177</magK>
 		<mass errorminus="0.0669" errorplus="0.0678">0.874</mass>
+		<radius errorminus="0.12" errorplus="0.14">1.67</radius>
 		<temperature errorminus="55.0" errorplus="55.0">5754.0</temperature>
 		<metallicity errorminus="0.04" errorplus="0.04">0.27</metallicity>
+		<spectraltype>G2V</spectraltype>
 		<planet>
 			<name>KELT-8 b</name>
-			<semimajoraxis errorminus="0.00084" errorplus="0.00096">0.04571</semimajoraxis>
-			<eccentricity errorminus="0.025" errorplus="0.05">0.035</eccentricity>
+			<name>KELT-8 b</name>
 			<periastron errorminus="97.0" errorplus="87.0">85.0</periastron>
-			<inclination errorminus="1.0" errorplus="0.8">82.65</inclination>
-			<period errorminus="0.00016" errorplus="0.00016">3.24406</period>
+			<name>KELT-8 b</name>
+			<name>HD 343246 b</name>
+			<name>2MASS J18531332+2407385 b</name>
+			<name>TYC 2109-49-1 b</name>
+			<name>WDS 18533+2407 b</name>
+			<list>Confirmed planets</list>
+			<radius errorminus="0.16" errorplus="0.18">1.86</radius>
 			<mass errorminus="0.0669" errorplus="0.0678">0.874</mass>
-			<radius errorminus="0.18" errorplus="0.18">1.86</radius>
+			<period errorminus="0.00016" errorplus="0.00016">3.24406</period>
+			<transittime errorminus="0.0007" errorplus="0.0007" unit="BJD">2456883.4803</transittime>
+			<semimajoraxis errorminus="0.00084" errorplus="0.000096">0.04571</semimajoraxis>
 			<temperature>1675.0</temperature>
+			<inclination errorminus="1" errorplus="0.81">82.65</inclination>
+			<eccentricity errorminus="0.025" errorplus="0.05">0.035</eccentricity>
+			<description>This highly inflated transiting hot Jupiter was discovered by the Kilodegree Extremely Little Telescope (KELT)-North survey. This planet is one of the most inflated of all known transiting exoplanets, making it one of the few members of a class of extremely low density, highly-irradiated gas giants.</description>
 			<discoverymethod>Primary Transit</discoverymethod>
-			<discoveryyear>2015</discoveryyear>
+			<istransiting>1</istransiting>
 			<lastupdate>2016-09-16</lastupdate>
-			<transittime errorminus="0.0007" errorplus="0.0007" unit="JD">2456883.4803</transittime>
+			<discoveryyear>2015</discoveryyear>
 		</planet>
 	</star>
 </system>

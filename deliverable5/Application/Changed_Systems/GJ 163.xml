@@ -1,13 +1,16 @@
 <system>
 	<name>GJ 163</name>
+	<name>GJ 163</name>
 	<rightascension>4 9 16</rightascension>
 	<declination>-53 22 24</declination>
 	<distance errorminus="0.4" errorplus="0.4">15.0</distance>
 	<star>
 		<name>GJ 163</name>
+		<name>GJ 163</name>
 		<magV>11.8</magV>
 		<mass errorminus="0.0028" errorplus="0.0028">0.02285</mass>
 		<planet>
+			<name>GJ 163 c</name>
 			<name>GJ 163 c</name>
 			<semimajoraxis errorminus="0.0001" errorplus="0.0001">0.1254</semimajoraxis>
 			<eccentricity errorminus="0.086" errorplus="0.086">0.094</eccentricity>

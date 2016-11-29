@@ -1,9 +1,11 @@
 <system>
 	<name>Kepler-37</name>
+	<name>Kepler-37</name>
 	<rightascension>18 56 14</rightascension>
 	<declination>+44 31 05</declination>
 	<distance>66.00</distance>
 	<star>
+		<name>Kepler-37</name>
 		<name>Kepler-37</name>
 		<radius errorminus="0.03" errorplus="0.03">0.77</radius>
 		<magV>9.705</magV>
@@ -11,6 +13,7 @@
 		<temperature errorminus="75.00" errorplus="75.00">5417.00</temperature>
 		<metallicity errorminus="0.070" errorplus="0.070">-0.320</metallicity>
 		<planet>
+			<name>Kepler-37 d</name>
 			<name>Kepler-37 d</name>
 			<period>39.79220000</period>
 			<mass>0.03839</mass>
@@ -22,6 +25,7 @@
 		</planet>
 		<planet>
 			<name>Kepler-37 b</name>
+			<name>Kepler-37 b</name>
 			<period>13.36750000</period>
 			<mass>0.03146</mass>
 			<radius errorminus="0.002" errorplus="0.002">0.029</radius>
@@ -31,6 +35,7 @@
 			<transittime unit="BJD">2455017.041710</transittime>
 		</planet>
 		<planet>
+			<name>Kepler-37 c</name>
 			<name>Kepler-37 c</name>
 			<period>21.30200000</period>
 			<mass>0.03776</mass>

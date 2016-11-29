@@ -1,8 +1,10 @@
 <system>
 	<name>Kepler-100</name>
+	<name>Kepler-100</name>
 	<rightascension>19 25 33</rightascension>
 	<declination>+41 59 25</declination>
 	<star>
+		<name>Kepler-100</name>
 		<name>Kepler-100</name>
 		<radius errorminus="0.04" errorplus="0.04">1.49</radius>
 		<magV>11.197</magV>
@@ -10,6 +12,7 @@
 		<temperature errorminus="75.00" errorplus="75.00">5825.00</temperature>
 		<metallicity errorminus="0.100" errorplus="0.100">0.020</metallicity>
 		<planet>
+			<name>Kepler-100 c</name>
 			<name>Kepler-100 c</name>
 			<period>12.81590000</period>
 			<radius errorminus="0.004" errorplus="0.004">0.196</radius>
@@ -19,6 +22,7 @@
 			<transittime unit="BJD">2454955.947130</transittime>
 		</planet>
 		<planet>
+			<name>Kepler-100 d</name>
 			<name>Kepler-100 d</name>
 			<period>35.33310000</period>
 			<radius errorminus="0.004" errorplus="0.004">0.144</radius>

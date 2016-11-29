@@ -1,12 +1,15 @@
 <system>
 	<name>EPIC 211970147</name>
+	<name>EPIC 211970147</name>
 	<rightascension>8 40 13</rightascension>
 	<declination>+19 46 43</declination>
 	<star>
 		<name>EPIC 211970147</name>
+		<name>EPIC 211970147</name>
 		<radius errorminus="0.03" errorplus="0.03">0.71</radius>
 		<temperature errorminus="50.0" errorplus="50.0">4695.0</temperature>
 		<planet>
+			<name>EPIC 211970147 b</name>
 			<name>EPIC 211970147 b</name>
 			<eccentricity errorminus="0.07" errorplus="0.16">0.1</eccentricity>
 			<inclination errorminus="0.6" errorplus="0.6">89.0</inclination>

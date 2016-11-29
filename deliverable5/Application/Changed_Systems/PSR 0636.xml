@@ -1,11 +1,14 @@
 <system>
 	<name>PSR 0636</name>
+	<name>PSR 0636</name>
 	<rightascension>6 35 59</rightascension>
 	<declination>+51 29 0</declination>
 	<star>
 		<name>PSR 0636</name>
+		<name>PSR 0636</name>
 		<mass>8.0</mass>
 		<planet>
+			<name>PSR 0636 b</name>
 			<name>PSR 0636 b</name>
 			<period>0.067</period>
 			<mass>8.0</mass>

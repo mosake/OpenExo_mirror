@@ -1,14 +1,17 @@
 <system>
 	<name>Qatar-4</name>
+	<name>Qatar-4</name>
 	<rightascension>0 19 26</rightascension>
 	<declination>+44 1 39</declination>
 	<star>
+		<name>Qatar-4</name>
 		<name>Qatar-4</name>
 		<radius errorminus="0.037" errorplus="0.037">1.115</radius>
 		<mass errorminus="0.47" errorplus="0.47">5.85</mass>
 		<temperature errorminus="50.0" errorplus="50.0">5219.0</temperature>
 		<metallicity errorminus="0.081" errorplus="0.081">0.166</metallicity>
 		<planet>
+			<name>Qatar-4 b</name>
 			<name>Qatar-4 b</name>
 			<semimajoraxis errorminus="0.00048" errorplus="0.00048">0.02861</semimajoraxis>
 			<inclination errorminus="1.2" errorplus="1.2">88.82</inclination>

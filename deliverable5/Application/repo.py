@@ -1,8 +1,9 @@
 #!/usr/bin/python
 import os
+import fileinput
 
 def getLocalRepo():
-    '''(None->str
+    '''None->str
     Returns the path in localRepoPath.txt, which should contain the path of the local repository
     If it does not exist, it will return an empty string
     '''
@@ -33,3 +34,27 @@ def changeLocalRepo(pathName):
     finally:
         if (opened == 1):
             file1.close()
+
+def storeSystemMatch (systemName, matchingName, inFile):
+    '''(str, str, str, bool) -> None
+    inFile is name of a file containing csv of system names and name of the file
+    that is a match to the system that is inside the local repository. Function sets the
+    systemName to the matchingName.
+    '''
+    newSystem = True
+    # Does a list of files, and 
+    # redirects STDOUT to the file in question
+    for line in fileinput.input(inFile, inplace = 1): 
+        #find line beginning with systemName and replace it with [systemName],[repolocation]
+        if (line.find(systemName) >=0):
+            print (line.rstrip().replace(line.strip(), systemName + "," + matchingName))
+            #not a new system so set it to false
+            newSystem = False
+        else:
+            print (line.strip())
+    #if this is a new system that we have not encountered before, we need to add it to our
+    #file
+    if (newSystem):
+        #append to end of file
+        with open(inFile, 'a') as f:
+            f.write(systemName + "," + matchingName)

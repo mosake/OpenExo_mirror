@@ -1,9 +1,11 @@
 <system>
 	<name>HD 3167</name>
+	<name>HD 3167</name>
 	<rightascension>00 34 58</rightascension>
 	<declination>+04 22 53</declination>
 	<distance errorminus="2.20" errorplus="2.20">45.80</distance>
 	<star>
+		<name>HD 3167</name>
 		<name>HD 3167</name>
 		<radius errorminus="0.03" errorplus="0.03">0.83</radius>
 		<magV errorminus="0.020">8.940</magV>
@@ -11,6 +13,7 @@
 		<temperature errorminus="50.00" errorplus="50.00">5370.00</temperature>
 		<metallicity errorminus="0.080" errorplus="0.080">0.000</metallicity>
 		<planet>
+			<name>HD 3167 b</name>
 			<name>HD 3167 b</name>
 			<inclination errorminus="1.500" errorplus="1.100">88.400</inclination>
 			<period errorminus="0.00001200" errorplus="0.00001200">0.95962800</period>
@@ -22,6 +25,7 @@
 			<transittime errorminus=".000440" errorplus="0.000440" unit="BJD">2457394.374500</transittime>
 		</planet>
 		<planet>
+			<name>HD 3167 c</name>
 			<name>HD 3167 c</name>
 			<inclination errorminus="0.850" errorplus="0.510">89.270</inclination>
 			<period errorminus="0.00120000" errorplus="0.00120000">29.84540000</period>

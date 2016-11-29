@@ -1,9 +1,11 @@
 <system>
 	<name>rho CrB</name>
+	<name>rho CrB</name>
 	<rightascension>16 01 03</rightascension>
 	<declination>+33 18 13</declination>
 	<distance errorminus="0.02" errorplus="0.02">17.24</distance>
 	<star>
+		<name>rho CrB</name>
 		<name>rho CrB</name>
 		<radius errorminus="0.03" errorplus="0.03">1.36</radius>
 		<magV>5.410</magV>
@@ -11,6 +13,7 @@
 		<temperature errorminus="54.00" errorplus="54.00">5627.00</temperature>
 		<metallicity errorminus="0.050" errorplus="0.050">-0.310</metallicity>
 		<planet>
+			<name>rho CrB b</name>
 			<name>rho CrB b</name>
 			<semimajoraxis errorminus="0.002500" errorplus="0.002400">0.219600</semimajoraxis>
 			<eccentricity errorminus="0.003900" errorplus="0.004000">0.037300</eccentricity>
@@ -23,6 +26,7 @@
 			<lastupdate>2016-10-27</lastupdate>
 		</planet>
 		<planet>
+			<name>rho CrB c</name>
 			<name>rho CrB c</name>
 			<semimajoraxis errorminus="0.004700" errorplus="0.004600">0.412300</semimajoraxis>
 			<eccentricity errorminus="0.037000" errorplus="0.061000">0.052000</eccentricity>

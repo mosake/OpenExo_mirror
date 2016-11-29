@@ -1,14 +1,17 @@
 <system>
 	<name>GJ 676 A</name>
+	<name>GJ 676 A</name>
 	<rightascension>17 30 11</rightascension>
 	<declination>-51 38 13</declination>
 	<distance errorminus="0.10" errorplus="0.10">16.90</distance>
 	<star>
 		<name>GJ 676 A</name>
+		<name>GJ 676 A</name>
 		<magV errorminus="0.009">9.580</magV>
 		<mass errorminus="0.04" errorplus="0.04">0.71</mass>
 		<metallicity errorminus="0.100" errorplus="0.100">0.230</metallicity>
 		<planet>
+			<name>GJ 676 A e</name>
 			<name>GJ 676 A e</name>
 			<eccentricity errorminus="0.087000" errorplus="0.119000">0.125000</eccentricity>
 			<periastron errorminus="57.9000" errorplus="19.7000">331.7000</periastron>
@@ -21,6 +24,7 @@
 		</planet>
 		<planet>
 			<name>GJ 676 A c</name>
+			<name>GJ 676 A c</name>
 			<semimajoraxis errorminus="0.100000" errorplus="0.100000">6.600000</semimajoraxis>
 			<period errorminus="92.00000000" errorplus="95.00000000">7337.00000000</period>
 			<mass errorminus="0.10000" errorplus="0.10000">6.80000</mass>
@@ -30,6 +34,7 @@
 			<transittime unit="JD" />
 		</planet>
 		<planet>
+			<name>GJ 676 A d</name>
 			<name>GJ 676 A d</name>
 			<eccentricity errorminus="0.101000" errorplus="0.090000">0.262000</eccentricity>
 			<periastron errorminus="16.3000" errorplus="13.8000">-48.7000</periastron>
@@ -41,6 +46,7 @@
 			<transittime unit="JD" />
 		</planet>
 		<planet>
+			<name>GJ 676 A b</name>
 			<name>GJ 676 A b</name>
 			<semimajoraxis errorminus="0.001000" errorplus="0.002000">1.812000</semimajoraxis>
 			<eccentricity errorminus="0.002000" errorplus="0.002000">0.323000</eccentricity>

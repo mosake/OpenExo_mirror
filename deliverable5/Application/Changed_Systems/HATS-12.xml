@@ -1,9 +1,11 @@
 <system>
 	<name>HATS-12</name>
+	<name>HATS-12</name>
 	<rightascension>19 16 49</rightascension>
 	<declination>-19 21 21</declination>
 	<distance errorminus="94.00" errorplus="94.00">981.00</distance>
 	<star>
+		<name>HATS-12</name>
 		<name>HATS-12</name>
 		<radius errorminus="0.21" errorplus="0.21">2.21</radius>
 		<magV errorminus="0.021">12.756</magV>
@@ -11,6 +13,7 @@
 		<temperature errorminus="75.00" errorplus="75.00">6408.00</temperature>
 		<metallicity errorminus="0.040" errorplus="0.040">-0.100</metallicity>
 		<planet>
+			<name>HATS-12 b</name>
 			<name>HATS-12 b</name>
 			<semimajoraxis errorminus="0.000770" errorplus="0.000770">0.047950</semimajoraxis>
 			<eccentricity>0.085000</eccentricity>

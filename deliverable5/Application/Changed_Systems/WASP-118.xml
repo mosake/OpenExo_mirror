@@ -1,9 +1,11 @@
 <system>
 	<name>WASP-118</name>
+	<name>WASP-118</name>
 	<rightascension>01 18 12</rightascension>
 	<declination>+02 42 10</declination>
 	<distance errorminus="35.00" errorplus="35.00">250.00</distance>
 	<star>
+		<name>WASP-118</name>
 		<name>WASP-118</name>
 		<radius errorminus="0.03" errorplus="0.03">1.70</radius>
 		<magV>11.020</magV>
@@ -11,6 +13,7 @@
 		<temperature errorminus="125.00" errorplus="125.00">6410.00</temperature>
 		<metallicity errorminus="0.100" errorplus="0.100">0.160</metallicity>
 		<planet>
+			<name>WASP-118 b</name>
 			<name>WASP-118 b</name>
 			<semimajoraxis errorminus="0.000480" errorplus="0.000480">0.054530</semimajoraxis>
 			<eccentricity>0.000000</eccentricity>

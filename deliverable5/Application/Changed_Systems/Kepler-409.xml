@@ -1,8 +1,10 @@
 <system>
 	<name>Kepler-409</name>
+	<name>Kepler-409</name>
 	<rightascension>19 34 43</rightascension>
 	<declination>+46 51 10</declination>
 	<star>
+		<name>Kepler-409</name>
 		<name>Kepler-409</name>
 		<radius errorminus="0.02" errorplus="0.02">0.89</radius>
 		<magV>9.439</magV>
@@ -10,6 +12,7 @@
 		<temperature errorminus="75.00" errorplus="75.00">5460.00</temperature>
 		<metallicity errorminus="0.100" errorplus="0.100">0.080</metallicity>
 		<planet>
+			<name>Kepler-409 b</name>
 			<name>Kepler-409 b</name>
 			<period>68.95840000</period>
 			<radius errorminus="0.003" errorplus="0.003">0.106</radius>

@@ -1,9 +1,11 @@
 <system>
 	<name>WASP-93</name>
+	<name>WASP-93</name>
 	<rightascension>00 37 50</rightascension>
 	<declination>+51 17 20</declination>
 	<distance errorminus="60.00" errorplus="60.00">250.00</distance>
 	<star>
+		<name>WASP-93</name>
 		<name>WASP-93</name>
 		<radius errorminus="0.04" errorplus="0.04">1.52</radius>
 		<magV>10.970</magV>
@@ -11,6 +13,7 @@
 		<temperature errorminus="100.00" errorplus="100.00">6700.00</temperature>
 		<metallicity errorminus="0.170" errorplus="0.170">0.070</metallicity>
 		<planet>
+			<name>WASP-93 b</name>
 			<name>WASP-93 b</name>
 			<semimajoraxis errorminus="0.000350" errorplus="0.000350">0.042110</semimajoraxis>
 			<eccentricity>0.000000</eccentricity>

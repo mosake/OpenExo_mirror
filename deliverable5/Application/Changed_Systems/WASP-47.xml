@@ -1,9 +1,11 @@
 <system>
 	<name>WASP-47</name>
+	<name>WASP-47</name>
 	<rightascension>22 4 49</rightascension>
 	<declination>-12 1 8</declination>
 	<distance errorminus="30.0" errorplus="30.0">200.0</distance>
 	<star>
+		<name>WASP-47</name>
 		<name>WASP-47</name>
 		<radius errorminus="0.26" errorplus="0.26">1.16</radius>
 		<magV>11.9</magV>
@@ -11,6 +13,7 @@
 		<temperature errorminus="100.0" errorplus="100.0">5400.0</temperature>
 		<metallicity errorminus="0.07" errorplus="0.07">0.18</metallicity>
 		<planet>
+			<name>WASP-47 b</name>
 			<name>WASP-47 b</name>
 			<semimajoraxis errorminus="0.011" errorplus="0.011">0.052</semimajoraxis>
 			<eccentricity errorminus="0.002" errorplus="0.0042">0.0028</eccentricity>
@@ -27,6 +30,7 @@
 		</planet>
 		<planet>
 			<name>WASP-47 c</name>
+			<name>WASP-47 c</name>
 			<semimajoraxis errorminus="0.3" errorplus="0.3">1.41</semimajoraxis>
 			<eccentricity errorminus="0.12" errorplus="0.12">0.36</eccentricity>
 			<periastron errorminus="20.0" errorplus="20.0">136.0</periastron>
@@ -39,6 +43,7 @@
 			<lastupdate>2016-10-28</lastupdate>
 		</planet>
 		<planet>
+			<name>WASP-47 d</name>
 			<name>WASP-47 d</name>
 			<semimajoraxis errorminus="0.019" errorplus="0.019">0.088</semimajoraxis>
 			<eccentricity errorminus="0.004" errorplus="0.098">0.006</eccentricity>
@@ -53,6 +58,7 @@
 			<transittime errorminus="0.014" errorplus="0.014" unit="JD">2456988.375</transittime>
 		</planet>
 		<planet>
+			<name>WASP-47 e</name>
 			<name>WASP-47 e</name>
 			<semimajoraxis errorminus="0.0038" errorplus="0.0038">0.0173</semimajoraxis>
 			<eccentricity errorminus="0.02" errorplus="0.036">0.03</eccentricity>

@@ -1,8 +1,10 @@
 <system>
 	<name>WASP-12</name>
+	<name>WASP-12</name>
 	<rightascension>06 30 33</rightascension>
 	<declination>+29 40 20</declination>
 	<star>
+		<name>WASP-12</name>
 		<name>WASP-12</name>
 		<radius errorminus="0.05" errorplus="0.04">1.66</radius>
 		<magV errorminus="0.080">11.690</magV>
@@ -10,6 +12,7 @@
 		<temperature errorminus="130.00" errorplus="140.00">6360.00</temperature>
 		<metallicity errorminus="0.140" errorplus="0.170">0.330</metallicity>
 		<planet>
+			<name>WASP-12 b</name>
 			<name>WASP-12 b</name>
 			<semimajoraxis errorminus="0.000500" errorplus="0.000560">0.023400</semimajoraxis>
 			<eccentricity>0.000000</eccentricity>

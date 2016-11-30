@@ -3,18 +3,20 @@
 	<name>KOI-500</name>
 	<name>KIC 4852528</name>
 	<rightascension>19 44 27</rightascension>
-	<declination>+39 58 43</declination>
+	<declination>+39 58 44</declination>
 	<distance>418.17</distance>
 	<star>
 		<magJ errorminus="0.023" errorplus="0.023">12.954</magJ>
+		<metallicity>-0.56</metallicity>
+		<magV>15.0</magV>
 		<magH errorminus="0.022" errorplus="0.022">12.354</magH>
 		<magK errorminus="0.020" errorplus="0.020">12.253</magK>
 		<name>Kepler-80</name>
 		<name>KOI-500</name>
 		<name>KIC 4852528</name>
-		<temperature errorminus="4" errorplus="74">4613</temperature>
-		<radius errorminus=".022" errorplus="0.022">0.637</radius>
-		<mass errorminus="0.0160" errorplus="0.0160">0.7220</mass>
+		<temperature>4250.0</temperature>
+		<radius>0.738</radius>
+		<mass errorminus="0.0016" errorplus="0.0022">0.0212</mass>
 		<planet>
 			<name>Kepler-80 b</name>
 			<name>KOI-500 b</name>
@@ -49,18 +51,19 @@
 		</planet>
 		<planet>
 			<name>Kepler-80 d</name>
+			<mass errorminus="0.0016" errorplus="0.0022">0.0212</mass>
 			<name>KOI-500 d</name>
 			<name>KOI-500.03</name>
 			<name>KIC 4852528 d</name>
 			<name>KIC 4852528.03</name>
-			<radius errorminus="0.01823" errorplus="0.01823">0.15857</radius>
-			<period errorminus=".000010" errorplus="0.000010">3.072186</period>
+			<radius>0.125</radius>
+			<period>3.07</period>
 			<transittime errorminus="0.0016900" errorplus="0.0016900">2454967.0214900</transittime>
 			<list>Confirmed planets</list>
 			<description>Kepler-80 d has been discovered by the Kepler spacecraft and was originally classified as a planet candidate. A new statistical analysis led by a team at NASA Ames Research Center has validated the planet with more than 99 percent confidence. Although many parameters of Kepler-80 d are still unknown, the object is highly unlikely to be a false positive.</description>
-			<discoveryyear>2014</discoveryyear>
-			<lastupdate>14/02/26</lastupdate>
-			<discoverymethod>transit</discoverymethod>
+			<discoveryyear>2012</discoveryyear>
+			<lastupdate>2016-11-17</lastupdate>
+			<discoverymethod>Primary Transit</discoverymethod>
 			<istransiting>1</istransiting>
 		</planet>
 		<planet>

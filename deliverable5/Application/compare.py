@@ -84,16 +84,9 @@ def compare_element(xml1, xml2, result, isBinary):
                     isMismatch = True
                     indexOriginal = j
                     index = i
-                if(compareTo[i].tag == original[j].tag and compareTo[i].tag != 'name'):
+                if(compareTo[i].tag == original[j].tag):
                         isMissingTag = False
                 if(len(original[j].getchildren()) >= 1 and len(compareTo[i].getchildren()) >= 1):           
-                    #print(11111111)
-                    #print(j)
-                    #print(len(original))
-                    #print(len(result))
-                    #print(result[j + 1], original[j])
-                    #print(incr)
-                    #print(compareTo)
                     compare_element(original[j], compareTo[i], result[j + incr], False)
 
             if (isMismatch):

@@ -5,13 +5,16 @@ import fileinput
 def getLocalRepo():
     '''None->str
     Returns the path in localRepoPath.txt, which should contain the path of the local repository
-    If it does not exist, it will return an empty string
+    If it does not exist or file is empty, it will return an empty string
     '''
     fname = "localRepoPath.txt" #textfile containing path to local repo
     if (os.path.isfile(fname) == False):
         return ""
     with open(fname) as f:
         content = f.readlines() #read the file path
+    #if no content
+    if (len(content) == 0):
+        return ""
     return content[0].strip()
 
 def changeLocalRepo(pathName):

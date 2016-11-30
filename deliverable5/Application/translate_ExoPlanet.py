@@ -14,25 +14,30 @@ import datetime
 #####################
 #store data files in module path    
 #path = os.path.dirname(os.path.realpath(__file__)) 
-path="extracted" #restructured to use relative path from main folder
 #TODO: What if last commit file gets deleted?
 fname = "last_commit_date.txt" #textfile containing last commit date
 last_commit_date = str(datetime.date.today())
-if (os.path.isfile(fname) == False): #create file with current date if dne
-    file1 = open(fname, "w")
-    file1.write(last_commit_date)
-    file1.close()
-with open(fname) as f:
-    content = f.readlines()
-last_commit_date = content[0].strip()
-url_exoplanetarchive = "http://exoplanet.eu/catalog/csv/?status=&f=updated+%3E%3D+%22"+last_commit_date+"%22"
-#url_exoplanetarchive = "http://exoplanet.eu/catalog/csv/?status=&f=updated+%3E%3D+%222016-01-01%22&select=*"
 
 def get():
     try:
         #xmltools.ensure_empty_dir(path+"/"+"ExoPlanet_data")
         xmltools.ensure_empty_dir(os.path.join(os.path.curdir, 'extracted','ExoPlanet_data'))
         #urllib.request.urlretrieve (url_exoplanetarchive, path+"/"+"ExoPlanet_data/Exoplanet_archive_updated.csv")
+        fname = "last_commit_date.txt" #textfile containing last commit date
+        last_commit_date = str(datetime.date.today())
+        if (os.path.isfile(fname) == False): #create file with current date if dne
+            file1 = open(fname, "w")
+            file1.write(last_commit_date)
+            file1.close()
+        with open(fname) as f:
+            content = f.readlines()
+        if (len(content) == 0):
+            print("Last updated date has not been set correctly. Aborting extract")
+            return -1
+        else:
+            last_commit_date = content[0].strip()
+            url_exoplanetarchive = "http://exoplanet.eu/catalog/csv/?status=&f=updated+%3E%3D+%22"+last_commit_date+"%22"   
+            #url_exoplanetarchive = "http://exoplanet.eu/catalog/csv/?status=&f=updated+%3E%3D+%222016-01-01%22&select=*"        
         urllib.request.urlretrieve (url_exoplanetarchive, os.path.join(os.getcwd(), 'extracted', 'ExoPlanet_data', 'Exoplanet_archive_updated.csv'))
     except:
         pass
@@ -137,9 +142,3 @@ def parse():
         xmltools.removeemptytags(system)
         xmltools.indent(system)
         ET.ElementTree(system).write(outputfilename) 
-
-
-
-if __name__=="__main__":
-    get()
-    parse()

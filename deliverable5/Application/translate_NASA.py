@@ -17,20 +17,27 @@ import datetime
 #path="updated" #restructured to use relative path from main folder
 fname = "last_commit_date.txt" #textfile containing last commit date
 last_commit_date = str(datetime.date.today())
-if (os.path.isfile(fname) == False): #create file with current date if dne
-    file1 = open(fname, "w")
-    file1.write(last_commit_date)
-    file1.close()
-with open(fname) as f:
-    content = f.readlines()
-last_commit_date = content[0].strip()
-#url_exoplanetarchive = "http://exoplanetarchive.ipac.caltech.edu/cgi-bin/nstedAPI/nph-nstedAPI?table=exoplanets&format=csv&select=*"
-url_exoplanetarchive = "http://exoplanetarchive.ipac.caltech.edu/cgi-bin/nstedAPI/nph-nstedAPI?table=exoplanets&where=rowupdate>=to_date(%27"+last_commit_date+"%27,%27yyyy-mm-dd%27)&order=rowupdate&format=csv&select=*"
+url_exoplanetarchive = ""
 #print (url_exoplanetarchive)
 
 def get():
     #xmltools.ensure_empty_dir(path+"/"+"NASA_data")
     xmltools.ensure_empty_dir(os.path.join(os.getcwd(), 'extracted','NASA_data'))
+    fname = "last_commit_date.txt" #textfile containing last commit date
+    last_commit_date = str(datetime.date.today())
+    if (os.path.isfile(fname) == False): #create file with current date if dne
+        file1 = open(fname, "w")
+        file1.write(last_commit_date)
+        file1.close()
+    with open(fname) as f:
+        content = f.readlines()
+    if (len(content) == 0):
+        print("Last updated date has not been set correctly. Aborting extract")
+        return -1
+    else:
+        last_commit_date = content[0].strip()
+        url_exoplanetarchive = "http://exoplanetarchive.ipac.caltech.edu/cgi-bin/nstedAPI/nph-nstedAPI?table=exoplanets&where=rowupdate>=to_date(%27"+last_commit_date+"%27,%27yyyy-mm-dd%27)&order=rowupdate&format=csv&select=*"  
+        #url_exoplanetarchive = "http://exoplanet.eu/catalog/csv/?status=&f=updated+%3E%3D+%222016-01-01%22&select=*"    
     #urllib.request.urlretrieve (url_exoplanetarchive, path+"/"+"NASA_data/NASA_archive_updated.csv")
     urllib.request.urlretrieve (url_exoplanetarchive, os.path.join(os.getcwd(), 'extracted', 'NASA_data', 'NASA_archive_updated.csv'))
 
@@ -113,8 +120,3 @@ def parse():
         xmltools.indent(system)
         ET.ElementTree(system).write(outputfilename) 
 
-
-
-if __name__=="__main__":
-    get()
-    parse()

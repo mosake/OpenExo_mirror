@@ -12,6 +12,30 @@ import os
 import shutil
 import ntpath, datetime
 
+def commitCommand():
+    '''(None) -> None
+    Checks if localRepoPath is a valid path. If it is, syncs the local repository,
+    copies all the extracted XMLs from Changed_Systems into the local repository,
+    and pushes changes to the remote. Changes the last update date to current date
+    '''
+    localRepoPath = repoTools.getLocalRepo()
+    if (os.path.isdir(localRepoPath) == False): #file is not right, print message and pass if case
+        print("Problem in path. Please set the path of local repository using 'repo' command")   
+    else:
+        #go through changed_systems and copy files to local repo
+        source_dir = os.path.join(os.getcwd(), "Changed_Systems")
+        for filename in glob.glob(os.path.join(source_dir, '*.*')):
+            try:
+                shutil.copy(filename, localRepoPath)
+            except:
+                print ("Couldn't copy " + filename + " to " + localRepoPath +". Please close all files and try again")
+        #push.push_all(localRepoPath) 
+        #change updated date
+        today = str(datetime.date.today())
+        fname = "last_commit_date.txt"
+        with open(fname, 'w') as f:
+            f.write(today)        
+
 switch = True
 while (switch):
 
@@ -31,10 +55,10 @@ while (switch):
         try:
             if (command[8:].strip() == "-l"):
                 list_updated.main()
-            translate_Exoplanet.get()
-            translate_Exoplanet.parse()
-            translate_NASA.get()
-            translate_NASA.parse()
+            if (translate_Exoplanet.get() != -1):
+                translate_Exoplanet.parse()
+            if (translate_NASA.get() != -1):
+                translate_NASA.parse()
         except:
             print("Extraction from external sources failed. Try closing all opened CSV files and try again")
         localRepoPath = repoTools.getLocalRepo()
@@ -75,6 +99,9 @@ while (switch):
                 success = False
         if (success):
             print ("Files extracted. Please review XML files in "+os.path.join(os.getcwd(),"Changed_Systems"))
+        #if -a tag is entered, we commit automatically
+        if (command[8:].find(" -a") > -1):
+            commitCommand()
 
     elif (command[0:4] == "repo"):
         if (command[5:8] == "-p "):
@@ -85,7 +112,7 @@ while (switch):
                 repoPath = command[8:]
                 repoTools.changeLocalRepo(repoPath)
         elif (command[5:8].strip() == "-l"):
-            print(repoTools.getLocalRepo())
+            print("Path of local repository is set as: " + repoTools.getLocalRepo())
         else:
             print ("Usage Error: "+command+". Please enter 'help [command]' to read 'repo' command")
 
@@ -112,18 +139,7 @@ while (switch):
                 print (f.readlines()[0].strip()) 
                 
     elif (command[0:6] == "commit"):
-        localRepoPath = repoTools.getLocalRepo()
-        if (localRepoPath == ""): #file is not right, print message and pass if case
-            print("Problem in path. Please set the path of local repository using 'repo' command")
-            pass   
-        #go through changed_systems and copy files to local repo
-        source_dir = os.path.join(os.getcwd(), "Changed_Systems")
-        for filename in glob.glob(os.path.join(source_dir, '*.*')):
-            try:
-                shutil.copy(filename, localRepoPath)
-            except:
-                print ("Couldn't copy " + filename + " to " + localRepoPath +". Please close all files and try again")
-        push.push_all(localRepoPath)
+        commitCommand()
 
     elif (command == "exit"):
         switch = False

@@ -1,11 +1,9 @@
 <system>
 	<name>HD 128356</name>
-	<name>HD 128356</name>
 	<rightascension>14 37 05</rightascension>
 	<declination>-25 48 09</declination>
 	<distance errorminus="0.52" errorplus="0.52">26.03</distance>
 	<star>
-		<name>HD 128356</name>
 		<name>HD 128356</name>
 		<radius errorminus="0.02" errorplus="0.02">0.85</radius>
 		<magV>8.290</magV>
@@ -13,7 +11,6 @@
 		<temperature errorminus="100.00" errorplus="100.00">4875.00</temperature>
 		<metallicity errorminus="0.100" errorplus="0.100">0.170</metallicity>
 		<planet>
-			<name>HD 128356 b</name>
 			<name>HD 128356 b</name>
 			<semimajoraxis errorminus="0.030000" errorplus="0.030000">0.870000</semimajoraxis>
 			<eccentricity errorminus="0.080000" errorplus="0.080000">0.570000</eccentricity>

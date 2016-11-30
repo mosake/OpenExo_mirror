@@ -58,7 +58,7 @@ def matchXml(xml, repo, checkSystem = None):
                 if (compare(get_names(repo_fname, tag), get_names(xml_fname, tag))):
                     return file
         except:
-            print ("Could not parse "+repof)
+            print ("Could not parse "+file)
     return None
 
 '''

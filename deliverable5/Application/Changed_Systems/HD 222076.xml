@@ -1,11 +1,9 @@
 <system>
 	<name>HD 222076</name>
-	<name>HD 222076</name>
 	<rightascension>23 38 8</rightascension>
 	<declination>-70 54 12</declination>
 	<distance errorminus="4.3" errorplus="4.3">83.5</distance>
 	<star>
-		<name>HD 222076</name>
 		<name>HD 222076</name>
 		<radius errorminus="0.6" errorplus="0.6">4.14</radius>
 		<magV>7.48</magV>
@@ -13,7 +11,6 @@
 		<temperature errorminus="100.0" errorplus="100.0">4806.0</temperature>
 		<metallicity errorminus="0.1" errorplus="0.1">0.05</metallicity>
 		<planet>
-			<name>HD 222076</name>
 			<name>HD 222076</name>
 			<semimajoraxis errorminus="0.03" errorplus="0.03">1.83</semimajoraxis>
 			<eccentricity errorminus="0.05" errorplus="0.05">0.08</eccentricity>

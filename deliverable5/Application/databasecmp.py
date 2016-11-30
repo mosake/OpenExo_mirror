@@ -27,15 +27,17 @@ def matchXml(xml, repo, checkSystem = None):
     #if checkSystem is given, see if the systems are still a match
     if (checkSystem != None):
         try:
-            newf = open(xml, 'r', encoding='utf-8')
-            #name of file should be in form [path of repo]/[system name].xml
-            repof = open(os.path.join(repo,checkSystem), 'r', encoding='utf-8')
-            repo_fname = ET.parse(repof)
-            xml_fname = ET.parse(newf)
-            tags = ["star", "system", "planet", "bplanet"]
-            for tag in tags:
-                if (compare(get_names(repo_fname, tag), get_names(xml_fname, tag))):
-                    return os.path.join(repo,checkSystem)            
+            if (os.path.isfile(os.path.join(repo,checkSystem))):
+                #only do if local repo has this system as a file
+                newf = open(xml, 'r', encoding='utf-8')
+                #name of file should be in form [path of repo]/[system name].xml
+                repof = open(os.path.join(repo,checkSystem), 'r', encoding='utf-8')
+                repo_fname = ET.parse(repof)
+                xml_fname = ET.parse(newf)
+                tags = ["star", "system", "planet", "bplanet"]
+                for tag in tags:
+                    if (compare(get_names(repo_fname, tag), get_names(xml_fname, tag))):
+                        return os.path.join(repo,checkSystem)            
         except:
             print ("Could not open "+os.path.join(repo,checkSystem))        
     #checkSystem was not a match or not given, so go through whole repository
@@ -57,7 +59,6 @@ def matchXml(xml, repo, checkSystem = None):
                     return file
         except:
             print ("Could not parse "+repof)
-    print("not found")
     return None
 
 '''

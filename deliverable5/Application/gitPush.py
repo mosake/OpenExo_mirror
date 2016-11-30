@@ -7,25 +7,30 @@ push_all() pushes changes from local repository to master using command line
 '''
 
 
-def push_all(directory="*"):
+def push_all(repo_path=os.getcwd(), directory="*"):
     platform_names = ['Windows', 'Linux', 'Darwin', 'darwin']
     try:
         if platform.system() in platform_names:
-            branch_command = subprocess.Popen("git branch", shell=True,
+            branch_command = subprocess.Popen("git -C " + repo_path + " branch", shell=True,
                                               stdout=subprocess.PIPE,
                                               stderr=subprocess.PIPE)
             branch_output, branch_error = branch_command.communicate()
             branch_output_str = branch_output.decode()
             branch_name = branch_output_str.split('\n')[0][1:]
 
-            checkout_command = subprocess.Popen("git checkout " + branch_name,
+            checkout_command = subprocess.Popen("git -C " + repo_path + " checkout " + branch_name,
                                                 shell=True,
                                                 stdout=subprocess.PIPE,
                                                 stderr=subprocess.PIPE)
             checkout_command.communicate()
-            pull_result = subprocess.Popen(["git", "pull"],
-                                           stdout=subprocess.PIPE,
-                                           stderr=subprocess.PIPE)
+            #pull_result = subprocess.Popen(["git", "pull"],
+                                           #stdout=subprocess.PIPE,
+                                           #stderr=subprocess.PIPE)
+            pull_result = subprocess.Popen("git -C " + repo_path + " pull",
+                                                shell=True,
+                                                stdout=subprocess.PIPE,
+                                                stderr=subprocess.PIPE)
+            
             pull_output, pull_err = pull_result.communicate()
             pull_error_msg = pull_err.decode()
             if(pull_error_msg != ""):

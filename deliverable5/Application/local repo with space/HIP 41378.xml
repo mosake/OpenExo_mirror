@@ -1,0 +1,61 @@
+<system>
+	<name>HIP 41378</name>
+	<rightascension>08 26 28</rightascension>
+	<declination>+10 04 49</declination>
+	<distance errorminus="15.84" errorplus="21.79">116.14</distance>
+	<star>
+		<name>HIP 41378</name>
+		<radius errorminus="0.19" errorplus="0.19">1.40</radius>
+		<magV>8.930</magV>
+		<mass errorminus="0.06" errorplus="0.06">1.15</mass>
+		<temperature errorminus="50.00" errorplus="50.00">6199.00</temperature>
+		<metallicity errorminus="0.080" errorplus="0.080">-0.110</metallicity>
+		<planet>
+			<name>HIP 41378 b</name>
+			<inclination errorminus="1.600" errorplus="1.600">88.400</inclination>
+			<period errorminus="0.00120000" errorplus="0.00120000">15.57120000</period>
+			<radius errorminus="0.039" errorplus="0.039">0.259</radius>
+			<discoverymethod>Transit</discoverymethod>
+			<discoveryyear>2016</discoveryyear>
+			<lastupdate>16/07/07</lastupdate>
+			<transittime errorminus=".002100" errorplus="0.002100" unit="BJD">2457152.284400</transittime>
+		</planet>
+		<planet>
+			<name>HIP 41378 c</name>
+			<inclination errorminus="0.520" errorplus="0.520">89.580</inclination>
+			<period errorminus="0.00400000" errorplus="0.00400000">31.69780000</period>
+			<radius errorminus="0.036" errorplus="0.036">0.228</radius>
+			<discoverymethod>Transit</discoverymethod>
+			<discoveryyear>2016</discoveryyear>
+			<lastupdate>16/07/07</lastupdate>
+			<transittime errorminus=".002700" errorplus="0.002700" unit="BJD">2457163.165900</transittime>
+		</planet>
+		<planet>
+			<name>HIP 41378 d</name>
+			<period errorminus="78.00000000" errorplus="163.00000000">156.00000000</period>
+			<radius errorminus="0.053" errorplus="0.053">0.353</radius>
+			<discoverymethod>Transit</discoverymethod>
+			<discoveryyear>2016</discoveryyear>
+			<lastupdate>16/07/07</lastupdate>
+			<transittime errorminus=".001600" errorplus="0.001600" unit="BJD">2457166.262900</transittime>
+		</planet>
+		<planet>
+			<name>HIP 41378 e</name>
+			<period errorminus="36.00000000" errorplus="61.00000000">131.00000000</period>
+			<radius errorminus="0.069" errorplus="0.069">0.492</radius>
+			<discoverymethod>Transit</discoverymethod>
+			<discoveryyear>2016</discoveryyear>
+			<lastupdate>16/07/07</lastupdate>
+			<transittime errorminus=".000760" errorplus="0.000760" unit="BJD">2457142.016560</transittime>
+		</planet>
+		<planet>
+			<name>HIP 41378 f</name>
+			<period errorminus="126.00000000" errorplus="121.00000000">324.00000000</period>
+			<radius errorminus="0.125" errorplus="0.125">0.910</radius>
+			<discoverymethod>Transit</discoverymethod>
+			<discoveryyear>2016</discoveryyear>
+			<lastupdate>16/07/07</lastupdate>
+			<transittime errorminus=".000320" errorplus="0.000320" unit="BJD">2457186.914510</transittime>
+		</planet>
+	</star>
+</system>

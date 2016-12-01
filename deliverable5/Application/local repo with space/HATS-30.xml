@@ -1,0 +1,28 @@
+<system>
+	<name>HATS-30</name>
+	<rightascension>00 22 28</rightascension>
+	<declination>-59 56 33</declination>
+	<distance errorminus="16.00" errorplus="16.00">339.00</distance>
+	<star>
+		<name>HATS-30</name>
+		<radius errorminus="0.04" errorplus="0.04">1.06</radius>
+		<magV errorminus="0.010">12.192</magV>
+		<mass errorminus="0.03" errorplus="0.03">1.09</mass>
+		<temperature errorminus="70.00" errorplus="70.00">5943.00</temperature>
+		<metallicity errorminus="0.050" errorplus="0.050">0.060</metallicity>
+		<planet>
+			<name>HATS-30 b</name>
+			<semimajoraxis errorminus="0.000420" errorplus="0.000420">0.043540</semimajoraxis>
+			<eccentricity>0.096000</eccentricity>
+			<inclination errorminus="0.480" errorplus="0.480">86.840</inclination>
+			<period errorminus="0.00000260" errorplus="0.00000260">3.17435160</period>
+			<mass errorminus="0.03900" errorplus="0.03900">0.70600</mass>
+			<radius errorminus="0.052" errorplus="0.052">1.175</radius>
+			<temperature errorminus="32" errorplus="32">1414</temperature>
+			<discoverymethod>Transit</discoverymethod>
+			<discoveryyear>2016</discoveryyear>
+			<lastupdate>16/06/09</lastupdate>
+			<transittime errorminus=".000360" errorplus="0.000360" unit="BJD">2456629.761560</transittime>
+		</planet>
+	</star>
+</system>

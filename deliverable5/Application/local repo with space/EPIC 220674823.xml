@@ -1,9 +1,10 @@
 <system>
 	<name>EPIC 220674823</name>
-	<rightascension>0 52 19</rightascension>
-	<declination>+10 47 40</declination>
+	<rightascension>00 52 19</rightascension>
+	<declination>+10 47 41</declination>
 	<star>
 		<name>EPIC 220674823</name>
+		<mass>0.93</mass>
 		<radius errorminus="0.04" errorplus="0.04">0.83</radius>
 		<magV>12.0</magV>
 		<temperature errorminus="18.0" errorplus="18.0">5814.0</temperature>
@@ -17,7 +18,7 @@
 			<radius errorminus="0.012" errorplus="0.012">0.13</radius>
 			<discoverymethod>Primary Transit</discoverymethod>
 			<discoveryyear>2016</discoveryyear>
-			<lastupdate>2016-11-03</lastupdate>
+			<lastupdate>16/11/03</lastupdate>
 			<transittime errorminus="0.00085" errorplus="0.0008" unit="JD">2457437.42948</transittime>
 		</planet>
 		<planet>
@@ -29,7 +30,7 @@
 			<radius errorminus="0.012" errorplus="0.012">0.226</radius>
 			<discoverymethod>Primary Transit</discoverymethod>
 			<discoveryyear>2016</discoveryyear>
-			<lastupdate>2016-11-03</lastupdate>
+			<lastupdate>16/11/03</lastupdate>
 			<transittime errorminus="0.0039" errorplus="0.0027" unit="JD">2457405.73124</transittime>
 		</planet>
 	</star>

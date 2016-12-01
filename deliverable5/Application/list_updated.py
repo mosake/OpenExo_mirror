@@ -25,7 +25,7 @@ def main ():
         try:
             response = urllib.request.urlopen(url, timeout = 5)
             content = response.read()
-            f1 = open(os.path.join(os.path.curdir, 'updated',source+"_modified_since_"+last_commit_date+".csv"), 'w')
+            f1 = open(os.path.join(os.getcwd(), 'updated',source+"_modified_since_"+last_commit_date+".csv"), 'w')
             #create cumulative.csv for his generate_systems_kepler.py
             #f2 = open((os.path.join(os.path.curdir, 'updated',"cumulative.csv")), 'w') 
             f1.write( content.decode(encoding='utf-8',errors='ignore'))
@@ -44,7 +44,7 @@ def main ():
     print ("The following are planet host name that has been modified since "+last_commit_date+":")
     print ("Host Name" + " " * 21 + "Date Modified" + " " * 17+ "Source")
     if (attempts <3):
-        with open(os.path.join(os.path.curdir, 'updated',source+"_modified_since_"+last_commit_date+".csv"), 'r') as f:
+        with open(os.path.join(os.getcwd(), 'updated',source+"_modified_since_"+last_commit_date+".csv"), 'r') as f:
             reader = csv.reader(f)
             row1 = next(reader)
             nameCol = row1.index("pl_name")

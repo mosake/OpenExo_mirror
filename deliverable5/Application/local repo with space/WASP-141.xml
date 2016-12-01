@@ -1,0 +1,27 @@
+<system>
+	<name>WASP-141</name>
+	<rightascension>04 47 18</rightascension>
+	<declination>-17 53 05</declination>
+	<distance>570.0</distance>
+	<star>
+		<name>WASP-141</name>
+		<age>4.0</age>
+		<radius>1.37</radius>
+		<magV>12.4</magV>
+		<mass>1.25</mass>
+		<spectraltype>F9</spectraltype>
+		<temperature>5900.0</temperature>
+		<metallicity>0.29</metallicity>
+		<planet>
+			<name>WASP-141 b</name>
+			<semimajoraxis errorminus="0.0007" errorplus="0.0007">0.0469</semimajoraxis>
+			<eccentricity>0.0</eccentricity>
+			<inclination errorminus="1.3" errorplus="1.3">87.6</inclination>
+			<period errorminus="5e-06" errorplus="5e-06">3.310651</period>
+			<mass errorminus="0.15" errorplus="0.15">2.69</mass>
+			<radius errorminus="0.08" errorplus="0.08">1.21</radius>
+			<discoveryyear>2016</discoveryyear>
+			<lastupdate>16/07/11</lastupdate>
+		</planet>
+	</star>
+</system>

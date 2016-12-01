@@ -5,7 +5,6 @@ import urllib.error
 import os
 import xml.etree.ElementTree as ET 
 import xmltools as xmltools
-import degrees_to_time_converter as converter
 import csv
 import datetime
 
@@ -21,25 +20,28 @@ url_exoplanetarchive = ""
 #print (url_exoplanetarchive)
 
 def get():
-    #xmltools.ensure_empty_dir(path+"/"+"NASA_data")
-    xmltools.ensure_empty_dir(os.path.join(os.getcwd(), 'extracted','NASA_data'))
-    fname = "last_commit_date.txt" #textfile containing last commit date
-    last_commit_date = str(datetime.date.today())
-    if (os.path.isfile(fname) == False): #create file with current date if dne
-        file1 = open(fname, "w")
-        file1.write(last_commit_date)
-        file1.close()
-    with open(fname) as f:
-        content = f.readlines()
-    if (len(content) == 0):
-        print("Last updated date has not been set correctly. Aborting extract")
+    try:
+        #xmltools.ensure_empty_dir(path+"/"+"NASA_data")
+        xmltools.ensure_empty_dir(os.path.join(os.getcwd(), 'extracted','NASA_data'))
+        fname = "last_commit_date.txt" #textfile containing last commit date
+        last_commit_date = str(datetime.date.today())
+        if (os.path.isfile(fname) == False): #create file with current date if dne
+            file1 = open(fname, "w")
+            file1.write(last_commit_date)
+            file1.close()
+        with open(fname) as f:
+            content = f.readlines()
+        if (len(content) == 0):
+            print("Last updated date has not been set correctly. Aborting extract")
+            return -1
+        else:
+            last_commit_date = content[0].strip()
+            url_exoplanetarchive = "http://exoplanetarchive.ipac.caltech.edu/cgi-bin/nstedAPI/nph-nstedAPI?table=exoplanets&where=rowupdate>=to_date(%27"+last_commit_date+"%27,%27yyyy-mm-dd%27)&order=rowupdate&format=csv&select=*"  
+            #url_exoplanetarchive = "http://exoplanet.eu/catalog/csv/?status=&f=updated+%3E%3D+%222016-01-01%22&select=*"    
+            #urllib.request.urlretrieve (url_exoplanetarchive, path+"/"+"NASA_data/NASA_archive_updated.csv")
+            urllib.request.urlretrieve (url_exoplanetarchive, os.path.join(os.getcwd(), 'extracted', 'NASA_data', 'NASA_archive_updated.csv'))
+    except:
         return -1
-    else:
-        last_commit_date = content[0].strip()
-        url_exoplanetarchive = "http://exoplanetarchive.ipac.caltech.edu/cgi-bin/nstedAPI/nph-nstedAPI?table=exoplanets&where=rowupdate>=to_date(%27"+last_commit_date+"%27,%27yyyy-mm-dd%27)&order=rowupdate&format=csv&select=*"  
-        #url_exoplanetarchive = "http://exoplanet.eu/catalog/csv/?status=&f=updated+%3E%3D+%222016-01-01%22&select=*"    
-    #urllib.request.urlretrieve (url_exoplanetarchive, path+"/"+"NASA_data/NASA_archive_updated.csv")
-    urllib.request.urlretrieve (url_exoplanetarchive, os.path.join(os.getcwd(), 'extracted', 'NASA_data', 'NASA_archive_updated.csv'))
 
 def parse():
     # delete old data HL: We'll take this out because the folder should have info from exoplanet
@@ -108,9 +110,20 @@ def parse():
             ET.SubElement(planet, "mass", errorminus=p['pl_massjerr2'][1:], errorplus=p['pl_massjerr1']).text = p["pl_massj"]
         ET.SubElement(planet, "radius", errorminus=p['pl_radjerr2'][1:], errorplus=p['pl_radjerr1']).text = p["pl_radj"]
         ET.SubElement(planet, "temperature", errorminus=p['pl_eqterr2'][1:], errorplus=p['pl_eqterr1']).text = p["pl_eqt"]
-        ET.SubElement(planet, "discoverymethod").text = p["pl_discmethod"]
+        # to match OEC 
+        if p['pl_discmethod'].find("Radial Velocity") != -1:
+            ET.SubElement(planet, "discoverymethod").text = "RV"
+        elif p['pl_discmethod'].find("imaging") != -1:
+            ET.SubElement(planet, "discoverymethod").text = "imaging"
+        elif p['pl_discmethod'].find("ransit") != -1: #transit and Primary Transit checked
+            ET.SubElement(planet, "discoverymethod").text = "transit"        
+        #ET.SubElement(planet, "discoverymethod").text = p["pl_discmethod"]
         ET.SubElement(planet, "discoveryyear").text = p["pl_disc"]
-        ET.SubElement(planet, "lastupdate").text = p["rowupdate"]
+        #need in form yy/mm/dd
+        updateDate = p["rowupdate"]
+        (yy, mm, dd) = updateDate.split("-")
+        updateDate = yy[2:]+"/"+mm+"/"+dd        
+        ET.SubElement(planet, "lastupdate").text = updateDate
 
         # Need to check if BJD ?
         ET.SubElement(planet, "transittime", errorminus=p['pl_tranmiderr2'][2:], errorplus=p['pl_tranmiderr1'], unit=p['pl_tsystemref']).text = p["pl_tranmid"]

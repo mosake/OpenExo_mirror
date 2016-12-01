@@ -1,16 +1,18 @@
 import list_updated as list_updated
 import manual as man
 import xmltools
-import translate_ExoPlanet as translate_Exoplanet
-import translate_NASA as translate_NASA
+import extract_ExoPlanet as extract_ExoPlanet
+import translate_NASA as extract_NASA
+import cleanup as cleanUp
 import compare as cmpXml
-import gitPush as push
+import gitPush as git
 import databasecmp as matchSystems
 import repo as repoTools
 import glob
-import os
+import os, sys
 import shutil
 import ntpath, datetime
+#from io import StringIO
 
 def commitCommand():
     '''(None) -> None
@@ -23,16 +25,30 @@ def commitCommand():
         print("Problem in path. Please set the path of local repository using 'repo' command")   
     else:
         #pull from remote to make sure local is up to date
-        pull_repo(localRepoPath)
+        git.pull_repo(localRepoPath)
+        
+        #print clean up report in a text file
+        stdout = sys.stdout  #keep a handle on the real standard output
+        if (os.path.isfile('cleanUpReport.txt')):
+            with open('cleanUpReport.txt', 'w') as f:
+                f.write("")
+        sys.stdout = open('cleanUpReport.txt', 'w', encoding='utf-8')
+        try:
+            cleanUp.cleanUp()
+        except:
+            print("Fail to run clean up script")
+        #reset stdout
+        sys.stdout = stdout
         #go through changed_systems and copy files to local repo
         source_dir = os.path.join(os.getcwd(), "Changed_Systems")
+        print("Copying files...")
         for filename in glob.glob(os.path.join(source_dir, '*.*')):
             try:
                 shutil.copy(filename, localRepoPath)
             except:
                 print ("Couldn't copy " + filename + " to " + localRepoPath +". Please close all files and try again")
         #push changes from local to remote
-        push.push_all(localRepoPath) 
+        git.push_all(localRepoPath) 
         #change updated date
         today = str(datetime.date.today())
         fname = "last_commit_date.txt"
@@ -55,55 +71,58 @@ while (switch):
         else: 
             man.main()
     elif (command[0:7] == "extract"):
+        success = True
         try:
-            if (command[8:].find(" -l") > -1):
+            if (command[7:].find(" -l") > -1):
                 list_updated.main()
-            if (translate_Exoplanet.get() != -1):
-                translate_Exoplanet.parse()
-            if (translate_NASA.get() != -1):
-                translate_NASA.parse()
+            if (extract_ExoPlanet.get() != -1):
+                extract_ExoPlanet.parse()
+            if (extract_NASA.get() != -1):
+                extract_NASA.parse()
         except:
             print("Extraction from external sources failed. Try closing all opened CSV files and try again")
+            success = False
         localRepoPath = repoTools.getLocalRepo()
         if (localRepoPath == ""): #file is not right, print message and pass if case
             print("Problem in path. Please set the path of local repository using 'repo' command")
-            pass
+            success = False
         extractedXmlsPath = os.path.join(os.getcwd(), 'extracted', 'Extracted_XMLs')
         #clear change_systems of old updates
         xmltools.ensure_empty_dir(os.path.join(os.getcwd(),"Changed_Systems"))
-        success = True
-        for filename in glob.iglob(os.path.join(extractedXmlsPath,"*.xml")):
-            #performance improv: check matchedSystems file to see if there is a previous match of this planetary system
-            pairFile = "matchedSystems.txt" #textfile containing name of matched system in local repo
-            #get system name from filename, i.e. remove NASA_ or ExoPlanet_
-            systemName = ntpath.basename(filename).split("_",1)[1]       
-            matchedSystem = None
-            if (os.path.isfile(pairFile) == False): 
-                #create file if it got deleted
-                f = open(pairFile, "w")
-                f.write("")
-                f.close()
-            with open(pairFile) as f:
-                for line in f:
-                    if systemName in line:
-                        #get name of file in local repo stored in matchedSystem file
-                        #lines are in format: [system name], [filename]
-                        matchedSystem = line.split(",",1)[1].strip()
-            matchingFile = matchSystems.matchXml(os.path.abspath(filename), localRepoPath, matchedSystem)
-            #if found, add/update this matched pairing to our matchedSystem file
-            if (matchingFile != None):
-                #extract filename from matchingFile i.e. ../../[matchingSystem].xml
-                matchedSystem = ntpath.basename(matchingFile)  
-                repoTools.storeSystemMatch(systemName, matchedSystem, pairFile)
-            try:
-                cmpXml.main(matchingFile, filename, os.path.join(os.getcwd(),"Changed_Systems"))
-            except:
-                print ("failed to compare " + matchingFile +" and " + filename)
-                success = False
+        #if not success, let's save time from going through anything
+        if (success):
+            for filename in glob.iglob(os.path.join(extractedXmlsPath,"*.xml")):
+                #performance improv: check matchedSystems file to see if there is a previous match of this planetary system
+                pairFile = "matchedSystems.txt" #textfile containing name of matched system in local repo
+                #get system name from filename, i.e. remove NASA_ or ExoPlanet_
+                systemName = ntpath.basename(filename).split("_",1)[1]       
+                matchedSystem = None
+                if (os.path.isfile(pairFile) == False): 
+                    #create file if it got deleted
+                    f = open(pairFile, "w")
+                    f.write("")
+                    f.close()
+                with open(pairFile) as f:
+                    for line in f:
+                        if systemName in line:
+                            #get name of file in local repo stored in matchedSystem file
+                            #lines are in format: [system name], [filename]
+                            matchedSystem = line.split(",",1)[1].strip()
+                matchingFile = matchSystems.matchXml(os.path.abspath(filename), localRepoPath, matchedSystem)
+                #if found, add/update this matched pairing to our matchedSystem file
+                if (matchingFile != None):
+                    #extract filename from matchingFile i.e. ../../[matchingSystem].xml
+                    matchedSystem = ntpath.basename(matchingFile)  
+                    repoTools.storeSystemMatch(systemName, matchedSystem, pairFile)
+                try:
+                    cmpXml.main(matchingFile, filename, os.path.join(os.getcwd(),"Changed_Systems"))
+                except:
+                    print ("failed to compare " + matchingFile +" and " + filename)
+                    success = False
         if (success):
             print ("Files extracted. Please review XML files in "+os.path.join(os.getcwd(),"Changed_Systems"))
         #if -a tag is entered, we commit automatically
-        if (command[8:].find(" -a") > -1):
+        if (command[7:].find(" -a") > -1):
             commitCommand()
 
     elif (command[0:4] == "repo"):

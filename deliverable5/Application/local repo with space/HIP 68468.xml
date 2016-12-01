@@ -1,11 +1,13 @@
 <system>
 	<name>HIP 68468</name>
-	<rightascension>14 1 4</rightascension>
-	<declination>-32 45 25</declination>
+	<rightascension>14 01 04</rightascension>
+	<declination>-32 14 35</declination>
 	<distance errorminus="9.0" errorplus="9.0">87.8</distance>
 	<star>
 		<name>HIP 68468</name>
-		<mass>0.011</mass>
+		<spectraltype>G3V</spectraltype>
+		<age>5.9</age>
+		<mass>1.05</mass>
 		<temperature errorminus="8.0" errorplus="8.0">5857.0</temperature>
 		<metallicity errorminus="0.007" errorplus="0.007">0.065</metallicity>
 		<planet>
@@ -14,9 +16,9 @@
 			<eccentricity>0.41</eccentricity>
 			<period>1.8372</period>
 			<mass>0.011</mass>
-			<discoverymethod>Radial Velocity</discoverymethod>
+			<discoverymethod>RV</discoverymethod>
 			<discoveryyear>2016</discoveryyear>
-			<lastupdate>2016-11-02</lastupdate>
+			<lastupdate>16/11/02</lastupdate>
 		</planet>
 		<planet>
 			<name>HIP 68468 c</name>
@@ -24,9 +26,9 @@
 			<eccentricity>0.04</eccentricity>
 			<period>194.0</period>
 			<mass>0.094</mass>
-			<discoverymethod>Radial Velocity</discoverymethod>
+			<discoverymethod>RV</discoverymethod>
 			<discoveryyear>2016</discoveryyear>
-			<lastupdate>2016-11-02</lastupdate>
+			<lastupdate>16/11/02</lastupdate>
 		</planet>
 	</star>
 </system>

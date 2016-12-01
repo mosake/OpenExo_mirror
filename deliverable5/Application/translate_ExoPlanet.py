@@ -38,16 +38,19 @@ def get():
             last_commit_date = content[0].strip()
             url_exoplanetarchive = "http://exoplanet.eu/catalog/csv/?status=&f=updated+%3E%3D+%22"+last_commit_date+"%22"   
             #url_exoplanetarchive = "http://exoplanet.eu/catalog/csv/?status=&f=updated+%3E%3D+%222016-01-01%22&select=*"        
-        urllib.request.urlretrieve (url_exoplanetarchive, os.path.join(os.getcwd(), 'extracted', 'ExoPlanet_data', 'Exoplanet_archive_updated.csv'))
+            urllib.request.urlretrieve (url_exoplanetarchive, os.path.join(os.getcwd(), 'extracted', 'ExoPlanet_data', 'Exoplanet_archive_updated.csv'))
     except:
         pass
     
 def parse():
     # delete old data
-    xmltools.ensure_empty_dir(os.path.join(os.path.curdir, 'extracted', 'Extracted_XMLs'))
+    xmltools.ensure_empty_dir(os.path.join(os.getcwd(), 'extracted', 'Extracted_XMLs'))
 
+    if (os.path.isfile(os.path.join(os.getcwd(), 'extracted','ExoPlanet_data','Exoplanet_archive_updated.csv')) == False):
+        with open(os.path.join(os.getcwd(), 'extracted','ExoPlanet_data','Exoplanet_archive_updated.csv'), 'w') as f:
+            f.write("")
     # parse data into default xml format
-    f = open(os.path.join(os.path.curdir, 'extracted','ExoPlanet_data','Exoplanet_archive_updated.csv'))
+    f = open(os.path.join(os.getcwd(), 'extracted','ExoPlanet_data','Exoplanet_archive_updated.csv'))
     
     csv_f=csv.reader(f)
     header = [x.strip() for x in f.readline().split(",")]
@@ -94,7 +97,7 @@ def parse():
             ET.SubElement(star, "magH").text = p["mag_h"]
             ET.SubElement(star, "magK").text = p["mag_k"]
             #Upperlimit?
-            ET.SubElement(star, "mass", errorminus=p['mass_error_min'], errorplus=p['mass_error_max']).text = p["mass"]
+            ET.SubElement(star, "mass", errorminus=p['star_mass_error_min'], errorplus=p['star_mass_error_max']).text = p["star_mass"]
             ET.SubElement(star, "temperature", errorminus=p['star_teff_error_min'], errorplus=p['star_teff_error_max']).text = p["star_teff"]
             #ET.SubElement(star, "metallicity").text = p["st_metratio"]
             ET.SubElement(star, "metallicity",errorminus=p['star_metallicity_error_min'], errorplus=(p['star_metallicity_error_max'])).text = p["star_metallicity"]
@@ -129,10 +132,13 @@ def parse():
         ET.SubElement(planet, "temperature").text = p["temp_calculated"]
         ET.SubElement(planet, "discoverymethod").text = p["detection_type"]
         ET.SubElement(planet, "discoveryyear").text = p["discovered"]
-        ET.SubElement(planet, "lastupdate").text = p["updated"]
+        #need in form yy/mm/dd
+        updateDate = p["updated"]
+        (yy, mm, dd) = updateDate.split("-")
+        updateDate = yy[2:]+"/"+mm+"/"+dd
+        ET.SubElement(planet, "lastupdate").text = updateDate
 
         # Need to check if BJD ?
-        # QUESTION: Is BJD the same as JD?
         JD = "JD"
         if len(p["tzero_tr"]) == 0:
             JD = ""

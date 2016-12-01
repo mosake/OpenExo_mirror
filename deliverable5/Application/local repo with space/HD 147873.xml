@@ -19,7 +19,7 @@
 			<mass errorminus="0.34000" errorplus="0.34000">5.14000</mass>
 			<discoverymethod>Radial Velocity</discoverymethod>
 			<discoveryyear>2016</discoveryyear>
-			<lastupdate>2016-11-10</lastupdate>
+			<lastupdate>16/11/10</lastupdate>
 		</planet>
 		<planet>
 			<name>HD 147873 c</name>
@@ -30,7 +30,7 @@
 			<mass errorminus="0.18000" errorplus="0.18000">2.30000</mass>
 			<discoverymethod>Radial Velocity</discoverymethod>
 			<discoveryyear>2016</discoveryyear>
-			<lastupdate>2016-11-10</lastupdate>
+			<lastupdate>16/11/10</lastupdate>
 		</planet>
 	</star>
 </system>

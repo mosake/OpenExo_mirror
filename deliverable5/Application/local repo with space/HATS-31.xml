@@ -1,0 +1,26 @@
+<system>
+	<name>HATS-31</name>
+	<rightascension>12 46 49</rightascension>
+	<declination>-24 34 21</declination>
+	<distance>872.0</distance>
+	<star>
+		<name>HATS-31</name>
+		<age>4.3</age>
+		<radius>1.87</radius>
+		<magV>13.1</magV>
+		<mass>1.275</mass>
+		<temperature>6050.0</temperature>
+		<metallicity>0.0</metallicity>
+		<planet>
+			<name>HATS-31 b</name>
+			<semimajoraxis errorminus="0.0012" errorplus="0.0012">0.0478</semimajoraxis>
+			<eccentricity errorminus="0.233" errorplus="0.0">0.233</eccentricity>
+			<inclination errorminus="1.6" errorplus="2.5">85.0</inclination>
+			<period errorminus="1.2e-05" errorplus="1.2e-05">3.37796</period>
+			<mass errorminus="0.12" errorplus="0.12">0.88</mass>
+			<radius errorminus="0.22" errorplus="0.22">1.64</radius>
+			<discoveryyear>2016</discoveryyear>
+			<lastupdate>16/07/11</lastupdate>
+		</planet>
+	</star>
+</system>

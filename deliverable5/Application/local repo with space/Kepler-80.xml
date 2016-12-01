@@ -16,7 +16,7 @@
 		<name>KIC 4852528</name>
 		<temperature>4250.0</temperature>
 		<radius>0.738</radius>
-		<mass errorminus="0.0016" errorplus="0.0022">0.0212</mass>
+		<mass errorminus="0.0160" errorplus="0.0160">0.7220</mass>
 		<planet>
 			<name>Kepler-80 b</name>
 			<name>KOI-500 b</name>
@@ -62,8 +62,8 @@
 			<list>Confirmed planets</list>
 			<description>Kepler-80 d has been discovered by the Kepler spacecraft and was originally classified as a planet candidate. A new statistical analysis led by a team at NASA Ames Research Center has validated the planet with more than 99 percent confidence. Although many parameters of Kepler-80 d are still unknown, the object is highly unlikely to be a false positive.</description>
 			<discoveryyear>2012</discoveryyear>
-			<lastupdate>2016-11-17</lastupdate>
-			<discoverymethod>Primary Transit</discoverymethod>
+			<lastupdate>16/11/17</lastupdate>
+			<discoverymethod>transit</discoverymethod>
 			<istransiting>1</istransiting>
 		</planet>
 		<planet>

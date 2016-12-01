@@ -25,13 +25,13 @@ def changeLocalRepo(pathName):
     opened = 0
     file1 = None
     try:
-        file1 = open(fname, "w")
-        opened = 1
         if (os.path.isdir(pathName) == False):
             print (pathName+" is not a valid directory. Please enter a valid directory")
-            file1.close()
-            return   
+            return -1        
+        file1 = open(fname, "w")
+        opened = 1        
         file1.write(pathName)
+        file1.close()
     except:
         print("Something went wrong with writing to localRepoPath.txt. Please ensure it is writeable and try again.")
     finally:

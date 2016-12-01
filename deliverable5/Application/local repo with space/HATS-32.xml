@@ -1,0 +1,26 @@
+<system>
+	<name>HATS-32</name>
+	<rightascension>23 04 18</rightascension>
+	<declination>-21 43 41</declination>
+	<distance>839.0</distance>
+	<star>
+		<name>HATS-32</name>
+		<age>3.5</age>
+		<radius>1.097</radius>
+		<magV>14.38</magV>
+		<mass>1.099</mass>
+		<temperature>5700.0</temperature>
+		<metallicity>0.39</metallicity>
+		<planet>
+			<name>HATS-32 b</name>
+			<semimajoraxis errorminus="0.00053" errorplus="0.00053">0.04024</semimajoraxis>
+			<eccentricity errorminus="0.471" errorplus="0.0">0.471</eccentricity>
+			<inclination errorminus="1.2" errorplus="1.2">87.1</inclination>
+			<period errorminus="5.5e-06" errorplus="5.5e-06">2.8126548</period>
+			<mass errorminus="0.1" errorplus="0.1">0.92</mass>
+			<radius errorminus="0.096" errorplus="0.144">1.249</radius>
+			<discoveryyear>2016</discoveryyear>
+			<lastupdate>16/07/11</lastupdate>
+		</planet>
+	</star>
+</system>

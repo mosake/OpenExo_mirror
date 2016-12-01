@@ -5,15 +5,18 @@
 	<distance>63.0</distance>
 	<star>
 		<name>2M 2236+4751</name>
+		<spectraltype>K7</spectraltype>
+		<age>0.12</age>
 		<magV>12.5</magV>
-		<mass errorminus="1.5" errorplus="1.5">12.5</mass>
+		<mass>0.6</mass>
 		<planet>
 			<name>2M 2236+4751 b</name>
+			<temperature>1200.0</temperature>
 			<semimajoraxis errorminus="20.0" errorplus="20.0">230.0</semimajoraxis>
 			<mass errorminus="1.5" errorplus="1.5">12.5</mass>
 			<discoverymethod>Imaging</discoverymethod>
 			<discoveryyear>2016</discoveryyear>
-			<lastupdate>2016-11-03</lastupdate>
+			<lastupdate>16/11/03</lastupdate>
 		</planet>
 	</star>
 </system>

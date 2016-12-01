@@ -1,19 +1,5 @@
 import glob, os, xml.etree.ElementTree as ET
 
-def get_names2(xml_tree, tag):
-    temp = []
-    systems = xml_tree.getroot()
-    if not xml_tree.findall(".//" + tag):
-        temp.append('None')
-    else:
-        temp2 = []
-        for system in systems:
-            temp2.append(systems.findtext("name")) 
-        temp.append(temp2)
-        #if ("KELT-17" in temp):
-        print ("fff")
-    return temp
-
 def get_names(xml_tree, tag):
     temp = []
     #go through tree elements

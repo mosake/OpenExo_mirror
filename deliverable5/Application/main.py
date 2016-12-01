@@ -22,6 +22,8 @@ def commitCommand():
     if (os.path.isdir(localRepoPath) == False): #file is not right, print message and pass if case
         print("Problem in path. Please set the path of local repository using 'repo' command")   
     else:
+        #pull from remote to make sure local is up to date
+        pull_repo(localRepoPath)
         #go through changed_systems and copy files to local repo
         source_dir = os.path.join(os.getcwd(), "Changed_Systems")
         for filename in glob.glob(os.path.join(source_dir, '*.*')):
@@ -29,12 +31,14 @@ def commitCommand():
                 shutil.copy(filename, localRepoPath)
             except:
                 print ("Couldn't copy " + filename + " to " + localRepoPath +". Please close all files and try again")
-        #push.push_all(localRepoPath) 
+        #push changes from local to remote
+        push.push_all(localRepoPath) 
         #change updated date
         today = str(datetime.date.today())
         fname = "last_commit_date.txt"
         with open(fname, 'w') as f:
-            f.write(today)        
+            f.write(today)
+        print("Changes successfully made. Last updated date is now "+today)
 
 switch = True
 while (switch):
@@ -47,13 +51,12 @@ while (switch):
     if (command[0:4] == "help"):
         if (len(command) > 4):
             entry = command[5:].strip()
-            print(entry)
             man.main(entry)
         else: 
             man.main()
     elif (command[0:7] == "extract"):
         try:
-            if (command[8:].strip() == "-l"):
+            if (command[8:].find(" -l") > -1):
                 list_updated.main()
             if (translate_Exoplanet.get() != -1):
                 translate_Exoplanet.parse()
@@ -111,10 +114,8 @@ while (switch):
             else:
                 repoPath = command[8:]
                 repoTools.changeLocalRepo(repoPath)
-        elif (command[5:8].strip() == "-l"):
-            print("Path of local repository is set as: " + repoTools.getLocalRepo())
         else:
-            print ("Usage Error: "+command+". Please enter 'help [command]' to read 'repo' command")
+            print("Path of local repository is set as: " + repoTools.getLocalRepo())
 
     elif (command[0:4] == "date"):
         args = command.split(" ",2)

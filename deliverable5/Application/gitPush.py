@@ -43,7 +43,7 @@ def pull_repo(repo_path=os.getcwd()):
                     # Some other error has occurred.
                     print("The repository could not be pulled.")
                     raise
-            print("Repository has been successfully pull")
+            print("Repository has been successfully pulled")
     except:
         print("Git was unable to pull the repository.")
 
@@ -64,7 +64,7 @@ def push_all(repo_path=os.getcwd(), directory="*"):
                                               shell=True,
                                               stdout=subprocess.PIPE)
         commit_command.communicate()
-        push_command = subprocess.Popen("git -C " + repo_path + " push origin " + branch_name,
+        push_command = subprocess.Popen("git -C " + repo_path + " push",
                                             shell=True,
                                             stdout=subprocess.PIPE,
                                             stderr=subprocess.PIPE)

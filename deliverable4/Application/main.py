@@ -22,8 +22,13 @@ while (switch):
         translate_Exoplanet.parse()
         translate_NASA.get()
         translate_NASA.parse()
-    elif (command == "compare"):
-        cmp.main("hanno.xml", "nasa.xml")
+    elif (command[0: 7] == "compare"):
+        try:
+            l = command.split(" ")
+            cmp.main(l[1], l[2])
+        except:
+            print("Please enter a valid input: compare file1.xml file2.xml")
+            pass
     elif (command[0:4] == "push"):
         push.push_all()
     elif (command == "exit"):

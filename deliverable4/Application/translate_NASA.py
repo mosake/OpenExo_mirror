@@ -44,11 +44,15 @@ def parse():
     header = [x.strip() for x in f.readline().split(",")]
     for line in csv_f:
         p = dict(zip(header, [x.strip() for x in line]))
-        outputfilename = os.path.join(os.path.curdir, 'extracted','Extracted_XMLs',p["pl_hostname"]+".xml")
+        outputfilename = os.path.join(os.path.curdir, 'extracted','Extracted_XMLs',"NASA_"+p["pl_hostname"]+".xml")
         if os.path.exists(outputfilename):
             system = ET.parse(outputfilename).getroot()
             star = system.find(".//star")
         else:
+            if os.path.exists(os.path.join(os.path.curdir, 'extracted','Extracted_XMLs',"Exoplanet_"+p["pl_hostname"]+".xml")):
+                #extracted from exoplanet.eu before so we will delete the file
+                #print("Exoplanet_"+p["pl_hostname"]+".xml")
+                os.remove(os.path.join(os.path.curdir, 'extracted','Extracted_XMLs',"Exoplanet_"+p["pl_hostname"]+".xml"))
             system = ET.Element("system")
             ET.SubElement(system, "name").text = p["pl_hostname"]
             

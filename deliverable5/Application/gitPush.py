@@ -43,7 +43,7 @@ def pull_repo(repo_path=os.getcwd()):
                     # Some other error has occurred.
                     print("The repository could not be pulled.")
                     raise
-            print("Repository has been successfully pulled")
+            print("Repository has been successfully pulled.")
     except:
         print("Git was unable to pull the repository.")
 

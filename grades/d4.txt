@@ -1,0 +1,122 @@
+Team 25
+Jelly
+
+CSCC01 Deliverable 4 Marking Guide
+-----------------------------------
+
+Project Management:  __________ (18/20%)
+
+  Release plan: 2/3
+    * Please include all releases, even the ones that have passed. -1
+      * Include sum-total of story costs.
+    - each release corresponds to end of Sprint
+    - project fully laid out:
+      for each release date, list of user stories to implement
+    - project velocity specified and used
+    - highest priority user stories first modulo dependencies
+    - reasonable goals for each release
+
+  Product Backlog: 2/3
+    * Need to include all stories, not just ones left to implement. -1
+    * [D3] Stories still need some polishing.
+    - user stories follow the correct format.
+    - user stories, together, reflect all the user requirements (from
+      all personas).
+    - user stories correspond to actual requirements (no "invented"
+      features).
+    - user stories contain enough information for devs to estimate how
+      long it would take to implement it.
+    - each user story addresses one specific requirement (no "world
+      peace" stories).
+
+  Sprint Backlog(s): 2/2
+     * [D3] Need to give backklog and plan seperate sections.
+     - user stories taken from the Product Backlog
+     - estimated costs
+     - estimated values
+
+  Sprint Plan(s): 3/3
+    - user stories divided into tasks when appropriate.
+    - each Sprint Plan contains all the necessary information:
+        who is working on which task on which day
+    - sum of costs of user stories in the sprint = project velocity
+    - good planning decisions
+
+  Use of Task Board: 2/2
+    - correct format of task boards
+    - snapshots in the begginning and end of each Sprint are provided
+
+  Use of Burndown Charts: 3/3
+    - snapshots in the begginning and end of each Sprint are provided
+    - correctness of burndown charts
+
+  Use of Repo: 2/2
+      (including good use of branching from now on!)
+
+  Use of communication tools: 2/2
+     - evidence of using communication tools of their choice effectively
+
+
+Design and Implementation:  __________ (16/30%)
+
+   System Design: 3/5
+      * Need more focus on components of actual system, not 3rd party
+        components -1.
+      * Need more details on relevant components to determine if design is
+        modular -1
+      - good modular design
+      - general and easy to extend
+      - it is clear how the current implementation is going to be
+        extended into an application that satisfies the client's needs
+
+   Implementation: 5/10
+    * Critical bug: -2
+      * No file or directory 'extracted/Exoplanet_data/Exoplanet_archive_updated.csv'
+      * I've tried this on two platforms and all have this issue!
+      * Location: translate_ExoPlanet.parse()
+      * Cause: get() seems to fail, and fails silently due to try-catch!
+    * Incompleted/untested features. -2
+    * No README on how to setup/run. -1
+     - 0 marks if it doesn't run
+     - most of the features are either fully implemented of nearly implemented
+     - quality and maturity of code
+
+
+Verification and Validation:  __________ (12/25%)
+
+  - quality of unit tests: 2/10
+    * No unit tests found, only manual testing (test xml files) -8
+    - good coverage
+    - no redundancy
+
+  - code review activities and outcomes: 5/10
+    * Inconsistent formatting/checklist -1
+    * Reviews need to be more thorough (for some). -1
+      * Bugs, unreadable code, confusing code, etc etc
+      * Location, and suggestions for fixing?
+    * No evidence of actions taken. -1
+    * Meeting video isn't a presentation, needs to be a conversation. -2
+      * Note suggestions given during meeting for D4.
+    - each review follows a checklist (not necessarily the example one, but the
+      same checklist for all)
+    - each review is thorough
+    - evidence of addressing the outcomes of the review
+    - the video demonstrates an effective process used for the review/collection
+      meeting
+
+  - validation activities and outcomes: 5/5
+    * Good
+    - evidence of feedback from the user
+    - evidence of addressing feedback from the user
+
+
+Report: __________ (13/15%)
+  * Make report more cohesive by combining everything to 1 pdf. -2
+  - well-presented, is easy to read and to navigate
+  - spelling and grammar
+  - looks professional
+  - quality of the README file
+
+
+Interview: ________ (8/10%)
+  * Issues during demo, unclear of why there are path/git issues. -2

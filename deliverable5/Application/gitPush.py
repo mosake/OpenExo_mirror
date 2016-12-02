@@ -74,4 +74,4 @@ def push_all(repo_path=os.getcwd(), directory="*"):
     except:
         print("Git was unable to push your local copy to the main repository.")
 
-#push_all("/Users/Kris/git/team25-Project/deliverable5/Application")
+push_all("/Users/Kris/git/team25-Project/deliverable5/Application")

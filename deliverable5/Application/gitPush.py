@@ -6,6 +6,10 @@ import time
 push_all() pushes changes from local repository to master using command line
 '''
 def pull_repo(repo_path=os.getcwd()):
+    #get current working directory (we'll need to set it back after)
+    cur_dir = os.getcwd()
+    #change the current working directory to the local repo
+    os.chdir(repo_path)    
     platform_names = ['Windows', 'Linux', 'Darwin', 'darwin']
     try:
         if platform.system() in platform_names:
@@ -47,9 +51,15 @@ def pull_repo(repo_path=os.getcwd()):
             print("Repository has been successfully pulled.")
     except:
         print("Git was unable to pull the repository.")
-
+    finally:
+        #change the current working directory back
+        os.chdir(cur_dir)
 
 def push_all(repo_path=os.getcwd(), directory="*"):
+    #get current working directory (we'll need to set it back after)
+    cur_dir = os.getcwd()
+    #change the current working directory to the local repo
+    os.chdir(repo_path)    
     platform_names = ['Windows', 'Linux', 'Darwin', 'darwin']
     try:
         branch_command = subprocess.Popen("git branch", shell=True,
@@ -89,3 +99,6 @@ def push_all(repo_path=os.getcwd(), directory="*"):
         print("Push was successful.")
     except:
         print("Git was unable to push your local copy to the main repository.")
+    finally:
+        #change the current working directory back
+        os.chdir(cur_dir)   

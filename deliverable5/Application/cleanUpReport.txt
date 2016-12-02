@@ -1,7 +1,0 @@
-Error: Planet needs to be in exactly one of the following lists: 'Confirmed planets', 'Controversial', 'Kepler Objects of Interest', 'Solar System', 'Retracted planet candidate'. Check planets in file "Changed_Systems\EPIC 220504338.xml".
-Added istransiting tag to Changed_Systems\EPIC 220504338.xml
-Error: Planet needs to be in exactly one of the following lists: 'Confirmed planets', 'Controversial', 'Kepler Objects of Interest', 'Solar System', 'Retracted planet candidate'. Check planets in file "Changed_Systems\HD 222076.xml".
-Error: Planet needs to be in exactly one of the following lists: 'Confirmed planets', 'Controversial', 'Kepler Objects of Interest', 'Solar System', 'Retracted planet candidate'. Check planets in file "Changed_Systems\HD 86950.xml".
-Cleanup script finished. 4 files checked.
-5 file(s) modified.
-Number of issues: 3 (see above).

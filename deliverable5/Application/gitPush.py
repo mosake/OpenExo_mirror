@@ -20,12 +20,13 @@ def pull_repo(repo_path=os.getcwd()):
             for branch in branch_name:
                 if '*' in branch:
                     current_branch = branch[1:]
+
             checkout_command = subprocess.Popen("git checkout " + current_branch,
                                                 shell=True,
                                                 stdout=subprocess.PIPE,
                                                 stderr=subprocess.PIPE)
             checkout_command.communicate()
-            pull_result = subprocess.Popen(["git", "pull"],
+            pull_result = subprocess.Popen(["git", "pull"], shell=True,
                                            stdout=subprocess.PIPE,
                                            stderr=subprocess.PIPE)
 
@@ -51,6 +52,17 @@ def pull_repo(repo_path=os.getcwd()):
 def push_all(repo_path=os.getcwd(), directory="*"):
     platform_names = ['Windows', 'Linux', 'Darwin', 'darwin']
     try:
+        branch_command = subprocess.Popen("git branch", shell=True,
+                                                      stdout=subprocess.PIPE,
+                                                      stderr=subprocess.PIPE)
+        branch_output, branch_error = branch_command.communicate()
+        branch_output_str = branch_output.decode()
+        branch_name = branch_output_str.split('\n')
+        current_branch = ""
+        for branch in branch_name:
+            if '*' in branch:
+                current_branch = branch[1:]
+                
         add_command = subprocess.Popen("git add " + directory, shell=True,
                                            stdout=subprocess.PIPE,
                                                 stderr=subprocess.PIPE)

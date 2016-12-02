@@ -9,25 +9,21 @@ def pull_repo(repo_path=os.getcwd()):
     platform_names = ['Windows', 'Linux', 'Darwin', 'darwin']
     try:
         if platform.system() in platform_names:
-            branch_command = subprocess.Popen("git -C " + repo_path + " branch", shell=True,
+            branch_command = subprocess.Popen("git branch", shell=True,
                                               stdout=subprocess.PIPE,
                                               stderr=subprocess.PIPE)
             branch_output, branch_error = branch_command.communicate()
             branch_output_str = branch_output.decode()
             branch_name = branch_output_str.split('\n')[0][1:]
 
-            checkout_command = subprocess.Popen("git -C " + repo_path + " checkout " + branch_name,
+            checkout_command = subprocess.Popen("git checkout " + branch_name,
                                                 shell=True,
                                                 stdout=subprocess.PIPE,
                                                 stderr=subprocess.PIPE)
             checkout_command.communicate()
-            #pull_result = subprocess.Popen(["git", "pull"],
-                                           #stdout=subprocess.PIPE,
-                                           #stderr=subprocess.PIPE)
-            pull_result = subprocess.Popen("git -C " + repo_path + " pull",
-                                                shell=True,
-                                                stdout=subprocess.PIPE,
-                                                stderr=subprocess.PIPE)
+            pull_result = subprocess.Popen(["git", "pull"],
+                                           stdout=subprocess.PIPE,
+                                           stderr=subprocess.PIPE)
             
             pull_output, pull_err = pull_result.communicate()
             pull_error_msg = pull_err.decode()
@@ -51,7 +47,7 @@ def pull_repo(repo_path=os.getcwd()):
 def push_all(repo_path=os.getcwd(), directory="*"):
     platform_names = ['Windows', 'Linux', 'Darwin', 'darwin']
     try:
-        add_command = subprocess.Popen("git -C " + repo_path + " add \"" + directory + "\"",
+        add_command = subprocess.Popen("git add \"" + directory + "\"",
                                            stdout=subprocess.PIPE,
                                                 stderr=subprocess.PIPE)
         add_output, add_err = add_command.communicate()
@@ -59,12 +55,12 @@ def push_all(repo_path=os.getcwd(), directory="*"):
         if ("fatal" in add_error_msg):
             print("Oops! Are you adding an invalid file/directory?")
             raise
-        commit_command = subprocess.Popen("git -C " + repo_path + " commit"\
+        commit_command = subprocess.Popen("git commit"\
                                               " -m \"Push to main repository\"",
                                               shell=True,
                                               stdout=subprocess.PIPE)
         commit_command.communicate()
-        push_command = subprocess.Popen("git -C " + repo_path + " push",
+        push_command = subprocess.Popen("git push origin " + branch_name,
                                             shell=True,
                                             stdout=subprocess.PIPE,
                                             stderr=subprocess.PIPE)

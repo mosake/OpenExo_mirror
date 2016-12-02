@@ -1,0 +1,22 @@
+<system>
+	<name>K2-52</name>
+	<rightascension>16 26 27</rightascension>
+	<declination>-24 58 12</declination>
+	<star>
+		<name>K2-52</name>
+		<radius errorminus="0.52" errorplus="0.52">1.49</radius>
+		<magV>15.037</magV>
+		<mass errorminus="0.23" errorplus="0.23">1.21</mass>
+		<temperature errorminus="787.00" errorplus="787.00">6113.00</temperature>
+		<planet>
+			<name>K2-52 b</name>
+			<semimajoraxis errorminus="0.003100" errorplus="0.003100">0.048500</semimajoraxis>
+			<period errorminus="0.00019000" errorplus="0.00019000">3.53482000</period>
+			<radius errorminus="0.348" errorplus="0.348">0.990</radius>
+			<discoverymethod>Transit</discoverymethod>
+			<discoveryyear>2016</discoveryyear>
+			<lastupdate>16/07/18</lastupdate>
+			<transittime errorminus=".002300" errorplus="0.002300" unit="BJD_TDB">2456896.028000</transittime>
+		</planet>
+	</star>
+</system>

@@ -1,0 +1,25 @@
+<system>
+	<name>HD 191806</name>
+	<rightascension>20 09 28</rightascension>
+	<declination>+52 16 35</declination>
+	<distance errorminus="3.25" errorplus="3.57">73.47</distance>
+	<star>
+		<name>HD 191806</name>
+		<magV errorminus="0.012">8.084</magV>
+		<mass errorminus="0.12" errorplus="0.12">1.14</mass>
+		<temperature errorminus="30.00" errorplus="30.00">6010.00</temperature>
+		<metallicity errorminus="0.020" errorplus="0.020">0.300</metallicity>
+		<planet>
+			<name>HD 191806 b</name>
+			<semimajoraxis errorminus="0.100000" errorplus="0.100000">2.800000</semimajoraxis>
+			<eccentricity errorminus="0.017000" errorplus="0.017000">0.259000</eccentricity>
+			<periastron errorminus="4.2000" errorplus="4.2000">4.0000</periastron>
+			<period errorminus="7.20000000" errorplus="7.20000000">1606.30000000</period>
+			<mass errorminus="0.63000" errorplus="0.63000">8.52000</mass>
+			<discoverymethod>Radial Velocity</discoverymethod>
+			<discoveryyear>2016</discoveryyear>
+			<lastupdate>16/05/19</lastupdate>
+			<transittime unit="BJD" />
+		</planet>
+	</star>
+</system>

@@ -1,0 +1,2 @@
+Cleanup script finished. 0 files checked.
+No issues found.

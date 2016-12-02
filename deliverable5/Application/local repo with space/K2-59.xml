@@ -1,0 +1,32 @@
+<system>
+	<name>K2-59</name>
+	<rightascension>22 35 46</rightascension>
+	<declination>-14 01 40</declination>
+	<star>
+		<name>K2-59</name>
+		<radius errorminus="0.07" errorplus="0.07">0.73</radius>
+		<magV errorminus="0.030">14.226</magV>
+		<mass errorminus="0.07" errorplus="0.07">0.77</mass>
+		<temperature errorminus="93.00" errorplus="93.00">5055.00</temperature>
+		<planet>
+			<name>K2-59 b</name>
+			<semimajoraxis errorminus="0.004300" errorplus="0.004300">0.135400</semimajoraxis>
+			<period errorminus="0.00330000" errorplus="0.00330000">20.69210000</period>
+			<radius errorminus="0.028" errorplus="0.028">0.215</radius>
+			<discoverymethod>Transit</discoverymethod>
+			<discoveryyear>2016</discoveryyear>
+			<lastupdate>16/07/18</lastupdate>
+			<transittime errorminus=".004300" errorplus="0.004300" unit="BJD_TDB">2456987.060300</transittime>
+		</planet>
+		<planet>
+			<name>K2-59 c</name>
+			<semimajoraxis errorminus="0.002800" errorplus="0.002800">0.090500</semimajoraxis>
+			<period errorminus="0.00100000" errorplus="0.00100000">11.29540000</period>
+			<radius errorminus="0.026" errorplus="0.026">0.205</radius>
+			<discoverymethod>Transit</discoverymethod>
+			<discoveryyear>2016</discoveryyear>
+			<lastupdate>16/07/18</lastupdate>
+			<transittime errorminus=".002900" errorplus="0.002900" unit="BJD_TDB">2456986.709500</transittime>
+		</planet>
+	</star>
+</system>

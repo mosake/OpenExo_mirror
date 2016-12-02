@@ -1,0 +1,22 @@
+<system>
+	<name>K2-85</name>
+	<rightascension>03 57 51</rightascension>
+	<declination>+18 27 55</declination>
+	<star>
+		<name>K2-85</name>
+		<radius errorminus="0.04" errorplus="0.04">0.51</radius>
+		<magV errorminus="0.470">12.831</magV>
+		<mass errorminus="0.05" errorplus="0.05">0.57</mass>
+		<temperature errorminus="122.00" errorplus="122.00">4268.00</temperature>
+		<planet>
+			<name>K2-85 b</name>
+			<semimajoraxis errorminus="0.000370" errorplus="0.000370">0.012630</semimajoraxis>
+			<period errorminus="0.00001800" errorplus="0.00001800">0.68453300</period>
+			<radius errorminus="0.011" errorplus="0.011">0.090</radius>
+			<discoverymethod>Transit</discoverymethod>
+			<discoveryyear>2016</discoveryyear>
+			<lastupdate>16/07/18</lastupdate>
+			<transittime errorminus=".000940" errorplus="0.000940" unit="BJD_TDB">2457065.368460</transittime>
+		</planet>
+	</star>
+</system>

@@ -1,0 +1,28 @@
+<system>
+	<name>HATS-27</name>
+	<rightascension>12 54 13</rightascension>
+	<declination>-46 35 16</declination>
+	<distance errorminus="80.00" errorplus="51.00">840.00</distance>
+	<star>
+		<name>HATS-27</name>
+		<radius errorminus="0.17" errorplus="0.10">1.74</radius>
+		<magV errorminus="0.040">12.766</magV>
+		<mass errorminus="0.05" errorplus="0.05">1.42</mass>
+		<temperature errorminus="64.00" errorplus="64.00">6438.00</temperature>
+		<metallicity errorminus="0.040" errorplus="0.040">0.090</metallicity>
+		<planet>
+			<name>HATS-27 b</name>
+			<semimajoraxis errorminus="0.000680" errorplus="0.000680">0.061100</semimajoraxis>
+			<eccentricity>0.581000</eccentricity>
+			<inclination errorminus="1.300" errorplus="1.300">87.300</inclination>
+			<period errorminus="0.00001400" errorplus="0.00001400">4.63703800</period>
+			<mass errorminus="0.13000" errorplus="0.13000">0.53000</mass>
+			<radius errorminus="0.110" errorplus="0.200">1.500</radius>
+			<temperature errorminus="46" errorplus="66">1659</temperature>
+			<discoverymethod>Transit</discoverymethod>
+			<discoveryyear>2016</discoveryyear>
+			<lastupdate>16/06/09</lastupdate>
+			<transittime errorminus=".001100" errorplus="0.001100" unit="BJD">2457029.337400</transittime>
+		</planet>
+	</star>
+</system>

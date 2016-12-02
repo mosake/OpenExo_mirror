@@ -1,0 +1,22 @@
+<system>
+	<name>K2-63</name>
+	<rightascension>22 13 42</rightascension>
+	<declination>-12 03 59</declination>
+	<star>
+		<name>K2-63</name>
+		<radius errorminus="0.48" errorplus="0.48">1.63</radius>
+		<magV errorminus="0.020">12.876</magV>
+		<mass errorminus="0.25" errorplus="0.25">1.40</mass>
+		<temperature errorminus="303.00" errorplus="303.00">6771.00</temperature>
+		<planet>
+			<name>K2-63 b</name>
+			<semimajoraxis errorminus="0.009700" errorplus="0.009700">0.162700</semimajoraxis>
+			<period errorminus="0.00720000" errorplus="0.00720000">20.25700000</period>
+			<radius errorminus="0.088" errorplus="0.088">0.287</radius>
+			<discoverymethod>Transit</discoverymethod>
+			<discoveryyear>2016</discoveryyear>
+			<lastupdate>16/07/18</lastupdate>
+			<transittime errorminus=".009900" errorplus="0.009900" unit="BJD_TDB">2456989.592900</transittime>
+		</planet>
+	</star>
+</system>

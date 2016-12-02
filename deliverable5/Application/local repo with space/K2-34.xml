@@ -1,0 +1,28 @@
+<system>
+	<name>K2-34</name>
+	<rightascension>08 30 19</rightascension>
+	<declination>+22 14 09</declination>
+	<distance errorminus="20.00" errorplus="20.00">377.00</distance>
+	<star>
+		<name>K2-34</name>
+		<radius errorminus="0.08" errorplus="0.08">1.53</radius>
+		<magV errorminus="0.057">11.548</magV>
+		<mass errorminus="0.06" errorplus="0.09">1.28</mass>
+		<temperature errorminus="47.00" errorplus="47.00">6132.00</temperature>
+		<metallicity errorminus="0.220" errorplus="0.220">0.240</metallicity>
+		<planet>
+			<name>K2-34 b</name>
+			<semimajoraxis errorminus="0.001100" errorplus="0.000630">0.044190</semimajoraxis>
+			<eccentricity>0.000000</eccentricity>
+			<inclination errorminus="0.510" errorplus="0.510">82.060</inclination>
+			<period errorminus="0.00001700" errorplus="0.00001700">2.99560700</period>
+			<mass errorminus="0.13000" errorplus="0.13000">1.76000</mass>
+			<radius errorminus="0.067" errorplus="0.067">1.350</radius>
+			<temperature errorminus="38" errorplus="38">1742</temperature>
+			<discoverymethod>Transit</discoverymethod>
+			<discoveryyear>2016</discoveryyear>
+			<lastupdate>16/06/03</lastupdate>
+			<transittime errorminus=".000220" errorplus="0.000220" unit="BJD">2457141.351320</transittime>
+		</planet>
+	</star>
+</system>

@@ -60,7 +60,7 @@ def push_all(repo_path=os.getcwd(), directory="*"):
                                               shell=True,
                                               stdout=subprocess.PIPE)
         commit_command.communicate()
-        push_command = subprocess.Popen("git push origin " + branch_name,
+        push_command = subprocess.Popen("git push origin master",
                                             shell=True,
                                             stdout=subprocess.PIPE,
                                             stderr=subprocess.PIPE)

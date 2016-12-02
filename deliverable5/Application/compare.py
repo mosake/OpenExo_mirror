@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import xml.etree.ElementTree as ET
 import xmltools
 import os
@@ -279,4 +278,3 @@ def checkName(sys1, sys2):
             if(i.text == j.text):
                 sameSystem = True
     return sameSystem
->>>>>>> refs/remotes/origin/MainTest

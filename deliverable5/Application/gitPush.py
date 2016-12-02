@@ -24,7 +24,7 @@ def pull_repo(repo_path=os.getcwd()):
             pull_result = subprocess.Popen(["git", "pull"],
                                            stdout=subprocess.PIPE,
                                            stderr=subprocess.PIPE)
-            
+
             pull_output, pull_err = pull_result.communicate()
             pull_error_msg = pull_err.decode()
             if(pull_error_msg != ""):
@@ -47,7 +47,7 @@ def pull_repo(repo_path=os.getcwd()):
 def push_all(repo_path=os.getcwd(), directory="*"):
     platform_names = ['Windows', 'Linux', 'Darwin', 'darwin']
     try:
-        add_command = subprocess.Popen("git add \"" + directory + "\"",
+        add_command = subprocess.Popen("git add " + directory, shell=True,
                                            stdout=subprocess.PIPE,
                                                 stderr=subprocess.PIPE)
         add_output, add_err = add_command.communicate()
@@ -73,3 +73,5 @@ def push_all(repo_path=os.getcwd(), directory="*"):
         print("Push was successful.")
     except:
         print("Git was unable to push your local copy to the main repository.")
+
+push_all("/Users/Kris/git/team25-Project/deliverable5/Application")

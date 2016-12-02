@@ -14,9 +14,13 @@ def pull_repo(repo_path=os.getcwd()):
                                               stderr=subprocess.PIPE)
             branch_output, branch_error = branch_command.communicate()
             branch_output_str = branch_output.decode()
-            branch_name = branch_output_str.split('\n')[0][1:]
 
-            checkout_command = subprocess.Popen("git checkout " + branch_name,
+            branch_name = branch_output_str.split('\n')
+            current_branch = ""
+            for branch in branch_name:
+                if '*' in branch:
+                    current_branch = branch[1:]
+            checkout_command = subprocess.Popen("git checkout " + current_branch,
                                                 shell=True,
                                                 stdout=subprocess.PIPE,
                                                 stderr=subprocess.PIPE)
@@ -60,7 +64,7 @@ def push_all(repo_path=os.getcwd(), directory="*"):
                                               shell=True,
                                               stdout=subprocess.PIPE)
         commit_command.communicate()
-        push_command = subprocess.Popen("git push origin master",
+        push_command = subprocess.Popen("git push origin " + current_branch,
                                             shell=True,
                                             stdout=subprocess.PIPE,
                                             stderr=subprocess.PIPE)
@@ -73,5 +77,3 @@ def push_all(repo_path=os.getcwd(), directory="*"):
         print("Push was successful.")
     except:
         print("Git was unable to push your local copy to the main repository.")
-
-push_all("/Users/Kris/git/team25-Project/deliverable5/Application")

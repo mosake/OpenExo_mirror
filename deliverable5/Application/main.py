@@ -25,7 +25,7 @@ def commitCommand():
         print("Problem in path. Please set the path of local repository using 'repo' command")   
     else:
         #pull from remote to make sure local is up to date
-        git.pull_repo(localRepoPath)
+        git.pull_repo()
         
         #print clean up report in a text file
         stdout = sys.stdout  #keep a handle on the real standard output
@@ -48,7 +48,7 @@ def commitCommand():
             except:
                 print ("Couldn't copy " + filename + " to " + localRepoPath +". Please close all files and try again")
         #push changes from local to remote
-        git.push_all(localRepoPath) 
+        git.push_all() 
         #change updated date
         today = str(datetime.date.today())
         fname = "last_commit_date.txt"

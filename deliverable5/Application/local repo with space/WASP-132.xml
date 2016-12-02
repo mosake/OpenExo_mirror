@@ -1,27 +1,31 @@
 <system>
 	<name>WASP-132</name>
 	<rightascension>14 30 26</rightascension>
-	<declination>-46 50 27</declination>
-	<distance>120.0</distance>
+	<declination>-46 09 33</declination>
+	<distance errorminus="20.00" errorplus="20.00">120.00</distance>
 	<star>
 		<name>WASP-132</name>
 		<age>0.5</age>
 		<radius>0.74</radius>
-		<magV>12.4</magV>
-		<mass>0.8</mass>
+		<magV>12.400</magV>
+		<mass errorminus="0.04" errorplus="0.04">0.80</mass>
 		<spectraltype>K4</spectraltype>
-		<temperature>4775.0</temperature>
-		<metallicity>0.22</metallicity>
+		<temperature errorminus="100.00" errorplus="100.00">4775.00</temperature>
+		<metallicity errorminus="0.130" errorplus="0.130">0.220</metallicity>
 		<planet>
 			<name>WASP-132 b</name>
-			<semimajoraxis errorminus="0.001" errorplus="0.001">0.067</semimajoraxis>
-			<eccentricity>0.0</eccentricity>
-			<inclination errorminus="0.3" errorplus="0.3">89.6</inclination>
-			<period errorminus="9e-06" errorplus="9e-06">7.133521</period>
-			<mass errorminus="0.03" errorplus="0.03">0.41</mass>
-			<radius errorminus="0.03" errorplus="0.03">0.87</radius>
+			<transittime errorminus=".000400" errorplus="0.000400" unit="HJD-UTC">2456698.207600</transittime>
+			<discoverymethod>transit</discoverymethod>
+			<temperature errorminus="16" errorplus="16">763</temperature>
+			<semimajoraxis errorminus="0.001000" errorplus="0.001000">0.067000</semimajoraxis>
+			<eccentricity>0.000000</eccentricity>
+			<inclination errorminus="0.300" errorplus="0.300">89.600</inclination>
+			<period errorminus="0.00000900" errorplus="0.00000900">7.13352100</period>
+			<mass errorminus="0.03000" errorplus="0.03000">0.41000</mass>
+			<radius errorminus="0.030" errorplus="0.030">0.870</radius>
 			<discoveryyear>2016</discoveryyear>
-			<lastupdate>16/07/11</lastupdate>
+			<lastupdate>16/12/01</lastupdate>
+			<istransiting>1</istransiting>
 		</planet>
 	</star>
 </system>

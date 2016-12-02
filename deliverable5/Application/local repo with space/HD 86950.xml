@@ -1,16 +1,16 @@
 <system>
 	<name>HD 86950</name>
 	<rightascension>10 01 38</rightascension>
-	<declination>-17 40 01</declination>
-	<distance errorminus="22.0" errorplus="22.0">169.0</distance>
+	<declination>-17 19 59</declination>
+	<distance errorminus="22.00" errorplus="22.00">169.00</distance>
 	<star>
 		<name>HD 86950</name>
 		<spectraltype>K1 III</spectraltype>
-		<radius errorminus="0.6" errorplus="0.6">8.8</radius>
-		<magV>7.46</magV>
+		<radius errorminus="0.60" errorplus="0.60">8.80</radius>
+		<magV errorminus="0.011" errorplus="0.011">7.459</magV>
 		<mass>1.66</mass>
-		<temperature errorminus="100.0" errorplus="100.0">4805.0</temperature>
-		<metallicity errorminus="0.1" errorplus="0.1">0.04</metallicity>
+		<temperature errorminus="100.00" errorplus="100.00">4805.00</temperature>
+		<metallicity errorminus="0.100" errorplus="0.100">0.040</metallicity>
 		<planet>
 			<name>HD 86950</name>
 			<semimajoraxis errorminus="0.08" errorplus="0.08">2.72</semimajoraxis>
@@ -21,6 +21,18 @@
 			<discoverymethod>RV</discoverymethod>
 			<discoveryyear>2016</discoveryyear>
 			<lastupdate>16/11/24</lastupdate>
+		</planet>
+		<planet>
+			<name>HD 86950 b</name>
+			<semimajoraxis errorminus="0.080000" errorplus="0.080000">2.720000</semimajoraxis>
+			<eccentricity errorminus="0.160000" errorplus="0.160000">0.170000</eccentricity>
+			<periastron errorminus="70.0000" errorplus="70.0000">243.0000</periastron>
+			<period errorminus="57.00000000" errorplus="57.00000000">1270.00000000</period>
+			<mass errorminus="0.70000" errorplus="0.70000">3.60000</mass>
+			<discoverymethod>RV</discoverymethod>
+			<discoveryyear>2016</discoveryyear>
+			<lastupdate>16/12/01</lastupdate>
+			<transittime unit="BJD" />
 		</planet>
 	</star>
 </system>

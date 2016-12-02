@@ -1,26 +1,30 @@
 <system>
 	<name>HATS-33</name>
 	<rightascension>19 38 32</rightascension>
-	<declination>-55 40 12</declination>
-	<distance>355.0</distance>
+	<declination>-55 19 48</declination>
+	<distance errorminus="12.00" errorplus="12.00">255.00</distance>
 	<star>
 		<name>HATS-33</name>
 		<age>3.0</age>
-		<radius>1.022</radius>
-		<magV>11.9</magV>
-		<mass>1.062</mass>
-		<temperature>5659.0</temperature>
-		<metallicity>0.29</metallicity>
+		<radius errorminus="0.05" errorplus="0.04">1.02</radius>
+		<magV errorminus="0.070" errorplus="0.070">11.911</magV>
+		<mass errorminus="0.03" errorplus="0.03">1.06</mass>
+		<temperature errorminus="85.00" errorplus="85.00">5659.00</temperature>
+		<metallicity errorminus="0.050" errorplus="0.050">0.290</metallicity>
 		<planet>
 			<name>HATS-33 b</name>
-			<semimajoraxis errorminus="0.00037" errorplus="0.00037">0.03727</semimajoraxis>
-			<eccentricity errorminus="0.08" errorplus="0.0">0.08</eccentricity>
-			<inclination errorminus="0.92" errorplus="0.92">87.62</inclination>
-			<period errorminus="6.1e-06" errorplus="6.1e-06">2.5495551</period>
-			<mass errorminus="0.053" errorplus="0.053">1.192</mass>
-			<radius errorminus="0.08" errorplus="0.11">1.23</radius>
+			<transittime errorminus=".000500" errorplus="0.000500" unit="BJD">2456497.231810</transittime>
+			<discoverymethod>transit</discoverymethod>
+			<temperature errorminus="38" errorplus="38">1429</temperature>
+			<semimajoraxis errorminus="0.000370" errorplus="0.000370">0.037270</semimajoraxis>
+			<eccentricity>0.080000</eccentricity>
+			<inclination errorminus="0.920" errorplus="0.920">87.620</inclination>
+			<period errorminus="0.00000610" errorplus="0.00000610">2.54955510</period>
+			<mass errorminus="0.05300" errorplus="0.05300">1.19200</mass>
+			<radius errorminus="0.081" errorplus="0.112">1.230</radius>
 			<discoveryyear>2016</discoveryyear>
-			<lastupdate>16/07/11</lastupdate>
+			<lastupdate>16/12/01</lastupdate>
+			<istransiting>1</istransiting>
 		</planet>
 	</star>
 </system>

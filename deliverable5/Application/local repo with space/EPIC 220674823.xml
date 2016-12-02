@@ -16,10 +16,11 @@
 			<inclination errorminus="10.7" errorplus="7.0">80.2</inclination>
 			<period errorminus="3e-05" errorplus="3e-05">0.571308</period>
 			<radius errorminus="0.012" errorplus="0.012">0.13</radius>
-			<discoverymethod>Primary Transit</discoverymethod>
+			<discoverymethod>transit</discoverymethod>
 			<discoveryyear>2016</discoveryyear>
 			<lastupdate>16/11/03</lastupdate>
 			<transittime errorminus="0.00085" errorplus="0.0008" unit="JD">2457437.42948</transittime>
+			<istransiting>1</istransiting>
 		</planet>
 		<planet>
 			<name>EPIC 220674823 c</name>
@@ -28,10 +29,11 @@
 			<inclination errorminus="13.7" errorplus="0.5">87.2</inclination>
 			<period errorminus="0.0001" errorplus="0.0001">13.341245</period>
 			<radius errorminus="0.012" errorplus="0.012">0.226</radius>
-			<discoverymethod>Primary Transit</discoverymethod>
+			<discoverymethod>transit</discoverymethod>
 			<discoveryyear>2016</discoveryyear>
 			<lastupdate>16/11/03</lastupdate>
 			<transittime errorminus="0.0039" errorplus="0.0027" unit="JD">2457405.73124</transittime>
+			<istransiting>1</istransiting>
 		</planet>
 	</star>
 </system>

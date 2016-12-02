@@ -5,7 +5,7 @@
 	<distance errorminus="10.00" errorplus="10.00">74.00</distance>
 	<star>
 		<name>2MASS J22362452+4751425</name>
-		<magV errorminus="0.030">12.510</magV>
+		<magV errorminus="0.030" errorplus="0.030">12.510</magV>
 		<mass errorminus="0.05" errorplus="0.05">0.60</mass>
 		<temperature errorminus="35.00" errorplus="35.00">4045.00</temperature>
 		<planet>

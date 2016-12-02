@@ -17,7 +17,7 @@
 			<periastron errorminus="131.7800" errorplus="131.7800">17.1900</periastron>
 			<period errorminus="33.00000000" errorplus="33.00000000">1103.00000000</period>
 			<mass errorminus="0.35000" errorplus="0.35000">3.07000</mass>
-			<discoverymethod>Radial Velocity</discoverymethod>
+			<discoverymethod>RV</discoverymethod>
 			<discoveryyear>2016</discoveryyear>
 			<lastupdate>16/11/10</lastupdate>
 		</planet>

@@ -25,6 +25,7 @@
 			<discoveryyear>2016</discoveryyear>
 			<lastupdate>16/10/06</lastupdate>
 			<transittime errorminus=".003000" errorplus="0.003000" unit="BJD-TDB">2457233.823000</transittime>
+			<istransiting>1</istransiting>
 		</planet>
 	</star>
 </system>

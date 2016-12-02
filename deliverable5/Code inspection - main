@@ -8,7 +8,8 @@ Author: Kelly Mo
 
 
 date:
-	missing command in help function
+	Missing documentation: missing command in help function
+	Poor coding style: Needs to follow PEP-8
 
 
 	unittesting:
@@ -23,6 +24,10 @@ date:
 	ALL TESTS PASSED
 
 extract:
+	Missing documentation: missing optional commands (-l, etc) in help function
+	Poor coding style: Needs to follow PEP-8
+	Bugs:
+
 	unittesting:
 		inputs:								output:
 		[extract]							** nothing, pulls xml files into directory from all repositories after the last set date as wanted
@@ -34,4 +39,13 @@ extract:
 												Extraction from external sources failed. Try closing all opened CSV files and try again
 												Files extracted. Please review XML files in C:\Users\Kelly\Desktop\f16\CSCC01\team25-Project\deliverable5\Application\Changed_Systems
 											FAILED: server may be down?
-											Files extracted properly, still to wrong filepath
+
+=============================
+		tried again:
+		[extract -l]					 	Files extracted properly, still to wrong filepath 
+											(Solution? replace os.getcwd to repoTools.getLocalRepo() in line 101)
+											
+											date will remove older changed system files (may be intentional)
+
+
+

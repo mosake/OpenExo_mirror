@@ -7,3 +7,4 @@ To view deliverable 5:
 Link to Trello: https://trello.com/b/Q4HVjgif/c01-task-board
 
 Please: see Deliverable 5.pdf for burndown, product backlog, etc
+        see "User Guide.docx"for further information about the application

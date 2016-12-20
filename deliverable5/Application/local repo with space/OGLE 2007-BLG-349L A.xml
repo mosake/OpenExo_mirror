@@ -1,0 +1,19 @@
+<system>
+	<name>OGLE 2007-BLG-349L A</name>
+	<rightascension>18 05 24</rightascension>
+	<declination>-26 25 19</declination>
+	<distance errorminus="380.00" errorplus="380.00">2760.00</distance>
+	<star>
+		<name>OGLE 2007-BLG-349L A</name>
+		<mass errorminus="0.07" errorplus="0.07">0.41</mass>
+		<planet>
+			<name>OGLE 2007-BLG-349L A c</name>
+			<semimajoraxis errorminus="0.340000" errorplus="0.430000">2.590000</semimajoraxis>
+			<period>2557.00000000</period>
+			<mass errorminus="0.04090" errorplus="0.04090">0.25171</mass>
+			<discoverymethod>Microlensing</discoverymethod>
+			<discoveryyear>2016</discoveryyear>
+			<lastupdate>16/09/29</lastupdate>
+		</planet>
+	</star>
+</system>

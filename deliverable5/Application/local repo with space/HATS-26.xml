@@ -1,0 +1,28 @@
+<system>
+	<name>HATS-26</name>
+	<rightascension>09 39 42</rightascension>
+	<declination>-28 35 08</declination>
+	<distance errorminus="69.00" errorplus="49.00">907.00</distance>
+	<star>
+		<name>HATS-26</name>
+		<radius errorminus="0.15" errorplus="0.11">2.04</radius>
+		<magV errorminus="0.030">12.955</magV>
+		<mass errorminus="0.11" errorplus="0.06">1.30</mass>
+		<temperature errorminus="81.00" errorplus="81.00">6071.00</temperature>
+		<metallicity errorminus="0.050" errorplus="0.050">-0.020</metallicity>
+		<planet>
+			<name>HATS-26 b</name>
+			<semimajoraxis errorminus="0.000680" errorplus="0.001330">0.047350</semimajoraxis>
+			<eccentricity>0.245000</eccentricity>
+			<inclination errorminus="1.900" errorplus="1.900">86.200</inclination>
+			<period errorminus="0.00000760" errorplus="0.00000760">3.30238810</period>
+			<mass errorminus="0.07600" errorplus="0.07600">0.65000</mass>
+			<radius errorminus="0.210" errorplus="0.210">1.750</radius>
+			<temperature errorminus="61" errorplus="61">1918</temperature>
+			<discoverymethod>Transit</discoverymethod>
+			<discoveryyear>2016</discoveryyear>
+			<lastupdate>16/06/09</lastupdate>
+			<transittime errorminus=".001200" errorplus="0.001200" unit="BJD">2456867.423200</transittime>
+		</planet>
+	</star>
+</system>

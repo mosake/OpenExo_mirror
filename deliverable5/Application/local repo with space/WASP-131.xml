@@ -1,0 +1,31 @@
+<system>
+	<name>WASP-131</name>
+	<rightascension>14 00 46</rightascension>
+	<declination>-30 35 01</declination>
+	<distance errorminus="50.00" errorplus="50.00">250.00</distance>
+	<star>
+		<name>WASP-131</name>
+		<age>4.5</age>
+		<radius>1.53</radius>
+		<magV>10.100</magV>
+		<mass>1.06</mass>
+		<spectraltype>G0</spectraltype>
+		<temperature errorminus="90.00" errorplus="90.00">6030.00</temperature>
+		<metallicity errorminus="0.080" errorplus="0.080">-0.180</metallicity>
+		<planet>
+			<name>WASP-131 b</name>
+			<transittime errorminus=".000400" errorplus="0.000400" unit="HJD-UTC">2456919.823600</transittime>
+			<discoverymethod>transit</discoverymethod>
+			<temperature errorminus="30" errorplus="30">1460</temperature>
+			<semimajoraxis errorminus="0.000900" errorplus="0.000900">0.060700</semimajoraxis>
+			<eccentricity>0.000000</eccentricity>
+			<inclination errorminus="0.300" errorplus="0.300">85.000</inclination>
+			<period errorminus="0.00000500" errorplus="0.00000500">5.32202300</period>
+			<mass errorminus="0.02000" errorplus="0.02000">0.27000</mass>
+			<radius errorminus="0.050" errorplus="0.050">1.220</radius>
+			<discoveryyear>2016</discoveryyear>
+			<lastupdate>16/12/01</lastupdate>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

@@ -1,0 +1,32 @@
+<system>
+	<name>K2-62</name>
+	<rightascension>22 17 27</rightascension>
+	<declination>-12 11 15</declination>
+	<star>
+		<name>K2-62</name>
+		<radius errorminus="0.05" errorplus="0.05">0.73</radius>
+		<magV errorminus="0.040">12.397</magV>
+		<mass errorminus="0.05" errorplus="0.05">0.77</mass>
+		<temperature errorminus="216.00" errorplus="216.00">4880.00</temperature>
+		<planet>
+			<name>K2-62 b</name>
+			<semimajoraxis errorminus="0.001400" errorplus="0.001400">0.063600</semimajoraxis>
+			<period errorminus="0.00028000" errorplus="0.00028000">6.67202000</period>
+			<radius errorminus="0.019" errorplus="0.019">0.191</radius>
+			<discoverymethod>Transit</discoverymethod>
+			<discoveryyear>2016</discoveryyear>
+			<lastupdate>16/07/18</lastupdate>
+			<transittime errorminus=".001600" errorplus="0.001600" unit="BJD_TDB">2456982.684300</transittime>
+		</planet>
+		<planet>
+			<name>K2-62 c</name>
+			<semimajoraxis errorminus="0.002500" errorplus="0.002500">0.114800</semimajoraxis>
+			<period errorminus="0.00120000" errorplus="0.00120000">16.19660000</period>
+			<radius errorminus="0.020" errorplus="0.020">0.191</radius>
+			<discoverymethod>Transit</discoverymethod>
+			<discoveryyear>2016</discoveryyear>
+			<lastupdate>16/07/18</lastupdate>
+			<transittime errorminus=".002400" errorplus="0.002400" unit="BJD_TDB">2456991.544200</transittime>
+		</planet>
+	</star>
+</system>

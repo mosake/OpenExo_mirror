@@ -1,0 +1,25 @@
+<system>
+	<name>HD 221585</name>
+	<rightascension>23 32 54</rightascension>
+	<declination>+63 09 20</declination>
+	<distance errorminus="1.91" errorplus="2.06">53.59</distance>
+	<star>
+		<name>HD 221585</name>
+		<magV errorminus="0.010">7.465</magV>
+		<mass errorminus="0.12" errorplus="0.12">1.19</mass>
+		<temperature errorminus="27.00" errorplus="27.00">5620.00</temperature>
+		<metallicity errorminus="0.020" errorplus="0.020">0.290</metallicity>
+		<planet>
+			<name>HD 221585 b</name>
+			<semimajoraxis errorminus="0.081000" errorplus="0.081000">2.306000</semimajoraxis>
+			<eccentricity errorminus="0.069000" errorplus="0.069000">0.123000</eccentricity>
+			<periastron errorminus="28.0000" errorplus="28.0000">-6.8000</periastron>
+			<period errorminus="16.00000000" errorplus="16.00000000">1173.00000000</period>
+			<mass errorminus="0.14000" errorplus="0.14000">1.61000</mass>
+			<discoverymethod>Radial Velocity</discoverymethod>
+			<discoveryyear>2016</discoveryyear>
+			<lastupdate>16/05/19</lastupdate>
+			<transittime unit="BJD" />
+		</planet>
+	</star>
+</system>

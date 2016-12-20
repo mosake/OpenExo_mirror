@@ -1,0 +1,31 @@
+<system>
+	<name>WASP-142</name>
+	<rightascension>09 22 02</rightascension>
+	<declination>-23 56 46</declination>
+	<distance errorminus="310.00" errorplus="310.00">840.00</distance>
+	<star>
+		<name>WASP-142</name>
+		<age>2.0</age>
+		<radius>1.64</radius>
+		<magV>12.300</magV>
+		<mass>1.33</mass>
+		<spectraltype>F8</spectraltype>
+		<temperature errorminus="140.00" errorplus="140.00">6010.00</temperature>
+		<metallicity errorminus="0.120" errorplus="0.120">0.260</metallicity>
+		<planet>
+			<name>WASP-142 b</name>
+			<transittime errorminus=".000400" errorplus="0.000400" unit="HJD">2457007.777900</transittime>
+			<discoverymethod>transit</discoverymethod>
+			<temperature errorminus="60" errorplus="60">2000</temperature>
+			<semimajoraxis errorminus="0.000700" errorplus="0.000700">0.034700</semimajoraxis>
+			<eccentricity>0.000000</eccentricity>
+			<inclination errorminus="0.600" errorplus="0.600">80.200</inclination>
+			<period errorminus="0.00000200" errorplus="0.00000200">2.05286800</period>
+			<mass errorminus="0.09000" errorplus="0.09000">0.84000</mass>
+			<radius errorminus="0.080" errorplus="0.080">1.530</radius>
+			<discoveryyear>2016</discoveryyear>
+			<lastupdate>16/12/01</lastupdate>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

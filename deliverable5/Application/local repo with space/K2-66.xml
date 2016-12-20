@@ -1,0 +1,22 @@
+<system>
+	<name>K2-66</name>
+	<rightascension>22 06 06</rightascension>
+	<declination>-10 42 42</declination>
+	<star>
+		<name>K2-66</name>
+		<radius errorminus="0.14" errorplus="0.14">1.71</radius>
+		<magV errorminus="0.186">11.710</magV>
+		<mass errorminus="0.05" errorplus="0.05">1.16</mass>
+		<temperature errorminus="75.00" errorplus="75.00">5958.00</temperature>
+		<planet>
+			<name>K2-66 b</name>
+			<semimajoraxis errorminus="0.000870" errorplus="0.000870">0.060690</semimajoraxis>
+			<period errorminus="0.00080000" errorplus="0.00080000">5.06965000</period>
+			<radius errorminus="0.024" errorplus="0.024">0.222</radius>
+			<discoverymethod>Transit</discoverymethod>
+			<discoveryyear>2016</discoveryyear>
+			<lastupdate>16/07/18</lastupdate>
+			<transittime errorminus=".005000" errorplus="0.005000" unit="BJD_TDB">2456984.009000</transittime>
+		</planet>
+	</star>
+</system>

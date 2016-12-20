@@ -1,0 +1,18 @@
+<system>
+	<name>V2051 Oph</name>
+	<rightascension>17 08 19</rightascension>
+	<declination>-25 11 28</declination>
+	<star>
+		<name>V2051 Oph</name>
+		<magV>13.0</magV>
+		<planet>
+			<name>V2051 Oph b</name>
+			<name>PM J17083-2548S (AB) b</name>
+			<semimajoraxis>9.0</semimajoraxis>
+			<eccentricity>0.37</eccentricity>
+			<mass errorminus="0.7" errorplus="0.7">7.3</mass>
+			<discoveryyear>2015</discoveryyear>
+			<lastupdate>16/09/07</lastupdate>
+		</planet>
+	</star>
+</system>

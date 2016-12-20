@@ -1,0 +1,28 @@
+<system>
+	<name>K2-30</name>
+	<rightascension>03 29 22</rightascension>
+	<declination>+22 17 58</declination>
+	<distance errorminus="7.60" errorplus="7.60">278.00</distance>
+	<star>
+		<name>K2-30</name>
+		<radius errorminus="0.03" errorplus="0.03">0.84</radius>
+		<magV errorminus="0.040">13.530</magV>
+		<mass errorminus="0.04" errorplus="0.04">0.90</mass>
+		<temperature errorminus="40.00" errorplus="40.00">5425.00</temperature>
+		<metallicity errorminus="0.050" errorplus="0.050">-0.150</metallicity>
+		<planet>
+			<name>K2-30 b</name>
+			<semimajoraxis errorminus="0.000760" errorplus="0.000760">0.048390</semimajoraxis>
+			<eccentricity>0.000000</eccentricity>
+			<inclination errorminus="0.240" errorplus="0.260">86.920</inclination>
+			<period errorminus="0.00001100" errorplus="0.00001100">4.09850300</period>
+			<mass errorminus="0.02700" errorplus="0.02800">0.57900</mass>
+			<radius errorminus="0.051" errorplus="0.050">1.039</radius>
+			<temperature errorminus="20" errorplus="19">1092</temperature>
+			<discoverymethod>Transit</discoverymethod>
+			<discoveryyear>2016</discoveryyear>
+			<lastupdate>16/04/14</lastupdate>
+			<transittime errorminus=".000100" errorplus="0.000100" unit="BJD-TDB">2457063.807140</transittime>
+		</planet>
+	</star>
+</system>

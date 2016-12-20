@@ -1,0 +1,22 @@
+<system>
+	<name>K2-51</name>
+	<rightascension>16 27 15</rightascension>
+	<declination>-27 57 25</declination>
+	<star>
+		<name>K2-51</name>
+		<radius errorminus="0.15" errorplus="0.15">1.37</radius>
+		<magV>12.303</magV>
+		<mass errorminus="0.05" errorplus="0.05">1.01</mass>
+		<temperature errorminus="85.00" errorplus="85.00">5452.00</temperature>
+		<planet>
+			<name>K2-51 b</name>
+			<semimajoraxis errorminus="0.001800" errorplus="0.001800">0.108600</semimajoraxis>
+			<period errorminus="0.00140000" errorplus="0.00140000">13.01060000</period>
+			<radius errorminus="0.152" errorplus="0.152">1.151</radius>
+			<discoverymethod>Transit</discoverymethod>
+			<discoveryyear>2016</discoveryyear>
+			<lastupdate>16/07/18</lastupdate>
+			<transittime errorminus=".003400" errorplus="0.003400" unit="BJD_TDB">2456905.753100</transittime>
+		</planet>
+	</star>
+</system>

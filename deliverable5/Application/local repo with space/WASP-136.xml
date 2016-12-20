@@ -1,0 +1,29 @@
+<system>
+	<name>WASP-136</name>
+	<rightascension>00 01 18</rightascension>
+	<declination>-08 55 35</declination>
+	<distance errorminus="18.00" errorplus="18.00">164.00</distance>
+	<star>
+		<name>WASP-136</name>
+		<metallicity errorminus="0.100" errorplus="0.100">-0.180</metallicity>
+		<age>3.62</age>
+		<radius errorminus="0.22" errorplus="0.22">2.21</radius>
+		<magV>9.980</magV>
+		<mass errorminus="0.07" errorplus="0.07">1.41</mass>
+		<temperature errorminus="100.00" errorplus="100.00">6260.00</temperature>
+		<planet>
+			<name>WASP-136 b</name>
+			<transittime errorminus=".001090" errorplus="0.001090" unit="BJD">2456776.906150</transittime>
+			<discoverymethod>transit</discoverymethod>
+			<temperature errorminus="82" errorplus="82">1742</temperature>
+			<semimajoraxis errorminus="0.001200" errorplus="0.001200">0.066100</semimajoraxis>
+			<inclination errorminus="1.300" errorplus="1.600">84.700</inclination>
+			<period errorminus="0.00000600" errorplus="0.00000600">5.21535700</period>
+			<mass errorminus="0.08000" errorplus="0.08000">1.51000</mass>
+			<radius errorminus="0.160" errorplus="0.160">1.380</radius>
+			<discoveryyear>2016</discoveryyear>
+			<lastupdate>16/12/01</lastupdate>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

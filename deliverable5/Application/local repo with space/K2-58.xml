@@ -1,0 +1,42 @@
+<system>
+	<name>K2-58</name>
+	<rightascension>22 15 17</rightascension>
+	<declination>-14 02 59</declination>
+	<star>
+		<name>K2-58</name>
+		<radius errorminus="0.10" errorplus="0.10">0.86</radius>
+		<magV errorminus="0.030">12.378</magV>
+		<mass errorminus="0.08" errorplus="0.08">0.89</mass>
+		<temperature errorminus="255.00" errorplus="255.00">5413.00</temperature>
+		<planet>
+			<name>K2-58 b</name>
+			<semimajoraxis errorminus="0.002100" errorplus="0.002100">0.069200</semimajoraxis>
+			<period errorminus="0.00032000" errorplus="0.00032000">7.05254000</period>
+			<radius errorminus="0.033" errorplus="0.033">0.239</radius>
+			<discoverymethod>Transit</discoverymethod>
+			<discoveryyear>2016</discoveryyear>
+			<lastupdate>16/07/18</lastupdate>
+			<transittime errorminus=".001500" errorplus="0.001500" unit="BJD_TDB">2456986.976300</transittime>
+		</planet>
+		<planet>
+			<name>K2-58 c</name>
+			<semimajoraxis errorminus="0.001100" errorplus="0.001100">0.035000</semimajoraxis>
+			<period errorminus="0.00017000" errorplus="0.00017000">2.53726000</period>
+			<radius errorminus="0.021" errorplus="0.021">0.145</radius>
+			<discoverymethod>Transit</discoverymethod>
+			<discoveryyear>2016</discoveryyear>
+			<lastupdate>16/07/18</lastupdate>
+			<transittime errorminus=".002300" errorplus="0.002300" unit="BJD_TDB">2456982.120000</transittime>
+		</planet>
+		<planet>
+			<name>K2-58 d</name>
+			<semimajoraxis errorminus="0.004600" errorplus="0.004600">0.151700</semimajoraxis>
+			<period errorminus="0.00400000" errorplus="0.00400000">22.88270000</period>
+			<radius errorminus="0.022" errorplus="0.022">0.153</radius>
+			<discoverymethod>Transit</discoverymethod>
+			<discoveryyear>2016</discoveryyear>
+			<lastupdate>16/07/18</lastupdate>
+			<transittime errorminus=".005200" errorplus="0.005200" unit="BJD_TDB">2456998.070300</transittime>
+		</planet>
+	</star>
+</system>

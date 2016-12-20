@@ -1,0 +1,20 @@
+<system>
+	<name>HD 1160</name>
+	<rightascension>00 15 57</rightascension>
+	<declination>+04 15 04</declination>
+	<distance>103.5</distance>
+	<star>
+		<name>HD 1160</name>
+		<age>0.05</age>
+		<magV>7.12</magV>
+		<spectraltype>A0V</spectraltype>
+		<metallicity>-0.3</metallicity>
+		<planet>
+			<name>HD 1160 b</name>
+			<semimajoraxis errorminus="0.0" errorplus="0.0">80.0</semimajoraxis>
+			<mass errorminus="40.0" errorplus="65.0">79.0</mass>
+			<discoveryyear>2012</discoveryyear>
+			<lastupdate>16/08/22</lastupdate>
+		</planet>
+	</star>
+</system>

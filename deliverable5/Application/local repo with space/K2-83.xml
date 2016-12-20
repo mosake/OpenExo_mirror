@@ -1,0 +1,32 @@
+<system>
+	<name>K2-83</name>
+	<rightascension>03 59 36</rightascension>
+	<declination>+15 33 32</declination>
+	<star>
+		<name>K2-83</name>
+		<radius errorminus="0.02" errorplus="0.02">0.42</radius>
+		<magV errorminus="0.020">14.514</magV>
+		<mass errorminus="0.02" errorplus="0.02">0.48</mass>
+		<temperature errorminus="49.00" errorplus="49.00">3910.00</temperature>
+		<planet>
+			<name>K2-83 b</name>
+			<semimajoraxis errorminus="0.000410" errorplus="0.000410">0.030140</semimajoraxis>
+			<period errorminus="0.00018000" errorplus="0.00018000">2.74697000</period>
+			<radius errorminus="0.009" errorplus="0.009">0.111</radius>
+			<discoverymethod>Transit</discoverymethod>
+			<discoveryyear>2016</discoveryyear>
+			<lastupdate>16/07/18</lastupdate>
+			<transittime errorminus=".002400" errorplus="0.002400" unit="BJD_TDB">2457067.063300</transittime>
+		</planet>
+		<planet>
+			<name>K2-83 c</name>
+			<semimajoraxis errorminus="0.000960" errorplus="0.000960">0.071310</semimajoraxis>
+			<period errorminus="0.00081000" errorplus="0.00081000">9.99767000</period>
+			<radius errorminus="0.009" errorplus="0.009">0.132</radius>
+			<discoverymethod>Transit</discoverymethod>
+			<discoveryyear>2016</discoveryyear>
+			<lastupdate>16/07/18</lastupdate>
+			<transittime errorminus=".002900" errorplus="0.002900" unit="BJD_TDB">2457066.270300</transittime>
+		</planet>
+	</star>
+</system>

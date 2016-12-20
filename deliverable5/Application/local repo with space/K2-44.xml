@@ -1,0 +1,22 @@
+<system>
+	<name>K2-44</name>
+	<rightascension>11 36 03</rightascension>
+	<declination>-02 31 15</declination>
+	<star>
+		<name>K2-44</name>
+		<radius errorminus="0.15" errorplus="0.15">1.58</radius>
+		<magV errorminus="0.120">12.189</magV>
+		<mass errorminus="0.06" errorplus="0.06">1.15</mass>
+		<temperature errorminus="51.00" errorplus="51.00">5912.00</temperature>
+		<planet>
+			<name>K2-44 b</name>
+			<semimajoraxis errorminus="0.001100" errorplus="0.001100">0.065100</semimajoraxis>
+			<period errorminus="0.00059000" errorplus="0.00059000">5.65688000</period>
+			<radius errorminus="0.029" errorplus="0.029">0.243</radius>
+			<discoverymethod>Transit</discoverymethod>
+			<discoveryyear>2016</discoveryyear>
+			<lastupdate>16/07/18</lastupdate>
+			<transittime errorminus=".004400" errorplus="0.004400" unit="BJD_TDB">2456811.717600</transittime>
+		</planet>
+	</star>
+</system>

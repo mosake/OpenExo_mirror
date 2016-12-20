@@ -1,0 +1,23 @@
+<system>
+	<name>K2-65</name>
+	<rightascension>22 12 51</rightascension>
+	<declination>-10 55 31</declination>
+	<distance errorminus="11.17" errorplus="15.66">78.06</distance>
+	<star>
+		<name>K2-65</name>
+		<radius errorminus="0.12" errorplus="0.12">0.84</radius>
+		<magV errorminus="0.084">10.801</magV>
+		<mass errorminus="0.10" errorplus="0.10">0.87</mass>
+		<temperature errorminus="336.00" errorplus="336.00">5213.00</temperature>
+		<planet>
+			<name>K2-65 b</name>
+			<semimajoraxis errorminus="0.003900" errorplus="0.003900">0.101400</semimajoraxis>
+			<period errorminus="0.00130000" errorplus="0.00130000">12.64750000</period>
+			<radius errorminus="0.034" errorplus="0.034">0.141</radius>
+			<discoverymethod>Transit</discoverymethod>
+			<discoveryyear>2016</discoveryyear>
+			<lastupdate>16/07/18</lastupdate>
+			<transittime errorminus=".003100" errorplus="0.003100" unit="BJD_TDB">2456986.330300</transittime>
+		</planet>
+	</star>
+</system>

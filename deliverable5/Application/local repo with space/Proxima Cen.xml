@@ -1,0 +1,25 @@
+<system>
+	<name>Proxima Cen</name>
+	<rightascension>14 29 43</rightascension>
+	<declination>-62 40 46</declination>
+	<distance errorminus="0.00" errorplus=".00">1.29</distance>
+	<star>
+		<name>Proxima Cen</name>
+		<radius errorminus="0.02" errorplus="0.02">0.14</radius>
+		<magV>11.110</magV>
+		<mass errorminus="0.01" errorplus="0.01">0.12</mass>
+		<temperature errorminus="100.00" errorplus="100.00">3050.00</temperature>
+		<planet>
+			<name>Proxima Cen b</name>
+			<semimajoraxis errorminus="0.005100" errorplus="0.004100">0.048500</semimajoraxis>
+			<eccentricity>0.350000</eccentricity>
+			<periastron>310.0000</periastron>
+			<period errorminus="0.00200000" errorplus="0.00100000">11.18600000</period>
+			<mass errorminus="0.00053" errorplus="0.00060">0.00400</mass>
+			<temperature errorminus="14" errorplus="6">234</temperature>
+			<discoverymethod>Radial Velocity</discoverymethod>
+			<discoveryyear>2016</discoveryyear>
+			<lastupdate>16/08/25</lastupdate>
+		</planet>
+	</star>
+</system>

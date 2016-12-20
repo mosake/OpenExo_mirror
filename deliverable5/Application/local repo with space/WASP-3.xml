@@ -1,0 +1,54 @@
+<system>
+	<name>WASP-3</name>
+	<rightascension>18 34 32</rightascension>
+	<declination>+35 39 42</declination>
+	<distance errorminus="20" errorplus="20">220</distance>
+	<binary>
+		<name>WASP-3</name>
+		<separation errorminus="0.0015" errorplus="0.0015" unit="arcsec">1.1910</separation>
+		<separation errorminus="22" errorplus="22" unit="AU">299</separation>
+		<positionangle errorminus="0.075" errorplus="0.075">87.070</positionangle>
+		<star>
+			<name>WASP-3 A</name>
+			<metallicity errorminus="0.200" errorplus="0.200">0.000</metallicity>
+			<temperature errorminus="100.00" errorplus="100.00">6400.00</temperature>
+			<mass errorminus="0.03" errorplus="0.03">1.23</mass>
+			<radius errorminus="0.02" errorplus="0.02">1.36</radius>
+			<magV>10.500</magV>
+			<magB errorminus="0.06" errorplus="0.06">11.07</magB>
+			<magR errorminus="0.04" errorplus="0.04">10.52</magR>
+			<magJ errorminus="0.020" errorplus="0.020">9.603</magJ>
+			<magH errorminus="0.014" errorplus="0.014">9.407</magH>
+			<magK errorminus="0.015" errorplus="0.015">9.361</magK>
+			<spectraltype>F7V</spectraltype>
+			<planet>
+				<name>WASP-3 b</name>
+				<name>WASP-3 A b</name>
+				<name>2MASS J18343163+3539415 b</name>
+				<name>TYC 2636-00195-1 b</name>
+				<list>Confirmed planets</list>
+				<mass errorminus="0.06000" errorplus="0.06000">1.98000</mass>
+				<radius errorminus="0.030" errorplus="0.030">1.400</radius>
+				<period errorminus="0.00000070" errorplus="0.00000070">1.84683550</period>
+				<semimajoraxis errorminus="0.000300" errorplus="0.000300">0.031500</semimajoraxis>
+				<eccentricity errorminus="0.002000" errorplus="0.013000">0.003000</eccentricity>
+				<inclination errorminus="0.290" errorplus="0.290">84.060</inclination>
+				<transittime errorminus=".000110" errorplus="0.000110" unit="HJD">2454640.649930</transittime>
+				<discoverymethod>transit</discoverymethod>
+				<lastupdate>16/12/01</lastupdate>
+				<discoveryyear>2007</discoveryyear>
+				<temperature>1825.6</temperature>
+				<istransiting>1</istransiting>
+				<list>Planets in binary systems, S-type</list>
+			</planet>
+		</star>
+		<star>
+			<name>WASP-3 B</name>
+			<magJ errorminus="0.12" errorplus="0.12">16.88</magJ>
+			<magH errorminus="0.079" errorplus="0.079">16.090</magH>
+			<magK errorminus="0.052" errorplus="0.052">16.002</magK>
+			<temperature errorminus="51" errorplus="51">2871</temperature>
+			<mass errorminus="0.0048" errorplus="0.0048">0.1053</mass>
+		</star>
+	</binary>
+</system>

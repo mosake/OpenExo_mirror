@@ -1,0 +1,26 @@
+<system>
+	<name>GJ 667 C</name>
+	<rightascension>17 18 57</rightascension>
+	<declination>-34 00 37</declination>
+	<distance>6.84</distance>
+	<star>
+		<name>GJ 667 C</name>
+		<age>2.0</age>
+		<magV>10.22</magV>
+		<mass>0.33</mass>
+		<spectraltype>M1.5V</spectraltype>
+		<temperature>3600.0</temperature>
+		<metallicity>-0.55</metallicity>
+		<planet>
+			<name>GJ 667 C c</name>
+			<semimajoraxis errorminus="0.013" errorplus="0.012">0.125</semimajoraxis>
+			<periastron errorminus="360.0" errorplus="360.0">292.0</periastron>
+			<eccentricity errorminus="0.02" errorplus="0.15">0.02</eccentricity>
+			<period errorminus="0.03" errorplus="0.03">28.14</period>
+			<mass errorminus="0.0038" errorplus="0.0047">0.012</mass>
+			<discoverymethod>RV</discoverymethod>
+			<discoveryyear>2011</discoveryyear>
+			<lastupdate>16/10/08</lastupdate>
+		</planet>
+	</star>
+</system>

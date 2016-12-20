@@ -1,0 +1,32 @@
+<system>
+	<name>WASP-140</name>
+	<rightascension>04 01 33</rightascension>
+	<declination>-20 27 04</declination>
+	<distance errorminus="30.00" errorplus="30.00">180.00</distance>
+	<star>
+		<name>WASP-140</name>
+		<age>1.6</age>
+		<radius>0.87</radius>
+		<magV>11.100</magV>
+		<mass errorminus="0.04" errorplus="0.04">0.90</mass>
+		<spectraltype>K0</spectraltype>
+		<temperature errorminus="100.00" errorplus="100.00">5260.00</temperature>
+		<metallicity errorminus="0.100" errorplus="0.100">0.120</metallicity>
+		<planet>
+			<name>WASP-140 b</name>
+			<transittime errorminus=".000150" errorplus="0.000150" unit="HJD">2456912.351050</transittime>
+			<discoverymethod>transit</discoverymethod>
+			<temperature errorminus="40" errorplus="40">1320</temperature>
+			<semimajoraxis errorminus="0.000500" errorplus="0.000500">0.032300</semimajoraxis>
+			<periastron errorminus="8.0" errorplus="8.0">356.0</periastron>
+			<eccentricity errorminus="0.003500" errorplus="0.003500">0.047000</eccentricity>
+			<inclination errorminus="0.800" errorplus="0.500">83.300</inclination>
+			<period errorminus="0.00000080" errorplus="0.00000080">2.23598350</period>
+			<mass errorminus="0.07000" errorplus="0.07000">2.44000</mass>
+			<radius errorminus="0.180" errorplus="0.420">1.440</radius>
+			<discoveryyear>2016</discoveryyear>
+			<lastupdate>16/12/01</lastupdate>
+			<istransiting>1</istransiting>
+		</planet>
+	</star>
+</system>

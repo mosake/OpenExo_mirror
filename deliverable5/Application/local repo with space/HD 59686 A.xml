@@ -1,0 +1,25 @@
+<system>
+	<name>HD 59686 A</name>
+	<rightascension>07 31 48</rightascension>
+	<declination>+17 05 10</declination>
+	<distance errorminus="2.70" errorplus="2.60">96.80</distance>
+	<star>
+		<name>HD 59686 A</name>
+		<radius errorminus="0.30" errorplus="0.30">13.20</radius>
+		<magV errorminus="0.009">5.442</magV>
+		<mass errorminus="0.20" errorplus="0.20">1.90</mass>
+		<temperature errorminus="24.00" errorplus="24.00">4658.00</temperature>
+		<metallicity errorminus="0.100" errorplus="0.100">0.150</metallicity>
+		<planet>
+			<name>HD 59686 A b</name>
+			<semimajoraxis errorminus="0.000700" errorplus="0.000600">1.086000</semimajoraxis>
+			<eccentricity errorminus="0.020000" errorplus="0.030000">0.050000</eccentricity>
+			<periastron errorminus="24.0000" errorplus="28.0000">121.0000</periastron>
+			<period errorminus="0.31000000" errorplus="0.26000000">299.36000000</period>
+			<mass errorminus="0.24000" errorplus="0.18000">6.92000</mass>
+			<discoverymethod>Radial Velocity</discoverymethod>
+			<discoveryyear>2016</discoveryyear>
+			<lastupdate>16/08/12</lastupdate>
+		</planet>
+	</star>
+</system>
